@@ -1,0 +1,251 @@
+---
+// Hero.astro
+// DNA: Full viewport, Three.js GLSL concentric ripple shader behind content
+// Text left-aligned, display H1, DM Sans sub, single CTA + ghost secondary
+// Shader: burnt orange (#c8511a) rings on obsidian (#0d0d0b), time scale 0.03
+// Content from: content-homepage-dominion-digital.md → H1 + Opening section
+---
+
+<section
+  class="relative overflow-hidden"
+  style="min-height: 100dvh;"
+  aria-label="Hero"
+>
+
+  <!-- Shader canvas: absolute, fills entire hero, z-index 0 -->
+  <canvas
+    id="shader-canvas"
+    class="absolute inset-0 w-full h-full"
+    style="z-index: 0;"
+    aria-hidden="true"
+  ></canvas>
+
+  <!-- Left-side readability overlay: heavier left, fades right -->
+  <div
+    class="absolute inset-0 pointer-events-none"
+    style="z-index: 1; background: linear-gradient(105deg, rgba(13,13,11,0.92) 0%, rgba(13,13,11,0.72) 40%, rgba(13,13,11,0.25) 100%);"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Bottom page-blend overlay: fades hero into page background -->
+  <div
+    class="absolute bottom-0 left-0 right-0 pointer-events-none"
+    style="z-index: 1; height: 180px; background: linear-gradient(to bottom, transparent 0%, #0d0d0b 100%);"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Content layer: z-index 2, left-aligned, padded for fixed nav -->
+  <div
+    class="relative max-w-7xl mx-auto flex items-center"
+    style="z-index: 2; min-height: 100dvh; padding-top: 110px; padding-bottom: 6rem; padding-left: clamp(2rem, 6vw, 6rem); padding-right: clamp(2rem, 6vw, 6rem);"
+    style="z-index: 2; min-height: 100dvh; padding-top: 72px; padding-bottom: 6rem;"
+  >
+    <div class="max-w-3xl reveal" id="hero-content">
+
+      <!-- Section label -->
+      <p class="font-label text-xs tracking-widest uppercase text-accent mb-6">
+        Kansas City Digital Marketing
+      </p>
+
+      <!-- H1 -->
+      <h1
+        class="font-display font-extrabold text-text tracking-tighter leading-none mb-8"
+        style="font-size: clamp(3.5rem, 7vw, 7.5rem);"
+      >
+        Your Competition is<br class="hidden md:block" />
+        <span class="text-accent">Already Worried.</span>
+      </h1>
+
+      <!-- Subheadline -->
+      <p
+        class="font-body text-text-muted leading-relaxed mb-10"
+        style="font-size: 1.125rem; max-width: 60ch;"
+      >
+        Dominate your market with a beautiful website and a high-conversion online presence engineered for one goal: qualified leads. Web design, SEO, AI search, ads, and automations. One complete system. You'll have more leads <span class="text-accent font-body" style="font-weight: 500;">guaranteed</span> in 90 days or we work for free until you do.
+      </p>
+
+      <!-- CTAs -->
+      <div class="flex flex-wrap items-center gap-4">
+
+        <!-- Primary CTA: solid accent, zero radius, uppercase label -->
+        <a
+          href="/contact"
+          class="inline-flex items-center font-label text-xs font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover px-8 py-4 transition-colors duration-200 active:scale-[0.97]"
+          style="border-radius: 0;"
+        >
+          Book a Free Strategy Call
+        </a>
+
+        <!-- Ghost secondary: border, same padding, accent on hover -->
+        <a
+          href="#services"
+          class="inline-flex items-center font-label text-xs font-semibold tracking-widest uppercase text-text hover:text-accent px-8 py-4 transition-colors duration-200"
+          style="border: 1px solid rgba(240,235,225,0.25); border-radius: 0;"
+          id="hero-ghost-cta"
+        >
+          See What We Do
+          <svg class="ml-2 w-3 h-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M6 1v10M1 6l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<script>
+  // ─────────────────────────────────────────────
+  // SHADER: Concentric ripple rings
+  // DNA spec: burnt orange (#c8511a) on obsidian (#0d0d0b), time scale 0.03
+  // Technology: Raw WebGL — no Three.js dependency, same GLSL output
+  // Source reference: 21st.dev/community/components/aliimam/shader-animation/default
+  // ─────────────────────────────────────────────
+
+  const canvas = document.getElementById('shader-canvas') as HTMLCanvasElement;
+  const gl = canvas.getContext('webgl') ?? canvas.getContext('experimental-webgl') as WebGLRenderingContext | null;
+
+  if (gl) {
+    // Vertex shader: full-screen quad, no transforms needed
+    const vertSrc = `
+      attribute vec2 a_position;
+      void main() {
+        gl_Position = vec4(a_position, 0.0, 1.0);
+      }
+    `;
+
+    // Fragment shader: concentric ripple rings
+    // Burnt orange: #c8511a = (0.784, 0.318, 0.102)
+    // Obsidian:     #0d0d0b = (0.051, 0.051, 0.043)
+    const fragSrc = `
+      precision mediump float;
+
+      uniform vec2  u_resolution;
+      uniform float u_time;
+
+      void main() {
+        vec2 uv = (gl_FragCoord.xy * 2.0 - u_resolution.xy) / min(u_resolution.x, u_resolution.y);
+
+        // Obsidian background
+        vec3 col = vec3(0.051, 0.051, 0.043);
+
+        // Burnt orange accent
+        vec3 orange = vec3(0.784, 0.318, 0.102);
+
+        // Time at DNA spec: 0.03 (slow pulse)
+        float t = u_time * 0.03;
+
+        float lineWidth = 0.002;
+
+        // Primary rings: 5 concentric, burnt orange
+        for (int i = 1; i <= 5; i++) {
+          float offset = 0.01 * float(i);
+          float ring = lineWidth * float(i * i)
+            / abs(fract(t - offset) * 5.0 - length(uv) + mod(uv.x + uv.y, 0.2));
+          col += orange * ring;
+        }
+
+        // Secondary rings: 3 dimmer, offset phase for depth
+        vec3 dim = orange * 0.35;
+        for (int i = 1; i <= 3; i++) {
+          float offset = 0.005 * float(i) + 0.3;
+          float ring = lineWidth * 0.6 * float(i)
+            / abs(fract(t * 0.65 - offset) * 6.5 - length(uv) + mod(uv.x - uv.y, 0.3));
+          col += dim * ring;
+        }
+
+        col = clamp(col, 0.0, 1.0);
+        gl_FragColor = vec4(col, 1.0);
+      }
+    `;
+
+    function compileShader(type: number, src: string): WebGLShader {
+      const shader = gl!.createShader(type)!;
+      gl!.shaderSource(shader, src);
+      gl!.compileShader(shader);
+      return shader;
+    }
+
+    const program = gl.createProgram()!;
+    gl.attachShader(program, compileShader(gl.VERTEX_SHADER,   vertSrc));
+    gl.attachShader(program, compileShader(gl.FRAGMENT_SHADER, fragSrc));
+    gl.linkProgram(program);
+    gl.useProgram(program);
+
+    // Full-screen quad: two triangles covering clip space
+    const verts = new Float32Array([-1,-1, 1,-1, -1,1, 1,-1, 1,1, -1,1]);
+    const buf = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+    gl.bufferData(gl.ARRAY_BUFFER, verts, gl.STATIC_DRAW);
+
+    const posLoc = gl.getAttribLocation(program, 'a_position');
+    gl.enableVertexAttribArray(posLoc);
+    gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 0, 0);
+
+    const uResolution = gl.getUniformLocation(program, 'u_resolution');
+    const uTime       = gl.getUniformLocation(program, 'u_time');
+
+    // Resize canvas to match physical pixels
+    function resize() {
+      const dpr = window.devicePixelRatio || 1;
+      const w   = canvas.clientWidth  * dpr;
+      const h   = canvas.clientHeight * dpr;
+      if (canvas.width !== w || canvas.height !== h) {
+        canvas.width  = w;
+        canvas.height = h;
+        gl!.viewport(0, 0, w, h);
+      }
+    }
+
+    // Animation loop
+    let rafId: number;
+    function render(t: number) {
+      resize();
+      gl!.uniform2f(uResolution, canvas.width, canvas.height);
+      gl!.uniform1f(uTime, t * 0.001); // convert ms → seconds
+      gl!.drawArrays(gl!.TRIANGLES, 0, 6);
+      rafId = requestAnimationFrame(render);
+    }
+
+    rafId = requestAnimationFrame(render);
+
+    // Stop rendering when hero is not visible (performance)
+    const heroSection = canvas.closest('section')!;
+    const visibilityObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          if (!rafId) rafId = requestAnimationFrame(render);
+        } else {
+          cancelAnimationFrame(rafId);
+          rafId = 0;
+        }
+      },
+      { threshold: 0 }
+    );
+    visibilityObserver.observe(heroSection);
+  }
+
+  // ─────────────────────────────────────────────
+  // Scroll reveal: hero content fades in on load
+  // DNA motion: opacity 0→1 + translateY 24px→0, 600ms ease-out
+  // ─────────────────────────────────────────────
+  const heroContent = document.getElementById('hero-content');
+  if (heroContent) {
+    // Small delay so shader has a frame to render before text appears
+    setTimeout(() => {
+      heroContent.classList.add('visible');
+    }, 80);
+  }
+
+  // Ghost CTA hover: border color transitions to accent
+  const ghostCta = document.getElementById('hero-ghost-cta') as HTMLAnchorElement | null;
+  if (ghostCta) {
+    ghostCta.addEventListener('mouseenter', () => {
+      ghostCta.style.borderColor = '#c8511a';
+    });
+    ghostCta.addEventListener('mouseleave', () => {
+      ghostCta.style.borderColor = 'rgba(240,235,225,0.25)';
+    });
+  }
+</script>

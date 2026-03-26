@@ -1,16 +1,16 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Dominion Digital</title>
-	</head>
-	<body>
-		<h1>Hello World</h1>
-		<p>dominion.digital is coming soon.</p>
-	</body>
-</html>
+<Layout
+  title="Dominion Digital | Kansas City Digital Marketing Agency"
+  description="Dominion Digital is a Kansas City digital marketing agency built around one metric: qualified leads. Web design, SEO, GEO, ads, and automation — results or you don't pay."
+>
+  <Nav />
+  <main>
+    <Hero />
+    <!-- Remaining sections will be added here as they are built -->
+  </main>
+</Layout>

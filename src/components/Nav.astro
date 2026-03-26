@@ -1,0 +1,153 @@
+---
+// Nav.astro
+// DNA + user direction: Floating frosted glass pill nav, always visible
+// Logo: hexagonal image + wordmark (DOMINION bold, digital normal)
+// Pill: border-radius 9999px, backdrop-blur, dark semi-transparent bg, subtle border
+// Sole Media reference: floating pill that doesn't touch viewport edges
+---
+
+<!-- Outer wrapper: fixed, full-width, centers the pill -->
+<nav
+  id="site-nav"
+  class="fixed top-0 left-0 right-0 z-50 flex justify-center"
+  style="padding: 1.25rem clamp(1rem, 3vw, 2rem) 0;"
+  aria-label="Main navigation"
+>
+
+  <!-- The pill itself -->
+  <div
+    id="nav-pill"
+    class="w-full flex items-center justify-between transition-all duration-300 ease-out"
+    style="
+      max-width: 1100px;
+      height: 64px;
+      border-radius: 9999px;
+      background: rgba(13, 13, 11, 0.82);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(240, 235, 225, 0.10);
+      padding: 0 1rem 0 1.25rem;
+    "
+  >
+
+    <!-- Logo: hexagon image + wordmark -->
+    <a
+      href="/"
+      class="flex items-center gap-3 shrink-0"
+      aria-label="Dominion Digital home"
+    >
+      <img
+        src="/images/Dominion Digital Logo White.png"
+        alt="Dominion Digital logo"
+        style="height: 32px; width: auto; display: block;"
+      />
+      <span class="font-display text-text" style="font-size: 0.875rem; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap;">
+        <strong style="font-weight: 800;">DOMINION</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400;">digital</span>
+      </span>
+    </a>
+
+    <!-- Desktop nav links: centered -->
+    <div class="hidden md:flex items-center gap-7">
+      <a href="/web-design"          class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Web Design</a>
+      <a href="/internet-marketing"  class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Marketing</a>
+      <a href="/advertising"         class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Advertising</a>
+      <a href="/ai-automation"       class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Automation</a>
+      <a href="/about"               class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">About</a>
+    </div>
+
+    <!-- CTA + mobile toggle -->
+    <div class="flex items-center gap-3 shrink-0">
+      <a
+        href="/contact"
+        class="hidden md:inline-flex items-center font-label text-text bg-accent hover:bg-accent-hover transition-colors duration-200 active:scale-[0.97]"
+        style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.6rem 1.25rem; border-radius: 9999px;"
+      >
+        Get Started
+      </a>
+
+      <!-- Mobile hamburger -->
+      <button
+        id="nav-toggle"
+        class="md:hidden flex flex-col justify-center gap-[5px] bg-transparent border-none cursor-pointer p-1"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        style="width: 36px; height: 36px;"
+      >
+        <span id="bar1" class="block bg-text transition-transform duration-300 ease-out" style="width: 22px; height: 1.5px;"></span>
+        <span id="bar2" class="block bg-text transition-opacity duration-300 ease-out" style="width: 22px; height: 1.5px;"></span>
+        <span id="bar3" class="block bg-text transition-transform duration-300 ease-out" style="width: 22px; height: 1.5px;"></span>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Mobile menu panel -->
+<div
+  id="mobile-menu"
+  class="fixed top-0 right-0 h-full z-40 flex flex-col pt-24 gap-6 transition-transform duration-300 ease-out translate-x-full"
+  style="width: 75%; max-width: 300px; background: rgba(22,22,20,0.96); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-left: 1px solid rgba(240,235,225,0.06); padding-left: 2rem; padding-right: 2rem;"
+  aria-hidden="true"
+>
+  <a href="/web-design"         class="font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase;">Web Design</a>
+  <a href="/internet-marketing" class="font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase;">Marketing</a>
+  <a href="/advertising"        class="font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase;">Advertising</a>
+  <a href="/ai-automation"      class="font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase;">Automation</a>
+  <a href="/about"              class="font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase;">About</a>
+  <a
+    href="/contact"
+    class="mt-2 inline-flex items-center justify-center font-label text-text bg-accent hover:bg-accent-hover transition-colors duration-200 active:scale-[0.97]"
+    style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.75rem 1.5rem; border-radius: 9999px;"
+  >
+    Get Started
+  </a>
+</div>
+
+<!-- Backdrop -->
+<div
+  id="nav-backdrop"
+  class="fixed inset-0 z-30 opacity-0 pointer-events-none transition-opacity duration-300"
+  style="background: rgba(13,13,11,0.6);"
+></div>
+
+<script>
+  const toggle   = document.getElementById('nav-toggle')!;
+  const menu     = document.getElementById('mobile-menu')!;
+  const backdrop = document.getElementById('nav-backdrop')!;
+  const bar1     = document.getElementById('bar1')!;
+  const bar2     = document.getElementById('bar2')!;
+  const bar3     = document.getElementById('bar3')!;
+
+  let isOpen = false;
+
+  function openMenu() {
+    isOpen = true;
+    menu.classList.remove('translate-x-full');
+    backdrop.classList.remove('opacity-0', 'pointer-events-none');
+    backdrop.classList.add('opacity-100', 'pointer-events-auto');
+    toggle.setAttribute('aria-expanded', 'true');
+    menu.setAttribute('aria-hidden', 'false');
+    bar1.style.transform = 'rotate(45deg) translate(4.5px, 4.5px)';
+    bar2.style.opacity = '0';
+    bar3.style.transform = 'rotate(-45deg) translate(4.5px, -4.5px)';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    menu.classList.add('translate-x-full');
+    backdrop.classList.add('opacity-0', 'pointer-events-none');
+    backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+    toggle.setAttribute('aria-expanded', 'false');
+    menu.setAttribute('aria-hidden', 'true');
+    bar1.style.transform = '';
+    bar2.style.opacity = '';
+    bar3.style.transform = '';
+    document.body.style.overflow = '';
+  }
+
+  toggle.addEventListener('click', () => isOpen ? closeMenu() : openMenu());
+  backdrop.addEventListener('click', closeMenu);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && isOpen) closeMenu(); });
+</script>
