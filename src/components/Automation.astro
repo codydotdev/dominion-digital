@@ -7,16 +7,16 @@
 ---
 
 <section
-  style="padding-top: clamp(8rem, 14vw, 14rem); padding-bottom: clamp(8rem, 14vw, 14rem);"
+  style="padding-top: clamp(8rem, 14vw, 14rem); padding-bottom: clamp(8rem, 14vw, 14rem); background-color: #111110;"
   aria-labelledby="automation-heading"
   id="automation"
 >
   <div class="container">
 
-    <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-16 md:gap-24">
+    <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start gap-16 md:gap-24">
 
       <!-- Left on desktop, bottom on mobile: services list + CTA -->
-      <div class="reveal flex flex-col justify-end order-last md:order-first" id="automation-services" style="padding-bottom: 0.25rem;">
+      <div class="reveal flex flex-col order-last md:order-first" id="automation-services">
 
         <!-- Services label -->
         <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">
@@ -42,11 +42,11 @@
 
         <!-- CTA -->
         <a
-          href="#contact"
-          class="inline-flex items-center self-start font-label text-xs font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover px-8 py-4 transition-colors duration-200 active:scale-[0.97]"
-          style="border-radius: 0;"
+          href="/contact"
+          class="btn-cta inline-flex items-center self-start font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97]"
+          style="font-size: 0.7rem; padding: 0.6rem 1.25rem; margin-top: 2.5rem;"
         >
-          Get My Free Audit
+          Get Started
         </a>
 
       </div>
@@ -73,7 +73,7 @@
         <div class="space-y-6 max-w-2xl">
 
           <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
-            As an automation company built for small business, <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong> sees the same thing every time: owners doing work a system should handle for them. Following up with leads by hand. Copying contact info between tools. Sending the same onboarding email 40 times a month. Every hour spent on that is an hour not spent on the work that actually grows the business.
+            As an automation company built for small business, <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400;">Digital</span> sees the same thing every time: owners doing work a system should handle for them. Following up with leads by hand. Copying contact info between tools. Sending the same onboarding email 40 times a month. Every hour spent on that is an hour not spent on the work that actually grows the business.
           </p>
 
           <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
@@ -81,11 +81,11 @@
           </p>
 
           <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
-            The businesses that pull ahead in the next five years won't just have better marketing. They'll have better systems. <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong> builds both.
+            The businesses that pull ahead in the next five years won't just have better marketing. They'll have better systems. <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400;">Digital</span> builds both.
           </p>
 
           <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
-            Automation works best when it's built into your website from the start. Clients who begin with a <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong> web build get automation that connects to their site, their CRM, and their calendar on day one.
+            Automation works best when it's built into your website from the start. Clients who begin with a <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400;">Digital</span> web build get automation that connects to their site, their CRM, and their calendar on day one.
           </p>
 
         </div>
@@ -112,4 +112,22 @@
     );
     observer.observe(el);
   });
+
+  (function () {
+    const services = document.getElementById('automation-services');
+    const section  = document.getElementById('automation');
+    if (!services || !section) return;
+    // Kill transform transition immediately — prevents CSS easing from fighting JS updates
+    services.style.transition = 'opacity 600ms ease-out';
+    let raf: number | null = null;
+    function tick() {
+      const top  = section.getBoundingClientRect().top;
+      const vh   = window.innerHeight;
+      const past = Math.max(0, vh * 0.5 - top);
+      const max  = Math.max(0, section.offsetHeight - services.offsetHeight - 80);
+      services.style.transform = `translateY(${Math.min(past * 0.35, max)}px)`;
+      raf = null;
+    }
+    window.addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(tick); }, { passive: true });
+  })();
 </script>

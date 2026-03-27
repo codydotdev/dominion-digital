@@ -7,11 +7,16 @@
 ---
 
 <section
-  style="padding-top: clamp(8rem, 14vw, 14rem); padding-bottom: clamp(8rem, 14vw, 14rem); background: #161614;"
+  style="padding-top: clamp(8rem, 14vw, 14rem); padding-bottom: clamp(8rem, 14vw, 14rem); background: #161614; position: relative; overflow: hidden;"
   aria-labelledby="guarantee-heading"
   id="guarantee"
 >
-  <div class="container">
+  <!-- Pulsing radial bloom — centered behind content -->
+  <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; z-index: 0;">
+    <div class="guarantee-bloom" style="position: absolute; width: 900px; height: 900px; border-radius: 50%; left: 50%; top: 50%; margin-left: -450px; margin-top: -450px; background: radial-gradient(circle, rgba(200,81,26,0.16) 0%, transparent 65%); filter: blur(60px);"></div>
+  </div>
+
+  <div class="container" style="position: relative; z-index: 1;">
 
     <!-- Header -->
     <div class="reveal" id="guarantee-header">
@@ -30,7 +35,7 @@
       </h2>
 
       <p class="font-body leading-relaxed text-text-muted mb-16 md:mb-20" style="font-size: 1.125rem; max-width: 52ch;">
-        <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong> was founded on one frustration: marketing agencies that were great at sending reports but couldn't connect their work to revenue. If your agency's best answer to "are we getting leads?" is "your organic impressions are up 18%," that's the wrong answer.
+        <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400;">Digital</span> was founded on one frustration: marketing agencies that were great at sending reports but couldn't connect their work to revenue. If your agency's best answer to "are we getting leads?" is "your organic impressions are up 18%," that's the wrong answer.
       </p>
 
     </div>
@@ -84,21 +89,31 @@
     <div class="reveal mt-16 md:mt-20 flex flex-col md:flex-row md:items-center md:justify-between gap-8" id="guarantee-cta">
 
       <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; max-width: 52ch;">
-        The Kansas City business owners who work best with <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong> are the ones who've been burned before. They're not looking for promises. They're looking for an agency willing to put skin in the game.
+        The Kansas City business owners who work best with <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400;">Digital</span> are the ones who've been burned before. They're not looking for promises. They're looking for an agency willing to put skin in the game.
       </p>
 
       <a
-        href="#contact"
-        class="inline-flex items-center shrink-0 font-label text-xs font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover px-8 py-4 transition-colors duration-200 active:scale-[0.97]"
-        style="border-radius: 0;"
+        href="/contact"
+        class="btn-cta inline-flex items-center shrink-0 font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97]"
+        style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
       >
-        Get My Free Audit
+        Get Started
       </a>
 
     </div>
 
   </div>
 </section>
+
+<style>
+  @keyframes guarantee-bloom-pulse {
+    0%, 100% { opacity: 0.6; transform: scale(1); }
+    50%       { opacity: 1;   transform: scale(1.18); }
+  }
+  .guarantee-bloom {
+    animation: guarantee-bloom-pulse 10s ease-in-out infinite;
+  }
+</style>
 
 <script>
   ['guarantee-header', 'guarantee-blocks', 'guarantee-cta'].forEach((id, i) => {

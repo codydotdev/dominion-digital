@@ -19,9 +19,10 @@
   --color-accent-hover: #e05e20;
 
   /* Fonts */
-  --font-display: "Space Grotesk", system-ui, sans-serif;
-  --font-body:    "DM Sans", system-ui, sans-serif;
-  --font-label:   "Space Grotesk", system-ui, sans-serif;
+  --font-display:   "Space Grotesk", system-ui, sans-serif;
+  --font-body:      "DM Sans", system-ui, sans-serif;
+  --font-label:     "Space Grotesk", system-ui, sans-serif;
+  --font-wordmark:  "Raleway", system-ui, sans-serif;
 
   /* Custom spacing */
   --spacing-section: clamp(5rem, 10vw, 8rem);
@@ -136,4 +137,14 @@ ul, ol {
 
 .link-underline-accent::after {
   background: #c8511a;
+}
+
+/* --- Primary CTA Button: pill shape + accent glow --- */
+.btn-cta {
+  border-radius: 9999px;
+  box-shadow: 0 0 16px rgba(200, 81, 26, 0.38), 0 0 36px rgba(200, 81, 26, 0.14);
+  transition: box-shadow 200ms ease-out, background-color 200ms ease-out, transform 97ms;
+}
+.btn-cta:hover {
+  box-shadow: 0 0 22px rgba(200, 81, 26, 0.55), 0 0 50px rgba(200, 81, 26, 0.22);
 }

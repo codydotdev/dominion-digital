@@ -20,11 +20,15 @@ const canonical = canonicalUrl ?? Astro.url.href;
   <link rel="canonical" href={canonical} />
   <title>{title}</title>
 
-  <!-- Fonts: Space Grotesk (display/label) + DM Sans (body) -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/logo-icon.png" />
+  <link rel="shortcut icon" href="/images/logo-icon.png" />
+
+  <!-- Fonts: Space Grotesk (display/label) + Raleway (wordmark) + DM Sans (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Raleway:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap"
     rel="stylesheet"
   />
 </head>

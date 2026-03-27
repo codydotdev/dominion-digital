@@ -10,17 +10,18 @@
 <nav
   id="site-nav"
   class="fixed top-0 left-0 right-0 z-50 flex justify-center"
-  style="padding: 1.25rem clamp(1rem, 3vw, 2rem) 0;"
+  style="padding: 0.75rem clamp(1rem, 3vw, 2rem) 0;"
   aria-label="Main navigation"
 >
 
   <!-- The pill itself -->
   <div
     id="nav-pill"
-    class="w-full flex items-center justify-between transition-all duration-300 ease-out"
+    class="w-full grid items-center transition-all duration-300 ease-out"
     style="
+      grid-template-columns: 1fr auto 1fr;
       max-width: 1100px;
-      height: 64px;
+      height: 46px;
       border-radius: 9999px;
       background: rgba(13, 13, 11, 0.45);
       backdrop-filter: blur(28px) saturate(160%);
@@ -40,10 +41,10 @@
         src="/images/Dominion Digital Logo White.png"
         alt="Dominion Digital logo"
         class="nav-logo"
-        style="height: 32px; width: auto; display: block;"
+        style="height: 26px; width: auto; display: block;"
       />
-      <span class="font-display text-text" style="font-size: 0.875rem; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap;">
-        <strong style="font-weight: 800;">DOMINION</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400;">digital</span>
+      <span class="font-wordmark text-text" style="font-size: 0.875rem; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap;">
+        <strong style="font-weight: 800;">DOMINION</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400;">DIGITAL</span>
       </span>
     </a>
 
@@ -57,11 +58,11 @@
     </div>
 
     <!-- CTA + mobile toggle -->
-    <div class="flex items-center gap-3 shrink-0">
+    <div class="flex items-center justify-end gap-3">
       <a
         href="/contact"
-        class="hidden md:inline-flex items-center font-label text-text bg-accent hover:bg-accent-hover transition-colors duration-200 active:scale-[0.97]"
-        style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.6rem 1.25rem; border-radius: 9999px;"
+        class="btn-cta hidden md:inline-flex items-center font-label text-text bg-accent hover:bg-accent-hover active:scale-[0.97]"
+        style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.6rem 1.25rem;"
       >
         Get Started
       </a>
@@ -98,8 +99,8 @@
   <a href="/about"              class="font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase;">About</a>
   <a
     href="/contact"
-    class="mt-2 inline-flex items-center justify-center font-label text-text bg-accent hover:bg-accent-hover transition-colors duration-200 active:scale-[0.97]"
-    style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.75rem 1.5rem; border-radius: 9999px;"
+    class="btn-cta mt-2 inline-flex items-center justify-center font-label text-text bg-accent hover:bg-accent-hover active:scale-[0.97]"
+    style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.75rem 1.5rem;"
   >
     Get Started
   </a>

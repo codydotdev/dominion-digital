@@ -13,7 +13,7 @@
 >
   <div class="container">
 
-    <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-16 md:gap-24">
+    <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] items-start gap-16 md:gap-24">
 
       <!-- Left: narrative copy -->
       <div class="reveal" id="advertising-copy">
@@ -41,7 +41,7 @@
           </p>
 
           <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
-            The platform is rarely the problem. Google Ads work. The problem is strategy, targeting, and copy. Most agencies optimize for clicks. <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong> optimizes for <span style="color: #c8511a; font-weight: 500;">cost-per-lead.</span> Those are different goals that produce very different results.
+            The platform is rarely the problem. Google Ads work. The problem is strategy, targeting, and copy. Most agencies optimize for clicks. <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400;">Digital</span> optimizes for <span style="color: #c8511a; font-weight: 500;">cost-per-lead.</span> Those are different goals that produce very different results.
           </p>
 
           <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
@@ -57,7 +57,7 @@
       </div>
 
       <!-- Right: services list + CTA -->
-      <div class="reveal flex flex-col justify-end" id="advertising-services" style="padding-bottom: 0.25rem;">
+      <div class="reveal flex flex-col" id="advertising-services">
 
         <!-- Services label -->
         <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">
@@ -80,11 +80,11 @@
 
         <!-- CTA -->
         <a
-          href="#contact"
-          class="inline-flex items-center self-start font-label text-xs font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover px-8 py-4 transition-colors duration-200 active:scale-[0.97]"
-          style="border-radius: 0;"
+          href="/contact"
+          class="btn-cta inline-flex items-center self-start font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97]"
+          style="font-size: 0.7rem; padding: 0.6rem 1.25rem; margin-top: 2.5rem;"
         >
-          Get My Free Audit
+          Get Started
         </a>
 
       </div>
@@ -109,4 +109,22 @@
     );
     observer.observe(el);
   });
+
+  (function () {
+    const services = document.getElementById('advertising-services');
+    const section  = document.getElementById('advertising');
+    if (!services || !section) return;
+    // Kill transform transition immediately — prevents CSS easing from fighting JS updates
+    services.style.transition = 'opacity 600ms ease-out';
+    let raf: number | null = null;
+    function tick() {
+      const top  = section.getBoundingClientRect().top;
+      const vh   = window.innerHeight;
+      const past = Math.max(0, vh * 0.5 - top);
+      const max  = Math.max(0, section.offsetHeight - services.offsetHeight - 80);
+      services.style.transform = `translateY(${Math.min(past * 0.35, max)}px)`;
+      raf = null;
+    }
+    window.addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(tick); }, { passive: true });
+  })();
 </script>
