@@ -1,0 +1,123 @@
+---
+// Intro.astro
+// Opening narrative — centered layout, reference: stitch about section
+// Pill label top center, large fading text block, service category pill buttons below
+// No section number — section 01 starts at WebDesign
+// Content from: content-homepage-dominion-digital.md → Opening section
+---
+
+<section
+  style="padding-top: clamp(8rem, 14vw, 14rem); padding-bottom: clamp(8rem, 14vw, 14rem);"
+  aria-labelledby="intro-heading"
+  id="intro"
+>
+  <div class="container">
+    <div class="reveal flex flex-col items-center text-center" id="intro-content">
+
+      <!-- Pill label -->
+      <div
+        class="inline-flex items-center font-label text-xs tracking-widest uppercase"
+        style="
+          color: #8a8880;
+          border: 1px solid rgba(240,235,225,0.12);
+          border-radius: 9999px;
+          padding: 0.4rem 1.1rem;
+          background: #161614;
+          margin-bottom: 3.5rem;
+        "
+      >
+        About &nbsp;<strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #8a8880;">Digital</span>
+      </div>
+
+      <!-- Text block: one flowing paragraph, muted → bright → muted -->
+      <p
+        class="font-body leading-relaxed"
+        style="max-width: 52rem; font-size: 1.125rem;"
+        id="intro-heading"
+      >
+        <span style="color: #8a8880;">Most Kansas City businesses that call us have already hired a marketing agency. They paid for six months of SEO, got monthly ranking reports, and ended their contract with more dashboards than new clients. </span><span style="color: #f0ebe1;"><strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong> Digital is a Kansas City digital marketing agency built around <span style="color: #c8511a; font-weight: 500;">one metric: qualified leads.</span> Web design, SEO, AI search optimization, Google Ads, and business automation are built as one connected system. When we send you a monthly report, every number connects to pipeline, not impressions. </span><span style="color: #8a8880;">Kansas City has no shortage of agencies that are great at selling retainers. Most business owners in Overland Park, Lee's Summit, and Olathe have already found that out the hard way. Dominion was built to work differently.</span>
+      </p>
+
+      <!-- Service category pill buttons -->
+      <div
+        class="flex flex-wrap justify-center gap-3"
+        style="margin-top: 4rem;"
+        aria-label="Service categories"
+      >
+
+        <a href="#web-design" class="intro-pill inline-flex items-center gap-2 font-label text-xs tracking-widest uppercase">
+          <span class="pill-icon" style="color: #c8511a; font-size: 1.08rem; line-height: 1; display: inline-block;">▲</span>
+          Web Design
+        </a>
+
+        <a href="#seo-geo" class="intro-pill inline-flex items-center gap-2 font-label text-xs tracking-widest uppercase">
+          <span class="pill-icon" style="color: #c8511a; font-size: 1.08rem; line-height: 1; display: inline-block;">▲</span>
+          SEO &amp; GEO
+        </a>
+
+        <a href="#advertising" class="intro-pill inline-flex items-center gap-2 font-label text-xs tracking-widest uppercase">
+          <span class="pill-icon" style="color: #c8511a; font-size: 1.08rem; line-height: 1; display: inline-block;">▲</span>
+          Google Ads
+        </a>
+
+        <a href="#automation" class="intro-pill inline-flex items-center gap-2 font-label text-xs tracking-widest uppercase">
+          <span class="pill-icon" style="color: #c8511a; font-size: 1.08rem; line-height: 1; display: inline-block;">▲</span>
+          AI Automation
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .intro-pill {
+    color: #8a8880;
+    border: 1px solid rgba(240,235,225,0.12);
+    border-radius: 9999px;
+    padding: 0.55rem 1.25rem;
+    background: #161614;
+    transition: color 200ms ease, border-color 200ms ease, transform 200ms ease;
+  }
+
+  .intro-pill:hover {
+    color: #f0ebe1;
+    border-color: rgba(240,235,225,0.25);
+    transform: scale(1.08);
+  }
+
+  /* ▲ icon: continuous slow spin, staggered per pill */
+  @keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+  .pill-icon {
+    animation: spin-slow 5s linear infinite;
+    text-shadow:
+      0 0 8px rgba(200, 81, 26, 0.9),
+      0 0 20px rgba(200, 81, 26, 0.6),
+      0 0 40px rgba(200, 81, 26, 0.3);
+  }
+
+  .intro-pill:nth-child(2) .pill-icon { animation-duration: 6s; }
+  .intro-pill:nth-child(3) .pill-icon { animation-duration: 4.5s; }
+  .intro-pill:nth-child(4) .pill-icon { animation-duration: 7s; }
+</style>
+
+<script>
+  const el = document.getElementById('intro-content');
+  if (el) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.classList.add('visible');
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+  }
+</script>

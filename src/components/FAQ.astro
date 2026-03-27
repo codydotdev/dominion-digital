@@ -1,0 +1,156 @@
+---
+// FAQ.astro
+// Section 07 — Frequently Asked Questions
+// DNA: Accordion-style, single column, clean expand/collapse
+// FAQPage schema recommended — questions in customer language
+// Content from: content-homepage-dominion-digital.md → FAQ section
+---
+
+<section
+  style="padding-top: clamp(8rem, 14vw, 14rem); padding-bottom: clamp(8rem, 14vw, 14rem);"
+  aria-labelledby="faq-heading"
+  id="faq"
+>
+  <div class="container">
+
+    <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-16 md:gap-24" id="faq-content">
+
+      <!-- Left: label + heading -->
+      <div>
+        <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">
+          07
+        </p>
+        <h2
+          id="faq-heading"
+          class="font-display font-bold tracking-tight text-text"
+          style="font-size: clamp(2rem, 4vw, 3.5rem);"
+        >
+          Questions.<br />Answered.
+        </h2>
+      </div>
+
+      <!-- Right: accordion -->
+      <div class="faq-list" role="list">
+
+        <div class="faq-item" role="listitem">
+          <button
+            class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+            style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+            aria-expanded="false"
+          >
+            <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+              How much does digital marketing cost in Kansas City?
+            </span>
+            <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; transition: transform 300ms ease; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+          </button>
+          <div class="faq-body" style="display: none; padding-bottom: 1.5rem;">
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              Dominion has three tiers. The entry option is a professional landing page for free, plus $200 per month for hosting and management. The Authority Accelerator, which includes a full 5–7 page site, local SEO, and Google Business Profile management, is $6,000 setup and $400 per month. Total Online Omnipresence, which covers a 30–40 page site, SEO, GEO, social media, Google Ads, and automation, is $10,000 setup and $1,500 per month. Every paid tier includes an unconditional site guarantee and a 90-day results guarantee.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button
+            class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+            style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+            aria-expanded="false"
+          >
+            <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+              What is GEO and why does it matter for Kansas City businesses?
+            </span>
+            <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; transition: transform 300ms ease; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+          </button>
+          <div class="faq-body" style="display: none; padding-bottom: 1.5rem;">
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              GEO stands for Generative Engine Optimization. It's the practice of optimizing your content to get cited by AI tools like ChatGPT, Perplexity, and Google AI Overviews. Traditional SEO gets you into Google's search results. GEO gets you into the AI-generated answers your customers are increasingly using to make decisions. In Kansas City, most businesses have no GEO strategy at all. That gap closes fast for the ones who move first.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button
+            class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+            style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+            aria-expanded="false"
+          >
+            <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+              How long does it take to see results from digital marketing in Kansas City?
+            </span>
+            <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; transition: transform 300ms ease; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+          </button>
+          <div class="faq-body" style="display: none; padding-bottom: 1.5rem;">
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              Web design results are visible at launch. Paid advertising campaigns typically produce leads within the first 30 days when set up correctly. SEO and GEO results appear within 60–90 days in most Kansas City markets, depending on your competition level. Dominion's 90-day results guarantee is built around that timeline.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button
+            class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+            style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; cursor: pointer;"
+            aria-expanded="false"
+          >
+            <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+              Does Dominion work with businesses outside Kansas City?
+            </span>
+            <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; transition: transform 300ms ease; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+          </button>
+          <div class="faq-body" style="display: none; padding-bottom: 1.5rem;">
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              Yes. Most clients are in the Kansas City metro, but Dominion works with national clients on web design, SEO, and automation. The process is the same regardless of location.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+  // Section reveal
+  const faqContent = document.getElementById('faq-content');
+  if (faqContent) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          faqContent.classList.add('visible');
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(faqContent);
+  }
+
+  // Accordion
+  document.querySelectorAll('.faq-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const item     = trigger.closest('.faq-item')!;
+      const body     = item.querySelector('.faq-body') as HTMLElement;
+      const icon     = trigger.querySelector('.faq-icon') as HTMLElement;
+      const isOpen   = trigger.getAttribute('aria-expanded') === 'true';
+
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(i => {
+        const b = i.querySelector('.faq-body') as HTMLElement;
+        const ic = i.querySelector('.faq-icon') as HTMLElement;
+        const t = i.querySelector('.faq-trigger')!;
+        b.style.display = 'none';
+        ic.style.transform = 'rotate(0deg)';
+        t.setAttribute('aria-expanded', 'false');
+      });
+
+      // Open clicked if it was closed
+      if (!isOpen) {
+        body.style.display = 'block';
+        icon.style.transform = 'rotate(180deg)';
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>

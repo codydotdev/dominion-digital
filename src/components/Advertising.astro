@@ -1,0 +1,112 @@
+---
+// Advertising.astro
+// Section 03 — Paid Ads That Produce Leads, Not Just Clicks
+// DNA: 2-col asymmetric (3fr 2fr), left body copy, right services + CTA
+// SEO anchor: "Advertising Agency" in opening sentence
+// Content from: content-homepage-dominion-digital.md → Advertising section
+---
+
+<section
+  style="padding-top: clamp(8rem, 14vw, 14rem); padding-bottom: clamp(8rem, 14vw, 14rem);"
+  aria-labelledby="advertising-heading"
+  id="advertising"
+>
+  <div class="container">
+
+    <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-16 md:gap-24">
+
+      <!-- Left: narrative copy -->
+      <div class="reveal" id="advertising-copy">
+
+        <!-- Section number -->
+        <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">
+          03
+        </p>
+
+        <!-- H2 -->
+        <h2
+          id="advertising-heading"
+          class="font-display font-bold tracking-tight text-text mb-10"
+          style="font-size: clamp(2rem, 4vw, 3.5rem);"
+        >
+          Paid Ads That Produce<br class="hidden md:block" />
+          Leads, Not Just Clicks.
+        </h2>
+
+        <!-- Body paragraphs — SEO anchor "Advertising Agency" in opening sentence -->
+        <div class="space-y-6 max-w-2xl">
+
+          <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+            Every advertising agency in Kansas City will tell you their ads work. Business owners have heard that before. They hand over $2,000 a month, watch the budget disappear, and get back a report full of clicks that never turned into customers.
+          </p>
+
+          <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
+            The platform is rarely the problem. Google Ads work. The problem is strategy, targeting, and copy. Most agencies optimize for clicks. <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong> optimizes for <span style="color: #c8511a; font-weight: 500;">cost-per-lead.</span> Those are different goals that produce very different results.
+          </p>
+
+          <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+            We manage Google Ads campaigns for Kansas City businesses in HVAC, legal, home services, B2B, and local retail. Every campaign includes conversion tracking from day one. Our reporting shows exactly where your budget went and exactly how many leads it produced. No brand awareness charts. No reach metrics. Pipeline.
+          </p>
+
+          <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
+            How much should you spend on Google Ads in Kansas City? Most local service businesses see positive return on ad spend with a monthly budget between $1,500 and $5,000. The right number depends on your average job value, your service area, and your current conversion rate. We'll tell you the honest number before you spend a dollar.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Right: services list + CTA -->
+      <div class="reveal flex flex-col justify-end" id="advertising-services" style="padding-bottom: 0.25rem;">
+
+        <!-- Services label -->
+        <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">
+          Advertising Services
+        </p>
+
+        <!-- Services list -->
+        <ul class="stagger mb-10" aria-label="Advertising services offered">
+          <li class="font-body text-text py-4 border-t" style="font-size: 1rem; border-color: rgba(240,235,225,0.08);">
+            Google Ads Management
+          </li>
+          <li class="font-body text-text py-4 border-t" style="font-size: 1rem; border-color: rgba(240,235,225,0.08);">
+            Ad Copywriting &amp; Creative
+          </li>
+          <li class="font-body text-text py-4 border-t" style="font-size: 1rem; border-color: rgba(240,235,225,0.08);">
+            PPC Campaign Strategy
+          </li>
+          <li class="py-4 border-t border-b" style="border-color: rgba(240,235,225,0.08);"></li>
+        </ul>
+
+        <!-- CTA -->
+        <a
+          href="#contact"
+          class="inline-flex items-center self-start font-label text-xs font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover px-8 py-4 transition-colors duration-200 active:scale-[0.97]"
+          style="border-radius: 0;"
+        >
+          Get My Free Audit
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+  ['advertising-copy', 'advertising-services'].forEach((id, i) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => el.classList.add('visible'), i * 120);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+  });
+</script>

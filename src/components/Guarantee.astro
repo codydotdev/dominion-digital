@@ -1,0 +1,118 @@
+---
+// Guarantee.astro
+// Section 06 — Results or You Don't Pay. That's the Offer.
+// DNA: High-contrast full-width statement section, two guarantee blocks
+// Different visual treatment — dark surface bg to break page rhythm
+// Content from: content-homepage-dominion-digital.md → Guarantee section
+---
+
+<section
+  style="padding-top: clamp(8rem, 14vw, 14rem); padding-bottom: clamp(8rem, 14vw, 14rem); background: #161614;"
+  aria-labelledby="guarantee-heading"
+  id="guarantee"
+>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="reveal" id="guarantee-header">
+
+      <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">
+        06
+      </p>
+
+      <h2
+        id="guarantee-heading"
+        class="font-display font-bold tracking-tight text-text mb-8"
+        style="font-size: clamp(2rem, 4vw, 3.5rem); max-width: 28ch;"
+      >
+        Results or You Don't Pay.<br class="hidden md:block" />
+        That's the Offer.
+      </h2>
+
+      <p class="font-body leading-relaxed text-text-muted mb-16 md:mb-20" style="font-size: 1.125rem; max-width: 52ch;">
+        <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong> was founded on one frustration: marketing agencies that were great at sending reports but couldn't connect their work to revenue. If your agency's best answer to "are we getting leads?" is "your organic impressions are up 18%," that's the wrong answer.
+      </p>
+
+    </div>
+
+    <!-- Two guarantee blocks -->
+    <div class="reveal grid grid-cols-1 md:grid-cols-2 gap-px" id="guarantee-blocks" style="border: 1px solid rgba(240,235,225,0.08);">
+
+      <!-- Site Guarantee -->
+      <div style="background: #0d0d0b; padding: clamp(2.5rem, 5vw, 3.5rem);">
+
+        <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">
+          The Site Guarantee
+        </p>
+
+        <p
+          class="font-display font-bold tracking-tight text-text mb-6"
+          style="font-size: clamp(1.5rem, 2.5vw, 2rem);"
+        >
+          Unconditional.
+        </p>
+
+        <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+          If you're not satisfied with your website at any point during the build, you get every dollar back. No questions. We don't launch until you'd be proud to send that URL to your best client.
+        </p>
+
+      </div>
+
+      <!-- Results Guarantee -->
+      <div style="background: #0d0d0b; padding: clamp(2.5rem, 5vw, 3.5rem);">
+
+        <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">
+          The Results Guarantee
+        </p>
+
+        <p
+          class="font-display font-bold tracking-tight mb-6"
+          style="font-size: clamp(1.5rem, 2.5vw, 2rem); color: #c8511a;"
+        >
+          Conditional.
+        </p>
+
+        <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+          If you don't have more qualified leads coming in within 90 days of launch, we keep working at no charge for up to 90 more days. That's not fine print. It's the offer.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- Closing statement + CTA -->
+    <div class="reveal mt-16 md:mt-20 flex flex-col md:flex-row md:items-center md:justify-between gap-8" id="guarantee-cta">
+
+      <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; max-width: 52ch;">
+        The Kansas City business owners who work best with <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong> are the ones who've been burned before. They're not looking for promises. They're looking for an agency willing to put skin in the game.
+      </p>
+
+      <a
+        href="#contact"
+        class="inline-flex items-center shrink-0 font-label text-xs font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover px-8 py-4 transition-colors duration-200 active:scale-[0.97]"
+        style="border-radius: 0;"
+      >
+        Get My Free Audit
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+  ['guarantee-header', 'guarantee-blocks', 'guarantee-cta'].forEach((id, i) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => el.classList.add('visible'), i * 150);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+  });
+</script>

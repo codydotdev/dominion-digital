@@ -1,0 +1,119 @@
+---
+// WebDesign.astro
+// Section 02 — A Website That Actually Brings In Leads
+// DNA: 2-col asymmetric (3fr 2fr), left body copy, right services + CTA
+// SEO anchor: "Website Designer" in opening sentence of body
+// Content from: content-homepage-dominion-digital.md → Web Design section
+---
+
+<section
+  style="padding-top: clamp(8rem, 14vw, 14rem); padding-bottom: clamp(8rem, 14vw, 14rem);"
+  aria-labelledby="webdesign-heading"
+  id="web-design"
+>
+  <div class="container">
+
+    <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-16 md:gap-24">
+
+      <!-- Left: narrative copy -->
+      <div class="reveal" id="webdesign-copy">
+
+        <!-- Section number -->
+        <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">
+          01
+        </p>
+
+        <!-- H2 -->
+        <h2
+          id="webdesign-heading"
+          class="font-display font-bold tracking-tight text-text mb-10"
+          style="font-size: clamp(2rem, 4vw, 3.5rem);"
+        >
+          A Website That Actually<br class="hidden md:block" /> Brings In Leads.
+        </h2>
+
+        <!-- Body paragraphs — SEO anchor "Website Designer" in opening sentence -->
+        <div class="space-y-6 max-w-2xl">
+
+          <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+            Most Kansas City businesses that hire a website designer end up with the same result: a site that looks fine, loads fast enough, and sits there doing nothing. A digital business card. You paid someone to build it, someone else to host it, and now it's competing with 40 other local businesses on a search page it barely shows up on.
+          </p>
+
+          <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
+            Every <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong> website is built around one question: what happens when someone lands here? We design the answer into the layout. High-conversion architecture, fast load times, and a user journey built to turn a visitor into a phone call or a contact form submission.
+          </p>
+
+          <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+            Businesses across Kansas City in industries from HVAC to professional services have seen inbound contact double after a site rebuild with <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong>. A well-built website isn't a cost. It's the foundation your entire marketing system sits on.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Right: services list + CTA -->
+      <div class="reveal flex flex-col justify-end" id="webdesign-services" style="padding-bottom: 0.25rem;">
+
+        <!-- Services label -->
+        <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">
+          Web Design Services
+        </p>
+
+        <!-- Services list: staggered reveal children -->
+        <ul class="stagger mb-10" aria-label="Web design services offered">
+          <li
+            class="font-body text-text py-4 border-t"
+            style="font-size: 1rem; border-color: rgba(240,235,225,0.08);"
+          >
+            High-Conversion Web Design
+          </li>
+          <li
+            class="font-body text-text py-4 border-t"
+            style="font-size: 1rem; border-color: rgba(240,235,225,0.08);"
+          >
+            Custom Web Development
+          </li>
+          <li
+            class="py-4 border-t border-b"
+            style="border-color: rgba(240,235,225,0.08);"
+          >
+            <!-- bottom border closer -->
+          </li>
+        </ul>
+
+        <!-- CTA -->
+        <a
+          href="#contact"
+          class="inline-flex items-center self-start font-label text-xs font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover px-8 py-4 transition-colors duration-200 active:scale-[0.97]"
+          style="border-radius: 0;"
+        >
+          Get My Free Audit
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+  // Section reveal: IntersectionObserver, fires once
+  // DNA motion: opacity 0→1 + translateY 24px→0, 600ms ease-out
+  // Stagger delay on services list children via .stagger CSS class
+  ['webdesign-copy', 'webdesign-services'].forEach((id, i) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          // Small offset so right column reveals slightly after left
+          setTimeout(() => el.classList.add('visible'), i * 120);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+  });
+</script>

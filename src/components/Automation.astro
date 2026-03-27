@@ -1,0 +1,115 @@
+---
+// Automation.astro
+// Section 04 — Automate the Work That's Eating Your Day
+// DNA: 2-col asymmetric (3fr 2fr), left body copy, right services + CTA
+// SEO anchor: "Automation Company" in opening sentence
+// Content from: content-homepage-dominion-digital.md → Automation section
+---
+
+<section
+  style="padding-top: clamp(8rem, 14vw, 14rem); padding-bottom: clamp(8rem, 14vw, 14rem);"
+  aria-labelledby="automation-heading"
+  id="automation"
+>
+  <div class="container">
+
+    <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-16 md:gap-24">
+
+      <!-- Left on desktop, bottom on mobile: services list + CTA -->
+      <div class="reveal flex flex-col justify-end order-last md:order-first" id="automation-services" style="padding-bottom: 0.25rem;">
+
+        <!-- Services label -->
+        <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">
+          Automation Services
+        </p>
+
+        <!-- Services list -->
+        <ul class="stagger mb-10" aria-label="Automation services offered">
+          <li class="font-body text-text py-4 border-t" style="font-size: 1rem; border-color: rgba(240,235,225,0.08);">
+            Custom AI Automation Systems
+          </li>
+          <li class="font-body text-text py-4 border-t" style="font-size: 1rem; border-color: rgba(240,235,225,0.08);">
+            Lead Follow-Up &amp; Nurture Sequences
+          </li>
+          <li class="font-body text-text py-4 border-t" style="font-size: 1rem; border-color: rgba(240,235,225,0.08);">
+            CRM Workflow Automation
+          </li>
+          <li class="font-body text-text py-4 border-t" style="font-size: 1rem; border-color: rgba(240,235,225,0.08);">
+            Client Onboarding Automation
+          </li>
+          <li class="py-4 border-t border-b" style="border-color: rgba(240,235,225,0.08);"></li>
+        </ul>
+
+        <!-- CTA -->
+        <a
+          href="#contact"
+          class="inline-flex items-center self-start font-label text-xs font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover px-8 py-4 transition-colors duration-200 active:scale-[0.97]"
+          style="border-radius: 0;"
+        >
+          Get My Free Audit
+        </a>
+
+      </div>
+
+      <!-- Right on desktop, top on mobile: narrative copy -->
+      <div class="reveal order-first md:order-last" id="automation-copy">
+
+        <!-- Section number -->
+        <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">
+          04
+        </p>
+
+        <!-- H2 -->
+        <h2
+          id="automation-heading"
+          class="font-display font-bold tracking-tight text-text mb-10"
+          style="font-size: clamp(2rem, 4vw, 3.5rem);"
+        >
+          Automate the Work<br class="hidden md:block" />
+          That's Eating Your Day.
+        </h2>
+
+        <!-- Body paragraphs — SEO anchor "Automation Company" in opening sentence -->
+        <div class="space-y-6 max-w-2xl">
+
+          <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+            As an automation company built for small business, <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong> sees the same thing every time: owners doing work a system should handle for them. Following up with leads by hand. Copying contact info between tools. Sending the same onboarding email 40 times a month. Every hour spent on that is an hour not spent on the work that actually grows the business.
+          </p>
+
+          <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
+            AI automation systems replace the manual work with real workflows. The moment a lead fills out a form on your site, a follow-up sequence goes out automatically. Appointment reminders run without anyone touching them. Your CRM updates itself. Reports compile overnight.
+          </p>
+
+          <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+            The businesses that pull ahead in the next five years won't just have better marketing. They'll have better systems. <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong> builds both.
+          </p>
+
+          <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
+            Automation works best when it's built into your website from the start. Clients who begin with a <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong> web build get automation that connects to their site, their CRM, and their calendar on day one.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+  ['automation-copy', 'automation-services'].forEach((id, i) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => el.classList.add('visible'), i * 120);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+  });
+</script>
