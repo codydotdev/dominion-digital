@@ -163,15 +163,12 @@
       const icon   = trigger.querySelector('.faq-icon') as HTMLElement;
       const isOpen = trigger.getAttribute('aria-expanded') === 'true';
 
-      // Close all
-      document.querySelectorAll('.faq-item').forEach(i => {
-        i.querySelector('.faq-body')!.classList.remove('is-open');
-        i.querySelector('.faq-icon')!.classList.remove('is-open');
-        i.querySelector('.faq-trigger')!.setAttribute('aria-expanded', 'false');
-      });
-
-      // Open clicked if it was closed
-      if (!isOpen) {
+      // Toggle clicked item only
+      if (isOpen) {
+        body.classList.remove('is-open');
+        icon.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+      } else {
         body.classList.add('is-open');
         icon.classList.add('is-open');
         trigger.setAttribute('aria-expanded', 'true');

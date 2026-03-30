@@ -41,7 +41,7 @@
           </p>
 
           <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
-            The platform is rarely the problem. Google Ads work. The problem is strategy, targeting, and copy. Most agencies optimize for clicks. <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400;">Digital</span> optimizes for <span style="color: #c8511a; font-weight: 500;">cost-per-lead.</span> Those are different goals that produce very different results.
+            The platform is rarely the problem. Google Ads work. The problem is strategy, targeting, and copy. Most agencies optimize for clicks. <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="color: #f0ebe1; font-weight: 400;">Digital</span> optimizes for <span style="color: #c8511a; font-weight: 500;">cost-per-lead.</span> Those are different goals that produce very different results.
           </p>
 
           <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
@@ -118,6 +118,11 @@
     services.style.transition = 'opacity 600ms ease-out';
     let raf: number | null = null;
     function tick() {
+      if (window.innerWidth < 768) {
+        services.style.transform = '';
+        raf = null;
+        return;
+      }
       const top  = section.getBoundingClientRect().top;
       const vh   = window.innerHeight;
       const past = Math.max(0, vh * 0.5 - top);
@@ -126,5 +131,6 @@
       raf = null;
     }
     window.addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(tick); }, { passive: true });
+    window.addEventListener('resize', () => { if (!raf) raf = requestAnimationFrame(tick); }, { passive: true });
   })();
 </script>

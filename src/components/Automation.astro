@@ -73,7 +73,7 @@
         <div class="space-y-6 max-w-2xl">
 
           <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
-            As an automation company built for small business, <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400;">Digital</span> sees the same thing every time: owners doing work a system should handle for them. Following up with leads by hand. Copying contact info between tools. Sending the same onboarding email 40 times a month. Every hour spent on that is an hour not spent on the work that actually grows the business.
+            As an automation company built for small business, <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="color: #f0ebe1; font-weight: 400;">Digital</span> sees the same thing every time: owners doing work a system should handle for them. Following up with leads by hand. Copying contact info between tools. Sending the same onboarding email 40 times a month. Every hour spent on that is an hour not spent on the work that actually grows the business.
           </p>
 
           <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
@@ -81,11 +81,11 @@
           </p>
 
           <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
-            The businesses that pull ahead in the next five years won't just have better marketing. They'll have better systems. <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400;">Digital</span> builds both.
+            The businesses that pull ahead in the next five years won't just have better marketing. They'll have better systems. <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="color: #f0ebe1; font-weight: 400;">Digital</span> builds both.
           </p>
 
           <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
-            Automation works best when it's built into your website from the start. Clients who begin with a <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400;">Digital</span> web build get automation that connects to their site, their CRM, and their calendar on day one.
+            Automation works best when it's built into your website from the start. Clients who begin with a <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="color: #f0ebe1; font-weight: 400;">Digital</span> web build get automation that connects to their site, their CRM, and their calendar on day one.
           </p>
 
         </div>
@@ -121,6 +121,11 @@
     services.style.transition = 'opacity 600ms ease-out';
     let raf: number | null = null;
     function tick() {
+      if (window.innerWidth < 768) {
+        services.style.transform = '';
+        raf = null;
+        return;
+      }
       const top  = section.getBoundingClientRect().top;
       const vh   = window.innerHeight;
       const past = Math.max(0, vh * 0.5 - top);
@@ -129,5 +134,6 @@
       raf = null;
     }
     window.addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(tick); }, { passive: true });
+    window.addEventListener('resize', () => { if (!raf) raf = requestAnimationFrame(tick); }, { passive: true });
   })();
 </script>

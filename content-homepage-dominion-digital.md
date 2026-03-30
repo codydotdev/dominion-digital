@@ -2,17 +2,19 @@
 **Slug:** /
 **Keyword Target:** kansas city digital marketing agency
 **Word Count Target:** 1,500-2,500 words
-**Source H1 (from conversion copy):** Kansas City Digital Marketing That Generates Leads or You Don't Pay
+**Source H1 (from conversion copy):** Your Competition is Already Worried
 
 ---
 
 ## Opening
 
-Most Kansas City businesses that call us have already hired a marketing agency. They paid for six months of SEO, got monthly ranking reports, and ended their contract with more dashboards than new clients. That's not a Dominion story.
+Dominate your market with a beautiful website and a high-conversion online presence engineered for one goal: qualified leads. Web design, SEO, AI search, ads, and automations. One complete system. You'll have more leads in 90 days or we work for free until you do. Guaranteed.
 
-Dominion Digital is a Kansas City digital marketing agency built around one metric: qualified leads. Web design, SEO, AI search optimization, Google Ads, and business automation are built as one connected system. When we send you a monthly report, every number connects to pipeline, not impressions.
+---
 
-Kansas City has no shortage of agencies that are great at selling retainers. Most business owners in Overland Park, Lee's Summit, and Olathe have already found that out the hard way. Dominion was built to work differently.
+## About Dominion.Digital
+
+Most Kansas City businesses that call us have already hired a marketing agency. They paid for six months of SEO, got monthly ranking reports, and ended their contract with more dashboards than new clients. Dominion.Digital is a Kansas City digital marketing agency built around one metric: qualified leads. Web design, SEO, AI search optimization, Google Ads, and business automation are built as one connected system. When we send you a monthly report, every number connects to pipeline, not impressions. Kansas City has no shortage of agencies that are great at selling retainers. Most business owners in Overland Park, Lee's Summit, and Olathe have already found that out the hard way. Dominion.Digital was built to work differently.
 
 ---
 

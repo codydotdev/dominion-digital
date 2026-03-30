@@ -40,11 +40,11 @@
           </p>
 
           <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
-            Every <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400;">Digital</span> website is built around one question: what happens when someone lands here? We design the answer into the layout. High-conversion architecture, fast load times, and a user journey built to turn a visitor into a phone call or a contact form submission.
+            Every <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="color: #f0ebe1; font-weight: 400;">Digital</span> website is built around one question: what happens when someone lands here? We design the answer into the layout. High-conversion architecture, fast load times, and a user journey built to turn a visitor into a phone call or a contact form submission.
           </p>
 
           <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
-            Businesses across Kansas City in industries from HVAC to professional services have seen inbound contact double after a site rebuild with <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400;">Digital</span>. A well-built website isn't a cost. It's the foundation your entire marketing system sits on.
+            Businesses across Kansas City in industries from HVAC to professional services have seen inbound contact double after a site rebuild with <strong style="color: #f0ebe1; font-weight: 800;">Dominion</strong><span style="color: #c8511a;">.</span><span style="color: #f0ebe1; font-weight: 400;">Digital</span>. A well-built website isn't a cost. It's the foundation your entire marketing system sits on.
           </p>
 
         </div>
@@ -124,6 +124,11 @@
     services.style.transition = 'opacity 600ms ease-out';
     let raf: number | null = null;
     function tick() {
+      if (window.innerWidth < 768) {
+        services.style.transform = '';
+        raf = null;
+        return;
+      }
       const top  = section.getBoundingClientRect().top;
       const vh   = window.innerHeight;
       const past = Math.max(0, vh * 0.5 - top);
@@ -132,5 +137,6 @@
       raf = null;
     }
     window.addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(tick); }, { passive: true });
+    window.addEventListener('resize', () => { if (!raf) raf = requestAnimationFrame(tick); }, { passive: true });
   })();
 </script>
