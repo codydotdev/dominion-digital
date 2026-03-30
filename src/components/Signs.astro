@@ -1,0 +1,81 @@
+---
+// Signs.astro
+// "3 Signs Your Internet Marketing Isn't Working" — pain-point qualifier section
+// Sits between Intro and WebDesign — hits the problem before the pitch
+// DNA: Full-width, surface bg, centered heading, 3-column card grid
+---
+
+<section
+  style="padding-top: clamp(8rem, 14vw, 14rem); padding-bottom: clamp(8rem, 14vw, 14rem); background-color: #111110;"
+  aria-labelledby="signs-heading"
+  id="signs"
+>
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="reveal text-center mb-16 md:mb-20" id="signs-header">
+      <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">
+        Sound familiar?
+      </p>
+      <h2
+        id="signs-heading"
+        class="font-display font-bold tracking-tight text-text"
+        style="font-size: clamp(2rem, 4vw, 3.5rem);"
+      >
+        3 Signs Your Internet Marketing<br class="hidden md:block" /> Isn't Working
+      </h2>
+    </div>
+
+    <!-- 3 Cards -->
+    <div class="reveal grid grid-cols-1 md:grid-cols-3 gap-px" id="signs-cards" style="border: 1px solid rgba(240,235,225,0.08);">
+
+      <div style="background: #0d0d0b; padding: clamp(2.5rem, 5vw, 3.5rem);">
+        <p class="font-display font-bold mb-6" style="color: #c8511a; font-size: clamp(2rem, 3vw, 2.5rem); line-height: 1;">
+          01
+        </p>
+        <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+          You rank for your business name but not for the services customers actually search for.
+        </p>
+      </div>
+
+      <div style="background: #0d0d0b; padding: clamp(2.5rem, 5vw, 3.5rem); border-left: 1px solid rgba(240,235,225,0.08); border-right: 1px solid rgba(240,235,225,0.08);">
+        <p class="font-display font-bold mb-6" style="color: #c8511a; font-size: clamp(2rem, 3vw, 2.5rem); line-height: 1;">
+          02
+        </p>
+        <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+          Your site gets traffic but the phone doesn't ring.
+        </p>
+      </div>
+
+      <div style="background: #0d0d0b; padding: clamp(2.5rem, 5vw, 3.5rem);">
+        <p class="font-display font-bold mb-6" style="color: #c8511a; font-size: clamp(2rem, 3vw, 2.5rem); line-height: 1;">
+          03
+        </p>
+        <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+          Your agency has never mentioned GEO or AI search visibility.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const header = document.getElementById('signs-header');
+  const cards  = document.getElementById('signs-cards');
+
+  [header, cards].forEach((el, i) => {
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => el.classList.add('visible'), i * 150);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+  });
+</script>
