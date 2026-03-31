@@ -14,6 +14,14 @@
   <div class="container">
     <div class="reveal flex flex-col items-center text-center" id="intro-content">
 
+      <!-- Logo -->
+      <img
+        src="/images/Dominion Digital Logo White.png"
+        alt="Dominion Digital"
+        class="intro-logo"
+        style="height: 6rem; width: auto; margin-bottom: 2.5rem;"
+      />
+
       <!-- Pill label -->
       <div
         class="inline-flex items-center font-wordmark text-xs tracking-widest uppercase"
@@ -72,6 +80,13 @@
 </section>
 
 <style>
+  .intro-logo {
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .intro-logo:hover {
+    transform: rotate(180deg);
+  }
+
   .intro-pill {
     color: #8a8880;
     border: 1px solid rgba(240,235,225,0.12);
