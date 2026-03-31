@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import ContactModal from '../components/ContactModal.astro';
 
 interface Props {
   title: string;
@@ -35,5 +36,6 @@ const canonical = canonicalUrl ?? Astro.url.href;
 </head>
 <body class="bg-bg text-text font-body antialiased">
   <slot />
+  <ContactModal />
 </body>
 </html>

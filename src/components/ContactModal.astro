@@ -1,0 +1,480 @@
+---
+// ContactModal.astro
+// 3-step contact popup: pain points → budget → contact info + consent
+// Web3Forms integration. Opened by any [data-open-contact] trigger.
+// Injected once via Layout.astro; available on every page.
+
+const painOptions = [
+  { value: 'not-enough-traffic',    label: 'Not enough website traffic' },
+  { value: 'visitors-not-converting', label: "Site visitors aren't converting into leads" },
+  { value: 'not-ranking',            label: 'Not ranking on Google' },
+  { value: 'outdated-site',          label: 'Site looks outdated or unprofessional' },
+  { value: 'not-enough-leads',       label: 'Not getting enough leads overall' },
+  { value: 'not-sure',               label: "Not sure — I just know something isn't working" },
+];
+
+const budgetOptions = [
+  { value: 'under-2500',   label: 'Under $2,500' },
+  { value: '2500-5000',    label: '$2,500 — $5,000' },
+  { value: '5000-10000',   label: '$5,000 — $10,000' },
+  { value: '10000-plus',   label: '$10,000+' },
+  { value: 'not-sure',     label: "Not sure yet — I'm still figuring that out" },
+];
+---
+
+<!-- OVERLAY — hidden by default -->
+<div
+  id="contact-modal"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Contact form"
+  style="display: none; position: fixed; inset: 0; z-index: 9999; align-items: center; justify-content: center;"
+>
+
+  <!-- Backdrop -->
+  <div
+    id="modal-backdrop"
+    style="position: absolute; inset: 0; background: rgba(0,0,0,0.82); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);"
+  ></div>
+
+  <!-- Panel -->
+  <div
+    id="modal-panel"
+    style="position: relative; z-index: 1; width: 100%; max-width: 520px; margin: 1rem; background: #0f0f0d; border: 1px solid rgba(240,235,225,0.09); max-height: 90dvh; overflow-y: auto; scrollbar-width: thin; scrollbar-color: rgba(200,81,26,0.3) transparent;"
+  >
+
+    <!-- Close button -->
+    <button
+      id="modal-close"
+      type="button"
+      aria-label="Close form"
+      style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; cursor: pointer; color: #8a8880; font-size: 1.1rem; line-height: 1; padding: 0.4rem 0.5rem; z-index: 2;"
+    >✕</button>
+
+    <!-- Header: logo + step indicator + progress bar -->
+    <div style="padding: clamp(2rem, 5vw, 2.5rem) clamp(1.5rem, 5vw, 2.5rem) 1.5rem;">
+
+      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.75rem;">
+        <img
+          src="/images/Dominion Digital Logo White.png"
+          alt="Dominion Digital"
+          style="height: 2rem; width: auto; display: block;"
+        />
+        <span class="font-wordmark text-text" style="font-size: 0.875rem; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap;">
+          <strong style="font-weight: 800;">DOMINION</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400;">DIGITAL</span>
+        </span>
+      </div>
+
+      <p id="step-label" class="font-label" style="font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: #8a8880; margin-bottom: 0.625rem;">
+        Step 1 of 3
+      </p>
+
+      <div style="width: 100%; height: 2px; background: rgba(240,235,225,0.07);">
+        <div id="form-progress" style="height: 100%; background: #c8511a; width: 33.333%; transition: width 0.35s cubic-bezier(0.4,0,0.2,1);"></div>
+      </div>
+
+    </div>
+
+    <!-- Form -->
+    <form id="contact-form" novalidate>
+
+      <!-- Web3Forms hidden fields -->
+      <input type="hidden" name="access_key" value="80768fb4-59cf-4ebf-a55a-b6303350574e" />
+      <input type="hidden" name="subject" value="New Inquiry — Dominion Digital" />
+      <input type="hidden" name="redirect" value="false" />
+      <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" aria-hidden="true" />
+      <input type="hidden" name="pain_points" id="pain-points-value" />
+      <input type="hidden" name="budget" id="budget-value" />
+
+      <!-- ── STEP 1: Pain points ── -->
+      <div data-step="1" style="padding: 0 clamp(1.5rem, 5vw, 2.5rem) clamp(2rem, 5vw, 2.5rem);">
+
+        <h2 class="font-display" style="font-size: clamp(1.25rem, 3.5vw, 1.5rem); font-weight: 700; color: #f0ebe1; line-height: 1.25; margin-bottom: 0.625rem;">
+          What's holding your<br />business back?
+        </h2>
+        <p class="font-body" style="font-size: 0.8rem; color: #8a8880; margin-bottom: 1.375rem;">Select all that apply.</p>
+
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+          {painOptions.map(opt => (
+            <label class="pain-option" style="display: flex; align-items: center; gap: 0.875rem; padding: 0.8125rem 1rem; cursor: pointer; border-radius: 2px;">
+              <input type="checkbox" name="pain_point" value={opt.value} />
+              <span class="pain-check" style="flex-shrink: 0; width: 17px; height: 17px; border-radius: 2px; display: flex; align-items: center; justify-content: center;">
+                <svg class="pain-checkmark" width="10" height="8" viewBox="0 0 10 8" fill="none" aria-hidden="true">
+                  <path d="M1 4l3 3 5-6" stroke="#c8511a" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="font-body" style="font-size: 0.875rem; color: #f0ebe1; line-height: 1.45;">{opt.label}</span>
+            </label>
+          ))}
+        </div>
+
+        <p id="step1-error" class="font-body" style="font-size: 0.775rem; color: #e05c2b; margin-top: 0.875rem; display: none;">
+          Please select at least one option.
+        </p>
+
+        <div style="display: flex; justify-content: flex-end; margin-top: 1.75rem;">
+          <button type="button" id="step1-next" class="btn-cta font-label"
+            style="background: #c8511a; color: #f0ebe1; border: none; cursor: pointer; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.75rem 2rem;">
+            Next
+          </button>
+        </div>
+
+      </div>
+
+      <!-- ── STEP 2: Budget ── -->
+      <div data-step="2" style="display: none; padding: 0 clamp(1.5rem, 5vw, 2.5rem) clamp(2rem, 5vw, 2.5rem);">
+
+        <h2 class="font-display" style="font-size: clamp(1.25rem, 3.5vw, 1.5rem); font-weight: 700; color: #f0ebe1; line-height: 1.25; margin-bottom: 1.5rem;">
+          What's your<br />marketing budget?
+        </h2>
+
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+          {budgetOptions.map(opt => (
+            <label class="budget-option" style="display: flex; align-items: center; gap: 0.875rem; padding: 0.8125rem 1rem; cursor: pointer; border-radius: 2px;">
+              <input type="radio" name="budget_radio" value={opt.value} />
+              <span class="budget-dot" style="flex-shrink: 0; width: 17px; height: 17px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                <span class="budget-dot-inner" style="width: 7px; height: 7px; border-radius: 50%; background: #c8511a;"></span>
+              </span>
+              <span class="font-body" style="font-size: 0.875rem; color: #f0ebe1; line-height: 1.45;">{opt.label}</span>
+            </label>
+          ))}
+        </div>
+
+        <p id="step2-error" class="font-body" style="font-size: 0.775rem; color: #e05c2b; margin-top: 0.875rem; display: none;">
+          Please select a budget range.
+        </p>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 1.75rem;">
+          <button type="button" id="step2-back" class="font-body"
+            style="background: none; border: none; cursor: pointer; color: #8a8880; font-size: 0.875rem; padding: 0.25rem 0;">
+            &larr; Back
+          </button>
+          <button type="button" id="step2-next" class="btn-cta font-label"
+            style="background: #c8511a; color: #f0ebe1; border: none; cursor: pointer; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.75rem 2rem;">
+            Next
+          </button>
+        </div>
+
+      </div>
+
+      <!-- ── STEP 3: Contact info ── -->
+      <div data-step="3" style="display: none; padding: 0 clamp(1.5rem, 5vw, 2.5rem) clamp(2rem, 5vw, 2.5rem);">
+
+        <h2 class="font-display" style="font-size: clamp(1.25rem, 3.5vw, 1.5rem); font-weight: 700; color: #f0ebe1; line-height: 1.25; margin-bottom: 1.5rem;">
+          Let's get in touch.
+        </h2>
+
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+
+          <div>
+            <label for="contact-name" class="font-label" style="display: block; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #8a8880; margin-bottom: 0.5rem;">
+              Name <span style="color: #c8511a;">*</span>
+            </label>
+            <input type="text" id="contact-name" name="name" required autocomplete="name" class="modal-input" />
+          </div>
+
+          <div>
+            <label for="contact-phone" class="font-label" style="display: block; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #8a8880; margin-bottom: 0.5rem;">
+              Phone <span style="color: #c8511a;">*</span>
+            </label>
+            <input type="tel" id="contact-phone" name="phone" required autocomplete="tel" class="modal-input" />
+          </div>
+
+          <div>
+            <label for="contact-email" class="font-label" style="display: block; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #8a8880; margin-bottom: 0.5rem;">
+              Email <span style="color: #c8511a;">*</span>
+            </label>
+            <input type="email" id="contact-email" name="email" required autocomplete="email" class="modal-input" />
+          </div>
+
+          <div>
+            <label for="contact-website" class="font-label" style="display: block; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #8a8880; margin-bottom: 0.5rem;">
+              Current website
+              <span class="font-body" style="color: #5e5c59; font-size: 0.65rem; text-transform: none; letter-spacing: 0;">(optional)</span>
+            </label>
+            <input type="url" id="contact-website" name="website" autocomplete="url" placeholder="https://" class="modal-input" />
+          </div>
+
+          <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer; margin-top: 0.25rem;">
+            <input
+              type="checkbox"
+              id="contact-consent"
+              name="consent"
+              required
+              style="width: 15px; height: 15px; min-width: 15px; margin-top: 3px; accent-color: #c8511a; cursor: pointer;"
+            />
+            <span class="font-body" style="font-size: 0.8rem; color: #8a8880; line-height: 1.55;">
+              I agree to receive texts and emails about my project from Dominion Digital.
+            </span>
+          </label>
+
+        </div>
+
+        <p id="step3-error" class="font-body" style="font-size: 0.775rem; color: #e05c2b; margin-top: 0.875rem; display: none;">
+          Please fill in all required fields and accept the terms.
+        </p>
+        <p id="submit-error" class="font-body" style="font-size: 0.775rem; color: #e05c2b; margin-top: 0.875rem; display: none;">
+          Something went wrong. Please try again.
+        </p>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 1.75rem;">
+          <button type="button" id="step3-back" class="font-body"
+            style="background: none; border: none; cursor: pointer; color: #8a8880; font-size: 0.875rem; padding: 0.25rem 0;">
+            &larr; Back
+          </button>
+          <button type="submit" id="submit-btn" class="btn-cta font-label"
+            style="background: #c8511a; color: #f0ebe1; border: none; cursor: pointer; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.75rem 2rem;">
+            Send My Info
+          </button>
+        </div>
+
+      </div>
+
+    </form>
+
+    <!-- SUCCESS STATE -->
+    <div id="modal-success" style="display: none; text-align: center; padding: clamp(3rem, 8vw, 4rem) clamp(1.5rem, 5vw, 2.5rem);">
+      <svg width="52" height="52" viewBox="0 0 52 52" fill="none" aria-hidden="true" style="margin: 0 auto 1.75rem;">
+        <circle cx="26" cy="26" r="25" stroke="#c8511a" stroke-width="1" opacity="0.35"/>
+        <path d="M16 26l8 8 13-15" stroke="#c8511a" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h2 class="font-display" style="font-size: 1.5rem; font-weight: 700; color: #f0ebe1; line-height: 1.25; margin-bottom: 0.75rem;">
+        Got it. We'll be in touch soon.
+      </h2>
+      <p class="font-body" style="font-size: 0.9rem; color: #8a8880; line-height: 1.6; max-width: 32ch; margin: 0 auto;">
+        Check your email — we'll send a confirmation and reach out within one business day.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<style>
+  /* Option card defaults */
+  .pain-option,
+  .budget-option {
+    border: 1px solid rgba(240,235,225,0.08);
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+  }
+  .pain-option:hover,
+  .budget-option:hover {
+    border-color: rgba(240,235,225,0.18);
+  }
+
+  /* Hide real inputs */
+  .pain-option input[type="checkbox"],
+  .budget-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+  }
+
+  /* Checkbox box */
+  .pain-check {
+    border: 1px solid rgba(240,235,225,0.2);
+    background: transparent;
+    transition: border-color 0.2s, background-color 0.2s;
+  }
+  .pain-checkmark {
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+
+  /* Pain checked state */
+  .pain-option:has(input:checked) {
+    border-color: #c8511a;
+    background-color: rgba(200,81,26,0.07);
+  }
+  .pain-option:has(input:checked) .pain-check {
+    border-color: #c8511a;
+    background-color: rgba(200,81,26,0.18);
+  }
+  .pain-option:has(input:checked) .pain-checkmark {
+    opacity: 1;
+  }
+
+  /* Radio dot */
+  .budget-dot {
+    border: 1px solid rgba(240,235,225,0.2);
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .budget-dot-inner {
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+
+  /* Budget checked state */
+  .budget-option:has(input:checked) {
+    border-color: #c8511a;
+    background-color: rgba(200,81,26,0.07);
+  }
+  .budget-option:has(input:checked) .budget-dot {
+    border-color: #c8511a;
+  }
+  .budget-option:has(input:checked) .budget-dot-inner {
+    opacity: 1;
+  }
+
+  /* Text inputs */
+  .modal-input {
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(240,235,225,0.03);
+    border: 1px solid rgba(240,235,225,0.1);
+    color: #f0ebe1;
+    font-family: inherit;
+    font-size: 0.9375rem;
+    padding: 0.75rem 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+    border-radius: 0;
+  }
+  .modal-input::placeholder {
+    color: rgba(240,235,225,0.22);
+  }
+  .modal-input:focus {
+    border-color: #c8511a;
+  }
+
+  /* Scrollbar */
+  #modal-panel::-webkit-scrollbar { width: 4px; }
+  #modal-panel::-webkit-scrollbar-thumb {
+    background: rgba(200,81,26,0.3);
+    border-radius: 2px;
+  }
+</style>
+
+<script>
+  let currentStep = 1;
+  const TOTAL = 3;
+
+  function goToStep(n) {
+    if (n > currentStep && !validateStep(currentStep)) return;
+    document.querySelectorAll('[data-step]').forEach(el => {
+      el.style.display = el.dataset.step == String(n) ? 'block' : 'none';
+    });
+    currentStep = n;
+    updateProgress(n);
+    const panel = document.getElementById('modal-panel');
+    if (panel) panel.scrollTop = 0;
+  }
+
+  function validateStep(step) {
+    if (step === 1) {
+      const ok = document.querySelectorAll('[name="pain_point"]:checked').length > 0;
+      const err = document.getElementById('step1-error');
+      if (err) err.style.display = ok ? 'none' : 'block';
+      return ok;
+    }
+    if (step === 2) {
+      const ok = document.querySelector('[name="budget_radio"]:checked') !== null;
+      const err = document.getElementById('step2-error');
+      if (err) err.style.display = ok ? 'none' : 'block';
+      return ok;
+    }
+    return true;
+  }
+
+  function updateProgress(step) {
+    const bar = document.getElementById('form-progress');
+    if (bar) bar.style.width = ((step / TOTAL) * 100) + '%';
+    const label = document.getElementById('step-label');
+    if (label) label.textContent = `Step ${step} of ${TOTAL}`;
+  }
+
+  function openModal() {
+    const modal = document.getElementById('contact-modal');
+    if (!modal) return;
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    currentStep = 1;
+    ['step1-error','step2-error','step3-error','submit-error'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = 'none';
+    });
+    const form = document.getElementById('contact-form');
+    const success = document.getElementById('modal-success');
+    if (form) form.style.display = 'block';
+    if (success) success.style.display = 'none';
+    goToStep(1);
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('contact-modal');
+    if (modal) modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  // Navigation
+  document.getElementById('step1-next')?.addEventListener('click', () => goToStep(2));
+  document.getElementById('step2-back')?.addEventListener('click', () => goToStep(1));
+  document.getElementById('step2-next')?.addEventListener('click', () => goToStep(3));
+  document.getElementById('step3-back')?.addEventListener('click', () => goToStep(2));
+
+  // Close triggers
+  document.getElementById('modal-close')?.addEventListener('click', closeModal);
+  document.getElementById('modal-backdrop')?.addEventListener('click', closeModal);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  // Open triggers
+  document.querySelectorAll('[data-open-contact]').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      openModal();
+    });
+  });
+
+  // Form submit
+  document.getElementById('contact-form')?.addEventListener('submit', async e => {
+    e.preventDefault();
+    const name = document.getElementById('contact-name').value.trim();
+    const phone = document.getElementById('contact-phone').value.trim();
+    const email = document.getElementById('contact-email').value.trim();
+    const consent = document.getElementById('contact-consent').checked;
+
+    if (!name || !phone || !email || !consent) {
+      document.getElementById('step3-error').style.display = 'block';
+      return;
+    }
+    document.getElementById('step3-error').style.display = 'none';
+
+    // Populate aggregated hidden fields
+    const painPoints = [...document.querySelectorAll('[name="pain_point"]:checked')].map(cb => cb.value).join(', ');
+    document.getElementById('pain-points-value').value = painPoints;
+    const budget = document.querySelector('[name="budget_radio"]:checked');
+    document.getElementById('budget-value').value = budget ? budget.value : '';
+
+    const submitBtn = document.getElementById('submit-btn');
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+
+    try {
+      const form = document.getElementById('contact-form');
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: new FormData(form),
+      });
+      const data = await res.json();
+      if (data.success) {
+        form.style.display = 'none';
+        const success = document.getElementById('modal-success');
+        if (success) success.style.display = 'block';
+        const bar = document.getElementById('form-progress');
+        if (bar) bar.style.width = '100%';
+        const lbl = document.getElementById('step-label');
+        if (lbl) lbl.textContent = 'Message sent';
+      } else {
+        document.getElementById('submit-error').style.display = 'block';
+        submitBtn.textContent = 'Send My Info';
+        submitBtn.disabled = false;
+      }
+    } catch {
+      document.getElementById('submit-error').style.display = 'block';
+      submitBtn.textContent = 'Send My Info';
+      submitBtn.disabled = false;
+    }
+  });
+</script>
