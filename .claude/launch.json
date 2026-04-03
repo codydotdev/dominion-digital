@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dominion-digital",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["--yes", "astro", "dev", "--root", "C:\\Users\\Cody\\.antigravity\\.webdev\\dominion-digital"],
+      "port": 4321
+    }
+  ]
+}
