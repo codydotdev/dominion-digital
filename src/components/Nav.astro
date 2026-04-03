@@ -17,8 +17,9 @@
   <!-- The pill itself -->
   <div
     id="nav-pill"
-    class="w-full nav-grid transition-all duration-300 ease-out"
+    class="w-full grid items-center transition-all duration-300 ease-out"
     style="
+      grid-template-columns: auto 1fr auto;
       max-width: 1100px;
       height: 56px;
       border-radius: 9999px;
@@ -33,7 +34,7 @@
     <!-- Logo: hexagon image + wordmark -->
     <a
       href="/"
-      class="flex items-center gap-3 shrink-0"
+      class="flex items-center gap-3 shrink-0 col-start-1"
       aria-label="Dominion Digital home"
     >
       <img
@@ -47,45 +48,40 @@
       </span>
     </a>
 
-    <!-- Center: desktop nav links / mobile hamburger -->
-    <div class="flex items-center justify-center">
-
-      <!-- Desktop nav links -->
-      <div class="hidden lg:flex items-center gap-7">
-        <a href="/web-design"          class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Web Design</a>
-        <a href="/internet-marketing"  class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Marketing</a>
-        <a href="/advertising"         class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Advertising</a>
-        <a href="/ai-automation"       class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Automation</a>
-        <a href="/about"               class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">About</a>
-      </div>
-
-      <!-- Mobile hamburger -->
-      <button
-        id="nav-toggle"
-        class="lg:hidden flex flex-col justify-center gap-[5px] bg-transparent border-none cursor-pointer p-1"
-        aria-label="Open menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-        style="width: 36px; height: 36px;"
-      >
-        <span id="bar1" class="block bg-text transition-transform duration-300 ease-out" style="width: 22px; height: 1.5px;"></span>
-        <span id="bar2" class="block bg-text transition-opacity duration-300 ease-out" style="width: 22px; height: 1.5px;"></span>
-        <span id="bar3" class="block bg-text transition-transform duration-300 ease-out" style="width: 22px; height: 1.5px;"></span>
-      </button>
-
+    <!-- Desktop nav links -->
+    <div class="hidden lg:flex items-center gap-7 col-start-2 justify-self-center">
+      <a href="/web-design"          class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Web Design</a>
+      <a href="/internet-marketing"  class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Marketing</a>
+      <a href="/advertising"         class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Advertising</a>
+      <a href="/ai-automation"       class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Automation</a>
+      <a href="/about"               class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">About</a>
     </div>
 
     <!-- CTA -->
-    <div class="flex items-center">
+    <div class="hidden min-[540px]:flex items-center max-lg:col-start-2 max-lg:justify-self-center lg:col-start-3 lg:justify-self-end">
       <button
         type="button"
         data-open-contact
-        class="btn-cta hidden min-[540px]:inline-flex items-center font-label text-text bg-accent hover:bg-accent-hover active:scale-[0.97]"
+        class="btn-cta inline-flex items-center font-label text-text bg-accent hover:bg-accent-hover active:scale-[0.97]"
         style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.6rem 1.25rem;"
       >
         Get Started
       </button>
     </div>
+
+    <!-- Mobile hamburger -->
+    <button
+      id="nav-toggle"
+      class="lg:hidden flex flex-col justify-center gap-[5px] bg-transparent border-none cursor-pointer p-1 col-start-3 justify-self-end"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      style="width: 36px; height: 36px;"
+    >
+      <span id="bar1" class="block bg-text transition-transform duration-300 ease-out" style="width: 22px; height: 1.5px;"></span>
+      <span id="bar2" class="block bg-text transition-opacity duration-300 ease-out" style="width: 22px; height: 1.5px;"></span>
+      <span id="bar3" class="block bg-text transition-transform duration-300 ease-out" style="width: 22px; height: 1.5px;"></span>
+    </button>
 
   </div>
 </nav>
@@ -120,18 +116,6 @@
 ></div>
 
 <style>
-  .nav-grid {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-  }
-  @media (max-width: 539px) {
-    .nav-grid {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
 
   .nav-logo {
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
