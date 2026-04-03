@@ -13,7 +13,7 @@
 >
   <!-- Pulsing radial bloom — centered behind content -->
   <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; z-index: 0;">
-    <div class="guarantee-bloom" style="position: absolute; width: 900px; height: 900px; border-radius: 50%; left: 50%; top: 50%; margin-left: -450px; margin-top: -450px; background: radial-gradient(circle, rgba(200,81,26,0.16) 0%, transparent 65%); filter: blur(60px);"></div>
+    <div class="guarantee-bloom" style="position: absolute; width: 900px; height: 900px; border-radius: 50%; left: 50%; top: 50%; margin-left: -450px; margin-top: -450px; background: radial-gradient(circle, rgba(200,81,26,0.38) 0%, transparent 65%); filter: blur(60px);"></div>
   </div>
 
   <div class="container" style="position: relative; z-index: 1;">
@@ -22,7 +22,7 @@
     <div class="reveal" id="guarantee-header">
 
       <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">
-        06
+        05
       </p>
 
       <h2
@@ -41,20 +41,20 @@
     </div>
 
     <!-- Two guarantee blocks -->
-    <div class="reveal grid grid-cols-1 md:grid-cols-2 gap-px" id="guarantee-blocks" style="border: 1px solid rgba(240,235,225,0.08); margin-top: clamp(3rem, 5vw, 5rem); margin-bottom: clamp(3rem, 5vw, 5rem);">
+    <div class="reveal grid grid-cols-1 md:grid-cols-2" id="guarantee-blocks" style="gap: 1.25rem; margin-top: 2rem; margin-bottom: 2rem;">
 
       <!-- Site Guarantee -->
-      <div style="background: #0d0d0b; padding: clamp(2.5rem, 5vw, 3.5rem);">
+      <div class="guarantee-card" style="padding: clamp(2.5rem, 5vw, 3.5rem);">
 
         <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">
-          The Site Guarantee
+          The Website Guarantee
         </p>
 
         <p
           class="font-display font-bold tracking-tight text-text mb-6"
           style="font-size: clamp(1.5rem, 2.5vw, 2rem);"
         >
-          Unconditional.
+          Love it or you don't pay.
         </p>
 
         <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
@@ -64,7 +64,7 @@
       </div>
 
       <!-- Results Guarantee -->
-      <div style="background: #0d0d0b; padding: clamp(2.5rem, 5vw, 3.5rem);">
+      <div class="guarantee-card" style="padding: clamp(2.5rem, 5vw, 3.5rem);">
 
         <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">
           The Results Guarantee
@@ -74,11 +74,11 @@
           class="font-display font-bold tracking-tight mb-6"
           style="font-size: clamp(1.5rem, 2.5vw, 2rem); color: #c8511a;"
         >
-          Conditional.
+          Results or you don't pay.
         </p>
 
         <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
-          If you don't have more qualified leads coming in within 90 days of launch, we keep working at no charge for up to 90 more days. That's not fine print. It's the offer.
+          If you don't have more qualified leads coming in within 90 days of launch, we keep working at no charge for up to 90 more days until you do. Seriously. We care about results that much.
         </p>
 
       </div>
@@ -113,6 +113,19 @@
   }
   .guarantee-bloom {
     animation: guarantee-bloom-pulse 10s ease-in-out infinite;
+  }
+
+  .guarantee-card {
+    border-radius: 1rem;
+    background: rgba(22, 22, 20, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(240, 235, 225, 0.1);
+    transition: transform 700ms ease, box-shadow 700ms ease;
+  }
+  .guarantee-card:hover {
+    transform: scale(1.025);
+    box-shadow: 0 0 0 1px rgba(200, 81, 26, 0.25), 0 0 30px rgba(200, 81, 26, 0.2), 0 0 60px rgba(200, 81, 26, 0.1);
   }
 </style>
 
