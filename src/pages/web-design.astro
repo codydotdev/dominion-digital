@@ -1,0 +1,439 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Web Design Kansas City | Dominion Digital"
+  description="Kansas City web design built to convert visitors into paying customers. High-conversion architecture, fast load times, SEO-ready from day one."
+  canonicalUrl="https://dominion.digital/web-design"
+>
+  <Fragment slot="head">
+    <!-- Breadcrumb + Service Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://dominion.digital"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Web Design",
+            "item": "https://dominion.digital/web-design"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://dominion.digital/web-design#service",
+        "name": "Web Design & Development",
+        "alternateName": "Website Designer",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://dominion.digital/#organization",
+          "name": "Dominion Digital"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Kansas City"
+        },
+        "url": "https://dominion.digital/web-design"
+      }
+    ]
+    </script>
+  </Fragment>
+
+  <Nav />
+
+  <main>
+
+    <!-- ─── PAGE HERO ──────────────────────────────────────────────────────── -->
+    <section
+      class="relative"
+      style="padding-top: clamp(9rem, 18vw, 14rem); padding-bottom: clamp(5rem, 10vw, 8rem);"
+      aria-label="Web Design page hero"
+    >
+      <div
+        class="absolute inset-0 pointer-events-none"
+        style="background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,81,26,0.07) 0%, transparent 70%); z-index: 0;"
+        aria-hidden="true"
+      ></div>
+
+      <div class="container relative" style="z-index: 1;">
+        <p class="font-label text-xs tracking-widest uppercase mb-6 reveal" style="color: #8a8880;">
+          <a href="/" class="hover:text-text transition-colors duration-200">Home</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          Web Design
+        </p>
+
+        <h1
+          class="font-display font-extrabold text-text tracking-tighter leading-none reveal"
+          style="font-size: clamp(3rem, 6.5vw, 6.5rem); max-width: 18ch; margin-bottom: 2rem;"
+        >
+          Kansas City Web Design That Converts Visitors Into Paying Customers
+        </h1>
+
+        <div class="flex flex-wrap items-center gap-4 reveal">
+          <button
+            type="button"
+            data-open-contact
+            class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover hover:scale-[1.05] active:scale-[0.98] transition-all duration-300"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── ROLE: CATEGORY PROBLEM ───────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);">
+      <div class="container reveal flex flex-col items-center justify-center">
+        <div class="w-full text-center flex flex-col items-center">
+          
+          <!-- Top Callout -->
+          <div class="text-center w-full max-w-4xl" style="margin-bottom: clamp(4rem, 8vw, 6rem); padding: 2rem 0; border-top: 1px solid rgba(200,81,26,0.2); border-bottom: 1px solid rgba(200,81,26,0.2);">
+            <strong class="font-display text-text" style="font-size: clamp(1.5rem, 3vw, 2rem); text-align: center; display: block;">
+              A fast, beautiful site that generates zero leads is a liability.
+            </strong>
+          </div>
+
+          <!-- Cards Summarizing Paragraph Points -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mb-16 text-left">
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px; padding: 2.5rem 2rem;" class="hover:-translate-y-2 hover:scale-[1.02] hover:bg-[rgba(200,81,26,0.03)] hover:border-[rgba(200,81,26,0.2)] hover:shadow-[0_0_30px_rgba(200,81,26,0.15)] transition-all duration-300 cursor-default group">
+              <div class="w-12 h-12 mb-6 flex items-center justify-center rounded-full group-hover:scale-110 transition-transform duration-300" style="background: rgba(200,81,26,0.1); color: #c8511a;">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+              </div>
+              <h3 class="font-display font-medium text-text mb-3" style="font-size: 1.25rem;">The Brochure Trap</h3>
+              <p class="font-body text-text-muted group-hover:text-text transition-colors duration-300" style="font-size: 1rem; line-height: 1.6;">Most websites are beautiful digital brochures that do nothing for the bottom line. We engineer your site to work as an aggressive 24/7 sales engine, so you can stop wasting traffic and start booking real appointments.</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px; padding: 2.5rem 2rem;" class="hover:-translate-y-2 hover:scale-[1.02] hover:bg-[rgba(200,81,26,0.03)] hover:border-[rgba(200,81,26,0.2)] hover:shadow-[0_0_30px_rgba(200,81,26,0.15)] transition-all duration-300 cursor-default group">
+              <div class="w-12 h-12 mb-6 flex items-center justify-center rounded-full group-hover:scale-110 transition-transform duration-300" style="background: rgba(200,81,26,0.1); color: #c8511a;">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.82 1.508-2.316a7.5 7.5 0 10-7.516 0c.85.496 1.508 1.333 1.508 2.316V18" />
+                </svg>
+              </div>
+              <h3 class="font-display font-medium text-text mb-3" style="font-size: 1.25rem;">Radio Silence</h3>
+              <p class="font-body text-text-muted group-hover:text-text transition-colors duration-300" style="font-size: 1rem; line-height: 1.6;">You pay top dollar for a sleek look, but the layout lacks clear pathways to connect. We place strategic trust anchors exactly where buyers look for them, so your visitors actually pick up the phone.</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px; padding: 2.5rem 2rem;" class="hover:-translate-y-2 hover:scale-[1.02] hover:bg-[rgba(200,81,26,0.03)] hover:border-[rgba(200,81,26,0.2)] hover:shadow-[0_0_30px_rgba(200,81,26,0.15)] transition-all duration-300 cursor-default group">
+              <div class="w-12 h-12 mb-6 flex items-center justify-center rounded-full group-hover:scale-110 transition-transform duration-300" style="background: rgba(200,81,26,0.1); color: #c8511a;">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+                </svg>
+              </div>
+              <h3 class="font-display font-medium text-text mb-3" style="font-size: 1.25rem;">Immediate Bounce</h3>
+              <p class="font-body text-text-muted group-hover:text-text transition-colors duration-300" style="font-size: 1rem; line-height: 1.6;">Your site takes too long to load or breaks entirely on mobile phones, immediately chasing away potential clients. We build friction-free, lightning-fast layouts, so impatience never costs you a lost lead again.</p>
+            </div>
+          </div>
+
+          <!-- Downward Arrow Button (Outlined style matching Explore Custom Dev) -->
+          <a
+            href="#high-conversion-web-design"
+            class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+            style="margin-top: 2rem; font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+          >
+            Don't worry, there's a solution
+            <svg class="ml-3 w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+            </svg>
+          </a>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ROLE: CORE SERVICE 1 (Single Column Stack) ───────────── -->
+    <section id="high-conversion-web-design" style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: rgba(255,255,255,0.02);">
+      <div class="container reveal flex flex-col items-center justify-center">
+        <div class="max-w-4xl w-full text-center space-y-8 flex flex-col items-center">
+          <p class="font-label text-xs tracking-widest uppercase mb-4" style="color: #c8511a;">
+            High-Conversion Web Design
+          </p>
+          <h2 class="font-display font-bold tracking-tight text-text mb-8" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+            Built to Turn Traffic Into Revenue
+          </h2>
+          <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; max-width: 60ch; margin: 0 auto;">
+            When you hire a website designer, their single job should be converting organic search traffic and paid clicks into qualified sales calls. We engineer sites around persuasion architecture. Rather than relying on gut-feeling layouts, we map out the exact psychological journey your ideal client takes from landing on the page to submitting a form. Above-the-fold clarity, strategic trust anchors, and friction-free mobile load times guarantee that every dollar you spend on traffic actually turns into revenue. We build the foundation of your lead generation system.
+          </p>
+        </div>
+
+        <!-- Scope / Inclusion List => Wide 2-Column Bento Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl" style="margin-top: clamp(4rem, 8vw, 6rem);">
+          {
+            [
+              "No worrying about mobile glitches. Your site will look beautiful on phones AND computers.",
+              "Lightning-fast page loads, so impatience never costs you a lost lead.",
+              "Automated lead delivery, so you never let another opportunity slip through the cracks.",
+              "Your site will be written to persuade. No words will be wasted.",
+              "Built from the ground up for search engines, meaning faster Google rankings.",
+              "A clean, secure setup, built without the messy plugins that crash standard sites."
+            ].map((item) => (
+              <div class="flex items-start hover:-translate-y-1 transition-all duration-300" style="padding: 1.5rem 2rem; background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px;">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: #c8511a; margin-right: 1rem;" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="font-body text-text text-left" style="font-size: 1rem; line-height: 1.5;">{item}</span>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ROLE: CORE SERVICE 2 (Pattern A Flipped: Left Pills, Right Narrative) ───────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] items-center gap-12 md:gap-24">
+          <!-- Left: Rapid Fire Benefits => Pill Cluster -->
+          <div class="reveal flex flex-col gap-3 w-full order-last md:order-first" style="padding-top: 1rem;">
+            {
+              [
+                "100% Custom Tailored Designs",
+                "No Pre-Made Templates",
+                "Easy-to-Manage Setup",
+                "Advanced Features Available",
+                "Grows With Your Business"
+              ].map((item) => (
+                <span class="inline-flex w-full items-center font-label text-xs tracking-widest uppercase text-text hover:border-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300" style="padding: 0.85rem 1.5rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">
+                  <svg class="w-3 h-3 flex-shrink-0" style="color: #c8511a; margin-right: 0.75rem;" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  {item}
+                </span>
+              ))
+            }
+          </div>
+
+          <!-- Right: Narrative -->
+          <div class="reveal space-y-6">
+            <p class="font-label text-xs tracking-widest uppercase mb-4" style="color: #c8511a;">
+              Custom Web Development
+            </p>
+            <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+              Built to Your Exact Requirements
+            </h2>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              You shouldn't have to settle for a cookie-cutter template that looks exactly like your competitor's. We build every website closely around your own vision and business goals. There are no pre-made themes here—just a completely custom design that you can finally be proud to show off.
+            </p>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              And if your business requires something a little more complex—like a custom client intake portal, special software integrations, or automated systems—we handle all of that technological heavy lifting behind the scenes. You get exactly what you want, and it just works.
+            </p>
+            <a
+              href="/web-design/custom-web-development"
+              class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+              style="margin-top: 2rem; font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+            >
+              Explore Custom Dev
+              <svg class="ml-2 w-3 h-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ROLE: URGENCY (Pattern B: Centered Heavyweight Variant) ───────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: rgba(200,81,26,0.05);">
+      <div class="container reveal flex flex-col items-center justify-center">
+        <div class="max-w-4xl w-full text-center space-y-8 flex flex-col items-center">
+          <p class="font-label text-xs tracking-widest uppercase text-accent mb-4">
+            When To Rebuild
+          </p>
+          <h2 class="font-display font-bold tracking-tight text-text mb-8" style="font-size: clamp(2rem, 3.5vw, 3rem);">
+            If Your Site Doesn't Generate Revenue Right Now, It Needs Replacing.
+          </h2>
+          <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; max-width: 60ch; margin: 0 auto;">
+            Look closely at your traffic analytics. If you have consistent visitors but an abysmal conversion rate, your user experience is broken. Furthermore, if your site takes longer than three seconds to load on a mobile connection, you are immediately losing over half of your potential new clients before they even see your logo. Do not patch a fundamentally outdated system with new colors.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ROLE: FAQ (Pattern G: Minimalist Accordion Layout mapped to List) ───────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);">
+      <div class="container flex flex-col items-center justify-center">
+        <div class="max-w-3xl w-full">
+          <h2 class="font-display font-bold tracking-tight text-text text-center reveal mb-16" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+            Frequently Asked Questions
+          </h2>
+          <div class="faq-list reveal" role="list">
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+                  How long does a new site build take?
+                </span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  Most high-conversion service sites require four to six weeks from kickoff to final deployment. Custom web development projects carrying heavy CRM or portal integrations generally take eight to twelve weeks depending on complexity.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+                  Will the site be optimized for mobile?
+                </span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  Absolutely. Local searches in Kansas City are driven heavily by smartphone users. Our architecture is engineered mobile-first to ensure flawless rendering and accessible click-to-call functionality on any device.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+                  Do you manage hosting and ongoing updates?
+                </span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  Yes. Through our managed hosting package, we cover all security protocols, essential backend updates, uptime monitoring, and fast server hosting so you never need to deal with the technical breakdown of your most important asset.
+                </p>
+              </div></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FINAL CTA STRIP ────────────────────────────────────────────────── -->
+    <section
+      style="background: #161614; padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);"
+      aria-labelledby="wd-final-cta-heading"
+    >
+      <div class="container">
+        <div class="reveal" id="wd-final-cta">
+          <p class="font-label text-xs tracking-widest uppercase text-accent mb-5">
+            Ready to Build Something That Actually Works?
+          </p>
+          <h2
+            id="wd-final-cta-heading"
+            class="font-display font-bold tracking-tight text-text"
+            style="font-size: clamp(2rem, 4vw, 3.5rem); max-width: 22ch; margin-bottom: clamp(3rem, 5vw, 4rem);"
+          >
+            Your Next Client Is Already Searching. Let's Make Sure They Find You.
+          </h2>
+          <div class="flex flex-wrap items-center gap-4">
+            <button
+              type="button"
+              data-open-contact
+              class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover hover:scale-[1.05] active:scale-[0.98] transition-all duration-300"
+              style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
+            >
+              Get Started
+            </button>
+            <a
+              href="/pricing"
+              class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text-muted hover:text-text hover:scale-[1.05] active:scale-[0.98] transition-all duration-300"
+              style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
+            >
+              See Pricing
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+
+</Layout>
+
+<style>
+  /* FAQ slide animation */
+  .faq-body {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 480ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .faq-body.is-open {
+    max-height: 600px;
+  }
+  .faq-body-inner {
+    padding-bottom: 1.5rem;
+  }
+
+  /* Triangle: spin when closed, freeze rotated when open */
+  @keyframes faq-spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  .faq-icon {
+    animation: faq-spin 4s linear infinite;
+  }
+  .faq-icon.is-open {
+    animation: none;
+    transform: rotate(180deg);
+  }
+</style>
+
+<script>
+  // Scroll reveal: all .reveal elements on this page
+  document.querySelectorAll<HTMLElement>('.reveal').forEach((el, i) => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => el.classList.add('visible'), i < 4 ? i * 80 : 0);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+  });
+
+  // Accordion with slide transition
+  document.querySelectorAll('.faq-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const item   = trigger.closest('.faq-item')!;
+      const body   = item.querySelector('.faq-body') as HTMLElement;
+      const icon   = trigger.querySelector('.faq-icon') as HTMLElement;
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+
+      // Toggle clicked item only
+      if (isOpen) {
+        body.classList.remove('is-open');
+        icon.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+      } else {
+        body.classList.add('is-open');
+        icon.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>

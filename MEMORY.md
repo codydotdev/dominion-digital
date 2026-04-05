@@ -1,176 +1,145 @@
-# Dominion Digital — Design Process & Memory File
+# Dominion Digital — Project Reference
 
-## Project Overview
-- **What:** Homepage for Dominion Digital, a Kansas City digital marketing agency
-- **Tech stack:** Astro 6, vanilla CSS, no React/frameworks
-- **Project path:** `c:\Users\Cody\.antigravity\.webdev\dominion-digital\`
-- **Dev server:** `npm run dev` → `http://localhost:4322/`
-- **Content docs:** All in project root (`content-homepage-dominion-digital.md`, `conversion-copy-dominion-digital.md`, `site-structure-dominion-digital.md`, `offers-dominion-digital.md`)
+**Business:** Dominion Digital | dominion.digital
+**Location:** Kansas City, MO
+**Dev server:** `npm run dev` → `http://localhost:4322/`
+**Project path:** `c:\Users\Cody\.antigravity\.webdev\dominion-digital\`
 
 ---
 
-## Phase 1: Initial Homepage Build (Complete)
+## Current Status
 
-### What was built
-A full working homepage using the **taste skill** design philosophy:
-- **File:** `src/pages/index.astro` — complete page with all sections
-- **File:** `src/styles/global.css` — full design system (tokens, components, animations, responsive)
-- **Design:** Dark off-black base (`#0a0a0a`), single emerald accent (`#10b981`), Outfit font
-- **Layout:** Asymmetric, left-aligned hero, zig-zag service sections, scroll reveal animations
-- **Sections:** Nav → Hero → Intro → Web Design → SEO/GEO → Paid Ads → Automation → Service Areas → Guarantee → FAQ → CTA → Footer
-- **SEO:** Full JSON-LD schema (LocalBusiness, Service x4, FAQPage), meta tags, semantic HTML
-- **Interactivity:** Scroll reveals (IntersectionObserver), FAQ accordion, mobile hamburger nav, hover effects
-- **Images:** 5 AI-generated images in `public/images/` (hero-bg, web-design, seo-geo, paid-ads, automation) plus logo files (logo-icon, logo-white, logo-black)
-- **All copy is final SEO content** from the content docs, not placeholder
+**Homepage is mostly finished.** All component files exist and render. Build the rest of the site using the homepage as the reference design — not this file, not old screenshots.
 
-### Taste Skill Rules Applied
-- DESIGN_VARIANCE=8, MOTION=6, DENSITY=4
-- No emojis, no Inter font, no purple/neon, no centered hero, no 3-column card grids
-- Pure black avoided (uses #0a0a0a), single accent color only
+**Next up:** `/web-design` category page.
 
 ---
 
-## Phase 2: Google Stitch Exploration (In Progress)
+## Design System (Live — source of truth is `src/styles/global.css`)
 
-### Setup
-- **Stitch MCP** is connected via `@_davideast/stitch-mcp` proxy
-- **API Key:** `AQ.Ab8RN6KkjyA5Z0LqPe83G-q8r-gpa0Vn0XaeSzFeBMEtMMV77Q`
-- **Google Cloud project:** "personal"
-- **Stitch project:** "Dominion Digital Home Variant 2" (ID: `15333340392466352429`)
+| Token | Value |
+|-------|-------|
+| Background | `#0d0d0b` (Obsidian) |
+| Surface | `#161614` |
+| Primary text | `#f0ebe1` (Warm white) |
+| Secondary text | `#8a8880` (Ash) |
+| Accent / CTA | `#c8511a` (Burnt orange) |
+| Accent hover | `#e05e20` |
+| Display / H1 / H2 / labels | Space Grotesk |
+| Body | DM Sans |
+| Wordmark | Raleway |
 
-### What exists in Stitch
-The project has an auto-generated design system called **"Dominion Dark Ether"** with:
-- Deep navy-black background (`#060e20`)
-- Plus Jakarta Sans headlines, Manrope body
-- Blue (`#7799ff`) primary, purple (`#ddb7ff`) secondary, pink-red (`#ffb2b7`) tertiary
-- Glassmorphism, atmospheric depth, no hard borders, ambient shadows
-- Blue-to-purple gradient CTAs (`#3e76fe` → `#9c48ea`)
+**Typography sizing:**
+- H1 display: `clamp(3.5rem, 7vw, 7.5rem)`, weight 800, `tracking-tighter`
+- H2: `clamp(2rem, 4vw, 3.5rem)`, weight 700, `tracking-tight`
+- Body: `1.125rem`, `leading-relaxed`, `max-w-2xl`
+- Label/caption: `0.75rem`, `tracking-widest`, uppercase, Space Grotesk
 
-### The Inspiration Image
-- **Screen ID:** `687023506455122569` — an uploaded image (no HTML code)
-- **Label:** "hero and about" on the Stitch canvas
-- **What it shows:** A "Boostly" branded SaaS-style page with:
-  - Center-aligned layout, deep black background
-  - "SEO Experts" pill badge above headline
-  - Large bold centered headline with gradient-highlighted keyword
-  - Email input + gradient CTA button
-  - Rising gradient line chart (purple→pink) with glowing nodes and vertical markers
-  - 4-column feature grid below the chart
-  - "About Us" section with large centered paragraph, 3 overlapping circular avatars embedded in text flow, and 4 colored service pills
-- **Why Cody likes it:** Clean center-aligned hero, the growth chart visual, the inline avatars in the about text, the pill tags with colored dots, the overall "atmospheric" dark feel
+**Layout patterns:**
+- Container: `max-w-7xl mx-auto`, `padding: clamp(2rem, 6vw, 6rem)`
+- Section padding: `clamp(8rem, 14vw, 14rem)` top/bottom
+- Preferred grid: `grid-cols-[3fr_2fr]` (asymmetric, never equal 3-col)
+- Section numbers: `01`, `02`, `03…` above H2, in Ash color, Space Grotesk label size
 
-### Screens Generated in Stitch
-All of these were generated to match the "Dominion Dark Ether" design system:
+**Buttons:**
+- Primary: pill shape (`border-radius: 9999px`), burnt orange bg, warm white text, orange glow `box-shadow`
+- Ghost/secondary: `border: 1px solid rgba(240,235,225,0.25)`, same font, accent on hover
+- All buttons use `data-open-contact` attribute to trigger the contact modal
 
-| Screen | ID | Status |
-|--------|----|--------|
-| **Hero + About** (adapted from inspiration) | `3a353543415f489693ff97097879c734` | ✅ Generated with HTML |
-| **Web Design Services** | `f7c51dcc78c84c1794173f4d321cf5f7` | ✅ Generated with HTML |
-| **Internet Marketing / SEO** (2 variants) | `55f9536889e4...` / `af404fcf...` | ✅ Generated with HTML |
-| **Paid Advertising** | `044822d4a03544b381ca398064efa1da` | ✅ Generated with HTML |
-| **AI Automation** | `fcfd72fe94264d36b53db3968b378acf` | ✅ Generated with HTML |
-| **Guarantee + FAQ** | (latest gen) | ✅ Generated with HTML |
-| **CTA Banner + Footer** | (latest gen) | ✅ Generated with HTML |
+**Motion (intensity 4/10):**
+- Scroll reveal: `.reveal` class → add `.visible` via IntersectionObserver → `opacity 0→1` + `translateY 24px→0`, `600ms ease-out`, fires once
+- Stagger: `.stagger` parent, 80ms delay per child
+- Hero shader: always animating (WebGL, not Three.js library)
+- Nav scroll: `backdrop-filter: blur(16px)` + dark glass on scroll
 
-### Current Problem — Stitch Output Not Satisfactory
-Cody reviewed the generated "Hero + About" screen and is **not happy with the result**. The Stitch-generated version:
-- Captured the general structure (centered headline, chart, features, about section)
-- Used the Dominion Dark Ether design system
-- BUT something about the execution isn't meeting expectations
-
-**Possible issues to explore:**
-1. The Stitch output may look too generic / template-y compared to the original inspiration
-2. The gradient colors or typography may not feel right
-3. The growth chart visual may not be as polished as the original
-4. The overall "atmospheric" quality may be lacking
-5. The layout spacing or proportions may feel off
-6. The design system (Dark Ether) may need adjustment
-7. The prompting strategy may need to be more specific or reference the original image differently
-
-### Options to Consider
-1. **Iterate in Stitch** — Edit the generated screens with more specific prompts
-2. **Tweak the design system** — Adjust Dominion Dark Ether's colors, fonts, or design MD
-3. **Generate variants** — Use Stitch's variant generation to explore alternatives
-4. **Different approach** — Skip Stitch entirely and hand-code the design based on the inspiration image directly in the Astro site
-5. **Hybrid** — Use Stitch for design exploration only, then hand-code the final version with more precision
-6. **Different inspiration** — Find or generate a new reference design that better fits Dominion's brand
+**Explicit bans:**
+- No gradient backgrounds on sections
+- No purple of any kind
+- No centered hero text
+- No 3-column equal card grids
+- No rounded section dividers
+- No neon glows (the btn-cta orange glow is the only exception, defined in CSS)
+- No emojis
+- No Inter font
+- No gradient text on headlines
+- No fake statistics or placeholder testimonial names
 
 ---
 
-## Content (Already Finalized)
+## File Structure
 
-### Homepage H1s & Section Structure
-- **Hero H1:** "Digital Marketing That Generates Leads or You Don't Pay"
-- **Intro H2:** "Most Kansas City businesses that call us have already hired an agency."
-- **Web Design H2:** "A Website That Actually Brings In Leads"
-- **SEO/GEO H2:** "Rank on Google. Show Up in AI. Own Both."
-- **Paid Ads H2:** "Paid Ads That Produce Leads, Not Just Clicks"
-- **Automation H2:** "Automate the Work That's Eating Your Day"
-- **Guarantee H2:** "Results or You Don't Pay. That's the Offer."
-- **FAQ:** 4 questions with full answers
-- **CTA:** "Ready to stop wondering where your next client is coming from?"
-
-### Service Categories (GBP)
-1. Website Designer
-2. Internet Marketing Service
-3. Advertising Agency
-4. Automation Company
-
-### Pricing Tiers
-- **Free Tier:** Landing page + $200/mo hosting
-- **Authority Accelerator:** $6,000 setup + $400/mo (5-7 page site, SEO, GBP)
-- **Total Online Omnipresence:** $10,000 setup + $1,500/mo (30-40 pages, SEO, GEO, social, ads, automation)
-
-### Guarantees
-- Unconditional site guarantee (full refund if not satisfied with site)
-- 90-day results guarantee (keep working free if no qualified leads)
-
-### Target Service Areas
-Kansas City MO/KS, Overland Park, Olathe, Lee's Summit, Independence, Liberty, Blue Springs, Shawnee, Leawood, Leavenworth, Parkville, Gladstone, North Kansas City
-
----
-
-## Key Files & Assets
-
-### Project Structure
 ```
 dominion-digital/
 ├── src/
+│   ├── components/
+│   │   ├── Nav.astro            ← Fixed nav, frosted glass on scroll, contact modal trigger
+│   │   ├── Hero.astro           ← Full-viewport, WebGL shader, left-aligned H1
+│   │   ├── Signs.astro          ← "Sound familiar?" pain points section
+│   │   ├── WebDesign.astro      ← Section 01 — homepage web design block
+│   │   ├── SeoGeo.astro         ← Section 02 — SEO + GEO block
+│   │   ├── Advertising.astro    ← Section 03 — Paid ads block
+│   │   ├── Automation.astro     ← Section 04 — Automation block
+│   │   ├── Guarantee.astro      ← Section 05 — Guarantee block
+│   │   ├── Intro.astro          ← About/who we are block
+│   │   ├── ServiceAreas.astro   ← KC metro service areas
+│   │   ├── FAQ.astro            ← FAQ accordion
+│   │   ├── Footer.astro         ← 4-col footer
+│   │   └── ContactModal.astro   ← Full contact modal (triggered by data-open-contact)
+│   ├── layouts/
+│   │   └── Layout.astro         ← HTML shell, fonts, meta, ContactModal slot
 │   ├── pages/
-│   │   └── index.astro          ← Full homepage (Phase 1 build)
+│   │   └── index.astro          ← Homepage (mostly finished)
 │   └── styles/
-│       └── global.css           ← Complete design system
+│       └── global.css           ← Design tokens, reveal, container, marquee, btn-cta
 ├── public/
-│   └── images/
-│       ├── logo-icon.png        ← Diamond shield icon
-│       ├── logo-white.png       ← Full logo, white text
-│       ├── logo-black.png       ← Full logo, black text
-│       ├── hero-bg.png          ← KC skyline (AI generated)
-│       ├── web-design.png       ← Monitor mockup (AI generated)
-│       ├── seo-geo.png          ← Network visual (AI generated)
-│       ├── paid-ads.png         ← Funnel/analytics (AI generated)
-│       └── automation.png       ← Automation/workflow (AI generated)
-├── content-homepage-dominion-digital.md
-├── conversion-copy-dominion-digital.md
-├── site-structure-dominion-digital.md
-├── offers-dominion-digital.md
-└── MEMORY.md                   ← This file
+│   └── images/                  ← Logo files + any images
+├── design-dna-dominion-digital.md      ← Full design spec (reference)
+├── site-structure-dominion-digital.md  ← All 32 pages: slugs, H1s, meta, links
+├── conversion-copy-dominion-digital.md ← H1s, subheadlines, CTAs, value props per page
+├── content-homepage-dominion-digital.md← Full homepage body copy
+├── offers-dominion-digital.md          ← Pricing tiers, guarantees, bonus values
+└── MEMORY.md                           ← This file
 ```
-
-### Design Skills Referenced
-- **Taste skill:** `c:\Users\Cody\.claude\skills\taste\SKILL.md` — Design engineering directives for typography, color, layout, motion
-- **Local SEO content skill:** `c:\Users\Cody\.claude\skills\local-seo-content\SKILL.md` — Used for content generation
-
-### Stitch MCP Config
-Located at `c:\Users\Cody\.gemini\antigravity\mcp_config.json`
-- Server: `@_davideast/stitch-mcp` with `proxy` command
-- Uses `STITCH_API_KEY` environment variable
 
 ---
 
-## Next Steps — Decision Point
-1. Decide on design direction: iterate Stitch, hand-code from inspiration, or hybrid
-2. Once design is locked, implement final homepage in Astro
-3. Replace lorem ipsum in Stitch sections with final SEO copy if pulling from Stitch
-4. Build remaining pages (contact, pricing, service pages, location pages)
-5. Deploy
+## Page Architecture (32 total pages)
+
+See `site-structure-dominion-digital.md` for full details. Summary:
+
+| Type | Count | Status |
+|------|-------|--------|
+| Homepage | 1 | ✅ Mostly done |
+| Category pages | 4 | 🔲 Not started |
+| Service pages | 10 | 🔲 Not started |
+| Location pages | 13 | 🔲 Not started |
+| Standard pages (About, Contact, Pricing) | 3 | 🔲 Not started |
+
+**Category pages (build in this order):**
+1. `/web-design` — GBP: Website Designer
+2. `/internet-marketing` — GBP: Internet Marketing Service
+3. `/advertising` — GBP: Advertising Agency
+4. `/ai-automation` — GBP: Automation Company
+
+---
+
+## Copy Sources
+
+- **H1s, subheadlines, CTAs, value props:** `conversion-copy-dominion-digital.md` ← use this first
+- **Site structure notes (positioning, linking):** `site-structure-dominion-digital.md`
+- **Body copy:** write fresh per page using the positioning notes + conversion copy as anchors
+- **Offers/pricing:** `offers-dominion-digital.md`
+- **Design rules:** `design-dna-dominion-digital.md`
+
+---
+
+## How to Build a New Page
+
+1. Create `src/pages/[slug].astro`
+2. Import `Layout`, `Nav`, `Footer` — same as `index.astro`
+3. Add page-specific JSON-LD schema in the `head` slot
+4. Build sections as inline HTML (or new component files if reusable)
+5. Use the same `.reveal` + IntersectionObserver pattern for scroll animations
+6. CTA buttons: `<button type="button" data-open-contact class="btn-cta ...">` — the modal handles the rest
+7. Internal links: use the link map from `site-structure-dominion-digital.md`
+8. Meta title + description: finalize from `conversion-copy-dominion-digital.md` (meta descriptions are still placeholders in the structure file — write them fresh)

@@ -14,18 +14,18 @@ Dominate your market with a beautiful website and a high-conversion online prese
 
 ## About Dominion.Digital
 
-Most Kansas City businesses that call us have already hired a marketing agency. They paid for six months of SEO, got monthly ranking reports, and ended their contract with more dashboards than new clients. Dominion.Digital is a Kansas City digital marketing agency built around one metric: qualified leads. Web design, SEO, AI search optimization, Google Ads, and business automation are built as one connected system. When we send you a monthly report, every number connects to pipeline, not impressions. Kansas City has no shortage of agencies that are great at selling retainers. Most business owners in Overland Park, Lee's Summit, and Olathe have already found that out the hard way. Dominion.Digital was built to work differently.
+Most Kansas City businesses that call us have already hired a marketing agency. They paid for six months of SEO, got monthly ranking reports, and ended their contract with more dashboards than new clients. Dominion.Digital is a Kansas City digital marketing agency focused on one metric: qualified leads. Web design, SEO, AI search optimization, Google Ads, and business automation are built as one connected system. When we send you a monthly report, every number connects to pipeline, not impressions. Kansas City has no shortage of agencies that are great at selling retainers. Most business owners in Overland Park, Lee's Summit, and Olathe have already found that out the hard way. Dominion.Digital was built to work differently.
 
 ---
 
 ## A Website That Actually Brings In Leads
-*(SEO anchor: "Website Designer" — GBP category name must appear in opening sentence of this section)*
+*(SEO anchor: "Website Designer": GBP category name must appear in opening sentence of this section)*
 
 Most websites don't generate leads. They look fine, load fast enough, and sit there doing nothing. A digital business card. You paid someone to build it, someone else to host it, and now it's competing with 40 other local businesses on a search page it barely shows up on.
 
-Every Dominion website is built around one question: what happens when someone lands here? We design the answer into the layout. High-conversion architecture, fast load times, and a user journey built to turn a visitor into a phone call or a contact form submission.
+Every Dominion website is starts with one question: what happens when someone lands here? We design the answer into the layout. High-conversion architecture, fast load times, and a user journey built to turn a visitor into a phone call or a contact form submission.
 
-Businesses across Kansas City in industries from HVAC to professional services have seen inbound contact double after a site rebuild with Dominion. A well-built website isn't a cost. It's the foundation your entire marketing system sits on.
+Businesses across Kansas City in industries from HVAC to professional services have seen inbound contact double after a site rebuild with Dominion. A well-built website is the foundation your entire marketing system sits on.
 
 **Web design services:**
 - High-conversion web design
@@ -36,7 +36,7 @@ Businesses across Kansas City in industries from HVAC to professional services h
 ---
 
 ## Rank on Google. Show Up in AI. Own Both.
-*(SEO anchor: "Internet Marketing Service" — GBP category name must appear in opening sentence of this section)*
+*(SEO anchor: "Internet Marketing Service": GBP category name must appear in opening sentence of this section)*
 
 If a customer in Kansas City searches for your service and you're not on the first page, you don't exist. That's the whole conversation.
 
@@ -62,7 +62,7 @@ Dominion optimizes for both channels under one roof. Traditional Google rankings
 ---
 
 ## Paid Ads That Produce Leads, Not Just Clicks
-*(SEO anchor: "Advertising Agency" — GBP category name must appear in opening sentence of this section)*
+*(SEO anchor: "Advertising Agency": GBP category name must appear in opening sentence of this section)*
 
 Paid ads have a reputation problem in Kansas City. Business owners have been burned. They hand an agency $2,000 a month, watch the budget disappear, and get back a report full of clicks that never turned into customers.
 
@@ -82,7 +82,7 @@ How much should you spend on Google Ads in Kansas City? Most local service busin
 ---
 
 ## Automate the Work That's Eating Your Day
-*(SEO anchor: "Automation Company" — GBP category name must appear in opening sentence of this section)*
+*(SEO anchor: "Automation Company": GBP category name must appear in opening sentence of this section)*
 
 Most Kansas City business owners are doing work a system should handle for them. Following up with leads by hand. Copying contact info between tools. Sending the same onboarding email 40 times a month. Every hour spent on that is an hour not spent on the work that actually grows the business.
 
@@ -147,7 +147,7 @@ Dominion has three tiers. The entry option is a professional landing page for fr
 GEO stands for Generative Engine Optimization. It's the practice of optimizing your content to get cited by AI tools like ChatGPT, Perplexity, and Google AI Overviews. Traditional SEO gets you into Google's search results. GEO gets you into the AI-generated answers your customers are increasingly using to make decisions. In Kansas City, most businesses have no GEO strategy at all. That gap closes fast for the ones who move first.
 
 **How long does it take to see results from digital marketing in Kansas City?**
-Web design results are visible at launch. Paid advertising campaigns typically produce leads within the first 30 days when set up correctly. SEO and GEO results appear within 60-90 days in most Kansas City markets, depending on your competition level. Dominion's 90-day results guarantee is built around that timeline.
+Web design results are visible at launch. Paid advertising campaigns typically produce leads within the first 30 days when set up correctly. SEO and GEO results appear within 60-90 days in most Kansas City markets, depending on your competition level. Dominion's 90-day results guarantee is based on that timeline.
 
 **Does Dominion work with businesses outside Kansas City?**
 Yes. Most clients are in the Kansas City metro, but Dominion works with national clients on web design, SEO, and automation. The process is the same regardless of location.
