@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import Sparkles from '../components/Sparkles.astro';
 ---
 
 <Layout
@@ -62,6 +63,7 @@ import Footer from '../components/Footer.astro';
       style="padding-top: clamp(9rem, 18vw, 14rem); padding-bottom: clamp(5rem, 10vw, 8rem);"
       aria-label="Web Design page hero"
     >
+      <Sparkles />
       <div
         class="absolute inset-0 pointer-events-none"
         style="background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,81,26,0.07) 0%, transparent 70%); z-index: 0;"
@@ -81,6 +83,10 @@ import Footer from '../components/Footer.astro';
         >
           Kansas City Web Design That Converts Visitors Into Paying Customers
         </h1>
+
+        <p class="font-body text-text-muted reveal" style="font-size: 1.125rem; max-width: 48ch; margin-bottom: 2rem; line-height: 1.6;">
+          Custom-built to not only look beautiful, but rank, and bring you leads. Your site should be your best salesperson.
+        </p>
 
         <div class="flex flex-wrap items-center gap-4 reveal">
           <button
@@ -102,13 +108,17 @@ import Footer from '../components/Footer.astro';
         <div class="w-full text-center flex flex-col items-center">
           
           <!-- Top Callout -->
-          <div class="text-center w-full max-w-4xl" style="margin-bottom: clamp(4rem, 8vw, 6rem); padding: 2rem 0; border-top: 1px solid rgba(200,81,26,0.2); border-bottom: 1px solid rgba(200,81,26,0.2);">
-            <strong class="font-display text-text" style="font-size: clamp(1.5rem, 3vw, 2rem); text-align: center; display: block;">
+          <div class="text-left w-full max-w-4xl" style="margin-bottom: clamp(2rem, 4vw, 3rem); padding: 2rem 0; border-top: 1px solid rgba(200,81,26,0.2); border-bottom: 1px solid rgba(200,81,26,0.2);">
+            <strong class="font-display text-text inline-flex items-center justify-start gap-6" style="font-size: clamp(1.5rem, 3vw, 2rem);">
+              <svg class="warn-icon flex-shrink-0" style="width: clamp(1.5rem, 2.5vw, 2rem); height: clamp(1.5rem, 2.5vw, 2rem); color: #c8511a;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+              </svg>
               A fast, beautiful site that generates zero leads is a liability.
             </strong>
           </div>
 
           <!-- Cards Summarizing Paragraph Points -->
+          <p class="font-label text-xs tracking-widest uppercase w-full max-w-6xl text-left" style="color: #8a8880; margin-bottom: 1.5rem;">Does this sound like your website?</p>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mb-16 text-left">
             <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px; padding: 2.5rem 2rem;" class="hover:-translate-y-2 hover:scale-[1.02] hover:bg-[rgba(200,81,26,0.03)] hover:border-[rgba(200,81,26,0.2)] hover:shadow-[0_0_30px_rgba(200,81,26,0.15)] transition-all duration-300 cursor-default group">
               <div class="w-12 h-12 mb-6 flex items-center justify-center rounded-full group-hover:scale-110 transition-transform duration-300" style="background: rgba(200,81,26,0.1); color: #c8511a;">
@@ -171,7 +181,7 @@ import Footer from '../components/Footer.astro';
         </div>
 
         <!-- Scope / Inclusion List => Wide 2-Column Bento Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl" style="margin-top: clamp(4rem, 8vw, 6rem);">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl" style="margin-top: clamp(2.5rem, 5vw, 4rem);">
           {
             [
               "No worrying about mobile glitches. Your site will look beautiful on phones AND computers.",
@@ -190,6 +200,17 @@ import Footer from '../components/Footer.astro';
             ))
           }
         </div>
+
+        <a
+          href="/web-design/high-conversion-web-design"
+          class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+          style="margin-top: clamp(3rem, 5vw, 4rem); font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+        >
+          See How It Works
+          <svg class="ml-2 w-3 h-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
       </div>
     </section>
 
@@ -224,10 +245,10 @@ import Footer from '../components/Footer.astro';
               Built to Your Exact Requirements
             </h2>
             <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
-              You shouldn't have to settle for a cookie-cutter template that looks exactly like your competitor's. We build every website closely around your own vision and business goals. There are no pre-made themes here—just a completely custom design that you can finally be proud to show off.
+              Every site we build starts from scratch. Your layout, your messaging, your visual identity. No templates, no recycled designs, nothing your competitor could copy and paste.
             </p>
             <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
-              And if your business requires something a little more complex—like a custom client intake portal, special software integrations, or automated systems—we handle all of that technological heavy lifting behind the scenes. You get exactly what you want, and it just works.
+              Need a client intake portal? A CRM integration? Automated booking or payment flows? Tell us what your business actually requires, and we build it. You get the features, and they just work.
             </p>
             <a
               href="/web-design/custom-web-development"
@@ -257,6 +278,14 @@ import Footer from '../components/Footer.astro';
           <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; max-width: 60ch; margin: 0 auto;">
             Look closely at your traffic analytics. If you have consistent visitors but an abysmal conversion rate, your user experience is broken. Furthermore, if your site takes longer than three seconds to load on a mobile connection, you are immediately losing over half of your potential new clients before they even see your logo. Do not patch a fundamentally outdated system with new colors.
           </p>
+          <button
+            type="button"
+            data-open-contact
+            class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover hover:scale-[1.05] active:scale-[0.98] transition-all duration-300"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem; margin-top: 3rem;"
+          >
+            Get Started
+          </button>
         </div>
       </div>
     </section>
@@ -283,7 +312,7 @@ import Footer from '../components/Footer.astro';
               </button>
               <div class="faq-body"><div class="faq-body-inner">
                 <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
-                  Most high-conversion service sites require four to six weeks from kickoff to final deployment. Custom web development projects carrying heavy CRM or portal integrations generally take eight to twelve weeks depending on complexity.
+                  Most sites are ready to go live within a month, start to finish. Heavier custom builds with complex integrations can take up to eight weeks, though we've finished plenty of those in a month or less too.
                 </p>
               </div></div>
             </div>
@@ -309,7 +338,7 @@ import Footer from '../components/Footer.astro';
             <div class="faq-item" role="listitem">
               <button
                 class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
-                style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; cursor: pointer;"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
                 aria-expanded="false"
               >
                 <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
@@ -320,6 +349,42 @@ import Footer from '../components/Footer.astro';
               <div class="faq-body"><div class="faq-body-inner">
                 <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
                   Yes. Through our managed hosting package, we cover all security protocols, essential backend updates, uptime monitoring, and fast server hosting so you never need to deal with the technical breakdown of your most important asset.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+                  What if I want to make changes to the website?
+                </span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  Any updates to content, images, or copy are handled for you. Other agencies typically charge around $1,200 a year for that kind of ongoing maintenance. As long as you're working with us, it's already included in your package.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+                  Do you work with existing websites, or do you only build new ones?
+                </span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  We build new. If your current site has fundamental issues with speed, structure, or conversion, patching it rarely works. A clean build on the right foundation costs less long-term than trying to fix something that wasn't designed to perform. That said, we handle management of existing websites on a case-by-case basis. Reach out and we'll take a look at what you've got.
                 </p>
               </div></div>
             </div>
@@ -357,8 +422,8 @@ import Footer from '../components/Footer.astro';
             </button>
             <a
               href="/pricing"
-              class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text-muted hover:text-text hover:scale-[1.05] active:scale-[0.98] transition-all duration-300"
-              style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
+              class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+              style="font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
             >
               See Pricing
             </a>
@@ -374,6 +439,15 @@ import Footer from '../components/Footer.astro';
 </Layout>
 
 <style>
+  /* Warning icon pulse */
+  @keyframes warn-pulse {
+    0%, 100% { filter: drop-shadow(0 0 4px rgba(200,81,26,0.6)); opacity: 1; }
+    50%       { filter: drop-shadow(0 0 12px rgba(200,81,26,0.95)); opacity: 0.8; }
+  }
+  .warn-icon {
+    animation: warn-pulse 2.4s ease-in-out infinite;
+  }
+
   /* FAQ slide animation */
   .faq-body {
     overflow: hidden;

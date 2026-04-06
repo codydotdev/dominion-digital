@@ -1,0 +1,544 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const checkGreen = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#22c55e;margin-top:0.15rem;" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>`;
+const xRed    = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;margin-top:0.15rem;" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414-1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>`;
+const checkBW = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:rgba(240,235,225,0.4);margin-top:0.15rem;" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>`;
+const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;margin-top:0.15rem;" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414-1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>`;
+---
+
+<Layout
+  title="Pricing | Dominion Digital"
+  description="Transparent pricing for web design, local SEO, and full-service digital marketing in Kansas City. Three packages built to scale with your business."
+  canonicalUrl="https://dominion.digital/pricing"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://dominion.digital"},
+        {"@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://dominion.digital/pricing"}
+      ]
+    }
+    </script>
+  </Fragment>
+
+  <Nav />
+
+  <main>
+
+    <!-- ─── HERO ──────────────────────────────────────────────────────────── -->
+    <section
+      class="relative"
+      style="padding-top: clamp(9rem, 18vw, 14rem); padding-bottom: clamp(5rem, 10vw, 8rem);"
+      aria-label="Pricing hero"
+    >
+      <div
+        class="absolute inset-0 pointer-events-none"
+        style="background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,81,26,0.07) 0%, transparent 70%); z-index: 0;"
+        aria-hidden="true"
+      ></div>
+      <div class="container relative" style="z-index: 1;">
+        <p class="font-label text-xs tracking-widest uppercase reveal" style="color: #8a8880; margin-bottom: 1.5rem;">
+          <a href="/" class="hover:text-text transition-colors duration-200">Home</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          Pricing
+        </p>
+        <h1
+          class="font-display font-extrabold text-text tracking-tighter leading-none reveal"
+          style="font-size: clamp(3rem, 6.5vw, 6.5rem); max-width: 18ch; margin-bottom: 1.5rem;"
+        >
+          Straightforward Pricing. No Surprises.
+        </h1>
+        <p class="font-body text-text-muted reveal" style="font-size: 1.125rem; max-width: 48ch; margin-bottom: 2rem; line-height: 1.6;">
+          Three packages built for where your business is right now, and where it's going.
+        </p>
+        <div class="flex flex-wrap items-center reveal" style="gap: 1rem;">
+          <button
+            type="button"
+            data-open-contact
+            class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover hover:scale-[1.05] active:scale-[0.98] transition-all duration-300"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── PRICING CARDS ─────────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(3rem, 6vw, 5rem); padding-bottom: clamp(6rem, 12vw, 10rem);">
+      <div class="container">
+        <div class="pricing-grid reveal">
+
+          <!-- ♟ LEFT: Minimum Bundle — Black & White -->
+          <div class="pricing-card-side pricing-card-left" style="position: relative; background: rgba(8,8,6,0.9); border: 1px solid rgba(240,235,225,0.1); border-radius: 20px; padding: 2rem; overflow: hidden;">
+            <!-- Chess piece top-right -->
+            <span aria-hidden="true" style="position: absolute; top: 1.25rem; right: 1.5rem; font-size: 3rem; color: rgba(240,235,225,0.35); line-height: 1; user-select: none;">♟</span>
+
+            <!-- Plan label -->
+            <p class="font-label text-xs tracking-widest uppercase" style="color: rgba(240,235,225,0.35); margin-bottom: 0.75rem;">Minimum Bundle</p>
+
+            <!-- Price -->
+            <p class="font-display font-extrabold text-text" style="font-size: clamp(2.25rem, 4vw, 3rem); letter-spacing: -0.02em; line-height: 1; margin-bottom: 0.25rem;">FREE</p>
+            <p class="font-body" style="color: rgba(240,235,225,0.35); font-size: 0.875rem; margin-bottom: 0.2rem;">setup fee</p>
+            <p class="font-body" style="color: rgba(240,235,225,0.35); font-size: 0.875rem; margin-bottom: 1.75rem;">$200 / month</p>
+
+            <!-- CTA ghost -->
+            <button
+              type="button"
+              data-open-contact
+              class="font-label font-semibold tracking-widest uppercase hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+              style="width: 100%; font-size: 0.65rem; padding: 0.7rem 1.25rem; background: transparent; border: 1px solid rgba(240,235,225,0.2); border-radius: 8px; cursor: pointer; color: rgba(240,235,225,0.7); margin-bottom: 1.75rem;"
+            >
+              Get Started
+            </button>
+
+            <!-- Features -->
+            <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0; display: flex; flex-direction: column; gap: 0.85rem;">
+              {[
+                'Custom landing page that performs better than your current site',
+                'Basic single-page SEO',
+                'Ongoing unlimited image & content edits',
+                'Managed website hosting',
+              ].map(item => (
+                <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                  <Fragment set:html={checkBW} />
+                  <span class="font-body" style="font-size: 0.875rem; color: rgba(240,235,225,0.5); line-height: 1.5;">{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <!-- Bonuses separator -->
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+              <span style="height: 1px; flex: 1; background: rgba(240,235,225,0.08);"></span>
+              <span class="font-label tracking-widest" style="font-size: 0.875rem; color: rgba(240,235,225,0.35); white-space: nowrap; text-transform: uppercase;">Bonuses</span>
+              <span style="height: 1px; flex: 1; background: rgba(240,235,225,0.08);"></span>
+            </div>
+
+            <!-- Bonuses -->
+            <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0; display: flex; flex-direction: column; gap: 0.85rem;">
+              <li style="display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem;">
+                <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                  <Fragment set:html={checkGreen} />
+                  <span class="font-body" style="font-size: 0.875rem; color: rgba(240,235,225,0.7); line-height: 1.5;">5-Star Review Request Automator</span>
+                </div>
+                <span class="font-label" style="font-size: 0.75rem; color: #c8511a; white-space: nowrap; margin-top: 0.1rem; flex-shrink: 0;">$500 value</span>
+              </li>
+            </ul>
+
+            <!-- Bonus summary -->
+            <div style="background: rgba(200,81,26,0.07); border: 1px solid rgba(200,81,26,0.15); border-radius: 8px; padding: 0.9rem 1rem; margin-bottom: 1.5rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem;">
+                <span class="font-label tracking-widest" style="font-size: 0.58rem; color: rgba(240,235,225,0.4); text-transform: uppercase;">Total bonus value</span>
+                <span class="font-display font-bold" style="color: rgba(240,235,225,0.4); text-decoration: line-through; font-size: 0.95rem;">$500</span>
+              </div>
+              <div style="display: flex; justify-content: flex-end;">
+                <span class="font-display font-extrabold text-text" style="font-size: 1.25rem;">FREE</span>
+              </div>
+            </div>
+
+            <!-- Separator -->
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+              <span style="height: 1px; flex: 1; background: rgba(240,235,225,0.08);"></span>
+              <span class="font-label tracking-widest" style="font-size: 0.875rem; color: rgba(240,235,225,0.35); white-space: nowrap; text-transform: uppercase;">What you won't get</span>
+              <span style="height: 1px; flex: 1; background: rgba(240,235,225,0.08);"></span>
+            </div>
+
+            <!-- X items -->
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.85rem;">
+              {[
+                'Paying thousands upfront before seeing results',
+                'A site you have to maintain yourself',
+                'Zero online presence while competitors dominate',
+              ].map(item => (
+                <li style="display: flex; align-items: flex-start; gap: 0.75rem; opacity: 0.65;">
+                  <Fragment set:html={xBW} />
+                  <span class="font-body" style="font-size: 0.875rem; color: rgba(240,235,225,0.65); line-height: 1.5;">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+
+          <!-- ♞ MIDDLE: Authority Accelerator — Featured -->
+          <div class="pricing-card-center" style="position: relative; z-index: 1;">
+            <!-- Ambient glow behind card -->
+            <div aria-hidden="true" style="position: absolute; inset: -40%; background: radial-gradient(ellipse at center, rgba(200,81,26,0.18) 0%, transparent 65%); z-index: 0; pointer-events: none;"></div>
+
+            <!-- Card itself — SVG overlay provides the animated border -->
+            <div class="card-shine-wrapper">
+              <svg class="card-shine-svg" style="position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; overflow: visible;" aria-hidden="true">
+                <defs>
+                  <filter id="card-glow" x="-100%" y="-100%" width="300%" height="300%">
+                    <feGaussianBlur stdDeviation="3" result="blur"/>
+                    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                  </filter>
+                </defs>
+                <rect class="shine-base" fill="none" stroke="rgba(200,81,26,0.4)" stroke-width="1.5" rx="19.5"/>
+                <rect class="shine-spot" fill="none" stroke="rgba(255,210,140,1)" stroke-width="2.5" rx="19.5" filter="url(#card-glow)"/>
+              </svg>
+              <div style="position: relative; z-index: 1; background: rgb(14,13,11); border-radius: 20px; padding: 2.25rem; overflow: hidden;">
+              <!-- Most Popular badge -->
+              <span
+                class="font-label tracking-widest"
+                style="position: absolute; top: 1.25rem; right: 1.5rem; font-size: 0.58rem; text-transform: uppercase; border: 1px solid rgba(200,81,26,0.5); color: #c8511a; border-radius: 9999px; padding: 0.2rem 0.7rem;"
+              >Most Popular</span>
+
+              <!-- Chess medallion -->
+              <div style="width: 5rem; height: 5rem; border-radius: 50%; background: rgba(0,0,0,0.6); border: 1px solid rgba(200,81,26,0.35); display: flex; align-items: center; justify-content: center; margin: 0 auto; margin-bottom: 1.75rem; box-shadow: 0 0 24px rgba(200,81,26,0.2);">
+                <span aria-hidden="true" style="font-size: 2.5rem; color: #c8511a; line-height: 1;">♞</span>
+              </div>
+
+              <!-- Plan label -->
+              <p class="font-label text-xs tracking-widest uppercase text-center" style="color: #c8511a; margin-bottom: 0.75rem;">Authority Accelerator</p>
+
+              <!-- Price -->
+              <p class="font-display font-extrabold text-text text-center" style="font-size: clamp(2.5rem, 4.5vw, 3.5rem); letter-spacing: -0.02em; line-height: 1; margin-bottom: 0.25rem;">$6,000</p>
+              <p class="font-body text-center" style="color: rgba(240,235,225,0.4); font-size: 0.875rem; margin-bottom: 0.5rem;">setup fee</p>
+              <p class="font-body text-center" style="color: rgba(240,235,225,0.4); font-size: 0.875rem; margin-bottom: 1.75rem;">$400 / month</p>
+
+              <!-- CTA -->
+              <button
+                type="button"
+                data-open-contact
+                class="font-label font-semibold tracking-widest uppercase text-text hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+                style="width: 100%; font-size: 0.7rem; padding: 0.8rem 1.25rem; background: linear-gradient(180deg, #d4622a 0%, #c8511a 100%); border-radius: 8px; border: none; cursor: pointer; box-shadow: 0 8px 28px rgba(200,81,26,0.4); margin-bottom: 1.75rem;"
+              >
+                Build My Authority
+              </button>
+
+              <!-- Features -->
+              <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0; display: flex; flex-direction: column; gap: 0.85rem;">
+                {[
+                  '8 to 12 page custom authority website',
+                  'Local SEO setup & optimization',
+                  'Ongoing unlimited image & content edits',
+                  'Google Business Page optimization',
+                  'Social media optimization',
+                  'Full analytics setup & reporting',
+                ].map(item => (
+                  <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                    <Fragment set:html={checkGreen} />
+                    <span class="font-body" style="font-size: 0.875rem; color: rgba(240,235,225,0.7); line-height: 1.5;">{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <!-- Bonuses separator -->
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+                <span style="height: 1px; flex: 1; background: rgba(240,235,225,0.1);"></span>
+                <span class="font-label tracking-widest" style="font-size: 0.875rem; color: rgba(240,235,225,0.35); white-space: nowrap; text-transform: uppercase;">Bonuses</span>
+                <span style="height: 1px; flex: 1; background: rgba(240,235,225,0.1);"></span>
+              </div>
+
+              <!-- Bonuses -->
+              <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-direction: column; gap: 0.85rem;">
+                {([
+                  ['Competitor Crusher SEO Audit', '$1,500 value'],
+                  ['Instant & 90-Day Local Google Ranking Report', '$1,500 value'],
+                  ['Ad Campaign Creation', '$2,500 value'],
+                  ['1-Hour Marketing Strategy Call', '$500 value'],
+                ] as [string, string][]).map(([item, val]) => (
+                  <li style="display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem;">
+                    <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                      <Fragment set:html={checkGreen} />
+                      <span class="font-body" style="font-size: 0.875rem; color: rgba(240,235,225,0.7); line-height: 1.5;">{item}</span>
+                    </div>
+                    <span class="font-label" style="font-size: 0.75rem; color: #c8511a; white-space: nowrap; margin-top: 0.1rem; flex-shrink: 0;">{val}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <!-- Bonus summary -->
+              <div style="background: rgba(200,81,26,0.07); border: 1px solid rgba(200,81,26,0.15); border-radius: 8px; padding: 0.9rem 1rem; margin-bottom: 1.5rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem;">
+                  <span class="font-label tracking-widest" style="font-size: 0.58rem; color: rgba(240,235,225,0.4); text-transform: uppercase;">Total bonus value</span>
+                  <span class="font-display font-bold" style="color: rgba(240,235,225,0.4); text-decoration: line-through; font-size: 0.95rem;">$6,000</span>
+                </div>
+                <div style="display: flex; justify-content: flex-end;">
+                  <span class="font-display font-extrabold text-text" style="font-size: 1.25rem;">FREE</span>
+                </div>
+              </div>
+
+              <!-- X separator -->
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+                <span style="height: 1px; flex: 1; background: rgba(240,235,225,0.1);"></span>
+                <span class="font-label tracking-widest" style="font-size: 0.875rem; color: rgba(240,235,225,0.35); white-space: nowrap; text-transform: uppercase;">What you won't get</span>
+                <span style="height: 1px; flex: 1; background: rgba(240,235,225,0.1);"></span>
+              </div>
+
+              <!-- X items -->
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.85rem;">
+                {[
+                  'Watching competitors rank above you in local search',
+                  'Agencies that disappear after your site goes live',
+                  'Ad budget pouring into traffic with nowhere good to land',
+                ].map(item => (
+                  <li style="display: flex; align-items: flex-start; gap: 0.75rem; opacity: 0.65;">
+                    <Fragment set:html={xRed} />
+                    <span class="font-body" style="font-size: 0.875rem; color: rgba(240,235,225,0.65); line-height: 1.5;">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ♚ RIGHT: Market Dominion — Colored, no glow -->
+          <div class="pricing-card-side pricing-card-right" style="position: relative; background: rgba(200,81,26,0.03); border: 1px solid rgba(200,81,26,0.18); border-radius: 20px; padding: 2rem; overflow: hidden;">
+            <!-- Chess piece top-right -->
+            <span aria-hidden="true" style="position: absolute; top: 1.25rem; right: 1.5rem; font-size: 3rem; color: #c8511a; line-height: 1; user-select: none;">♚</span>
+
+            <!-- Plan label -->
+            <p class="font-label text-xs tracking-widest uppercase" style="color: #c8511a; margin-bottom: 0.75rem;">Market Dominion</p>
+
+            <!-- Price -->
+            <p class="font-display font-extrabold" style="font-size: clamp(2.25rem, 4vw, 3rem); letter-spacing: -0.02em; line-height: 1; color: #c8511a; margin-bottom: 0.25rem;">$10,000</p>
+            <p class="font-body" style="color: rgba(240,235,225,0.35); font-size: 0.875rem; margin-bottom: 0.2rem;">setup fee</p>
+            <p class="font-body" style="color: rgba(240,235,225,0.35); font-size: 0.875rem; margin-bottom: 1.75rem;">
+              $1,500 / month
+            </p>
+
+            <!-- CTA filled -->
+            <button
+              type="button"
+              data-open-contact
+              class="font-label font-semibold tracking-widest uppercase text-text hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+              style="width: 100%; font-size: 0.65rem; padding: 0.7rem 1.25rem; background: linear-gradient(180deg, #d4622a 0%, #c8511a 100%); border-radius: 8px; border: none; cursor: pointer; box-shadow: 0 8px 24px rgba(200,81,26,0.25); margin-bottom: 1.75rem;"
+            >
+              Claim My Territory
+            </button>
+
+            <!-- Features -->
+            <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0; display: flex; flex-direction: column; gap: 0.85rem;">
+              {[
+                '30 to 40 page Market Dominion website',
+                'Full SEO + AI Search optimization',
+                'Ongoing unlimited image & content edits',
+                'Google Business Page management',
+                'Social media management',
+                'Full analytics setup & reporting',
+              ].map(item => (
+                <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                  <Fragment set:html={checkGreen} />
+                  <span class="font-body" style="font-size: 0.875rem; color: rgba(240,235,225,0.7); line-height: 1.5;">{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <!-- Bonuses separator -->
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+              <span style="height: 1px; flex: 1; background: rgba(200,81,26,0.15);"></span>
+              <span class="font-label tracking-widest" style="font-size: 0.875rem; color: rgba(240,235,225,0.35); white-space: nowrap; text-transform: uppercase;">Bonuses</span>
+              <span style="height: 1px; flex: 1; background: rgba(200,81,26,0.15);"></span>
+            </div>
+
+            <!-- Bonuses -->
+            <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-direction: column; gap: 0.85rem;">
+              <li style="display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem;">
+                <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                  <Fragment set:html={checkGreen} />
+                  <span class="font-body" style="font-size: 0.875rem; color: rgba(240,235,225,0.7); line-height: 1.5;">Everything from Authority Accelerator</span>
+                </div>
+                <span class="font-label" style="font-size: 0.75rem; color: #c8511a; white-space: nowrap; margin-top: 0.1rem; flex-shrink: 0;">$6,000 value</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem;">
+                <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                  <Fragment set:html={checkGreen} />
+                  <span class="font-body" style="font-size: 0.875rem; color: rgba(240,235,225,0.7); line-height: 1.5;">Custom Client-Conversion Automation</span>
+                </div>
+                <span class="font-label" style="font-size: 0.75rem; color: #c8511a; white-space: nowrap; margin-top: 0.1rem; flex-shrink: 0;">$5,000 value</span>
+              </li>
+            </ul>
+
+            <!-- Bonus summary -->
+            <div style="background: rgba(200,81,26,0.07); border: 1px solid rgba(200,81,26,0.15); border-radius: 8px; padding: 0.9rem 1rem; margin-bottom: 1.5rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem;">
+                <span class="font-label tracking-widest" style="font-size: 0.58rem; color: rgba(240,235,225,0.4); text-transform: uppercase;">Total bonus value</span>
+                <span class="font-display font-bold" style="color: rgba(240,235,225,0.4); text-decoration: line-through; font-size: 0.95rem;">$11,750</span>
+              </div>
+              <div style="display: flex; justify-content: flex-end;">
+                <span class="font-display font-extrabold text-text" style="font-size: 1.25rem;">FREE</span>
+              </div>
+            </div>
+
+            <!-- X separator -->
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+              <span style="height: 1px; flex: 1; background: rgba(200,81,26,0.15);"></span>
+              <span class="font-label tracking-widest" style="font-size: 0.875rem; color: rgba(240,235,225,0.35); white-space: nowrap; text-transform: uppercase;">What you won't get</span>
+              <span style="height: 1px; flex: 1; background: rgba(200,81,26,0.15);"></span>
+            </div>
+
+            <!-- X items -->
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.85rem;">
+              {[
+                'Competitors owning every channel you aren\'t in',
+                'AI search sending inquiries to someone else',
+                'Managing four vendors to do what one should',
+              ].map(item => (
+                <li style="display: flex; align-items: flex-start; gap: 0.75rem; opacity: 0.65;">
+                  <Fragment set:html={xRed} />
+                  <span class="font-body" style="font-size: 0.875rem; color: rgba(240,235,225,0.65); line-height: 1.5;">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── GUARANTEES ────────────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: rgba(255,255,255,0.02);">
+      <div class="container reveal">
+        <p class="font-label text-xs tracking-widest uppercase text-center" style="color: #c8511a; margin-bottom: 1rem;">Our Guarantees</p>
+        <h2
+          class="font-display font-bold tracking-tight text-text text-center"
+          style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: clamp(3rem, 6vw, 5rem);"
+        >
+          Every Package Backs Itself Up.
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2" style="gap: 1.5rem; max-width: 56rem; margin: 0 auto;">
+          <div style="border: 1px solid rgba(240,235,225,0.1); border-radius: 12px; padding: 2.5rem 2rem;">
+            <p class="font-label text-xs tracking-widest uppercase" style="color: #c8511a; margin-bottom: 1rem;">Site Guarantee</p>
+            <h3 class="font-display font-bold text-text" style="font-size: 1.5rem; margin-bottom: 1rem;">Money Back Before Launch</h3>
+            <p class="font-body text-text-muted" style="font-size: 1rem; line-height: 1.7;">If you're not happy with the site before it goes live, you get your money back. No negotiation, no fine print. After launch, any issues are fixed free for 30 days.</p>
+          </div>
+          <div style="border: 1px solid rgba(240,235,225,0.1); border-radius: 12px; padding: 2.5rem 2rem;">
+            <p class="font-label text-xs tracking-widest uppercase" style="color: #c8511a; margin-bottom: 1rem;">Results Guarantee</p>
+            <h3 class="font-display font-bold text-text" style="font-size: 1.5rem; margin-bottom: 1rem;">More Leads in 90 Days or We Work Free</h3>
+            <p class="font-body text-text-muted" style="font-size: 1rem; line-height: 1.7;">If you don't see more qualified leads within 90 days, we keep working at no charge for up to 90 more days. Your results are the only thing that matters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── FINAL CTA STRIP ───────────────────────────────────────────────── -->
+    <section
+      style="background: #161614; padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);"
+      aria-labelledby="pricing-cta-heading"
+    >
+      <div class="container">
+        <div class="reveal">
+          <p class="font-label text-xs tracking-widest uppercase text-accent" style="margin-bottom: 1.25rem;">Not Sure Which Package Fits?</p>
+          <h2
+            id="pricing-cta-heading"
+            class="font-display font-bold tracking-tight text-text"
+            style="font-size: clamp(2rem, 4vw, 3.5rem); max-width: 22ch; margin-bottom: clamp(3rem, 5vw, 4rem);"
+          >
+            Let's Talk. We'll Tell You Exactly What You Need.
+          </h2>
+          <div class="flex flex-wrap items-center" style="gap: 1rem;">
+            <button
+              type="button"
+              data-open-contact
+              class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover hover:scale-[1.05] active:scale-[0.98] transition-all duration-300"
+              style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+
+</Layout>
+
+<style>
+  /* Animated border shine on featured card */
+  .card-shine-wrapper {
+    position: relative;
+    border-radius: 20px;
+  }
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .pricing-grid {
+      grid-template-columns: 1fr 1.2fr 1fr;
+    }
+  }
+</style>
+
+<script>
+  // Match left card height to right card (right card is naturally taller)
+  function matchSideHeights() {
+    const left  = document.querySelector<HTMLElement>('.pricing-card-left');
+    const right = document.querySelector<HTMLElement>('.pricing-card-right');
+    if (!left || !right) return;
+    // Only apply on desktop where cards are side by side
+    if (window.innerWidth >= 1024) {
+      left.style.minHeight = '';
+      left.style.minHeight = right.offsetHeight + 'px';
+    } else {
+      left.style.minHeight = '';
+    }
+  }
+
+  matchSideHeights();
+  window.addEventListener('resize', matchSideHeights);
+
+  // Border shine — SVG dash travels at uniform linear speed around the rect
+  const shineWrapper = document.querySelector<HTMLElement>('.card-shine-wrapper');
+  if (shineWrapper) {
+    const svg   = shineWrapper.querySelector<SVGSVGElement>('.card-shine-svg')!;
+    const base  = shineWrapper.querySelector<SVGRectElement>('.shine-base')!;
+    const spot  = shineWrapper.querySelector<SVGRectElement>('.shine-spot')!;
+    let anim: Animation | null = null;
+
+    function setup() {
+      const w = shineWrapper.offsetWidth;
+      const h = shineWrapper.offsetHeight;
+      svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+      const o = 1.25; // half of spot stroke-width
+      [base, spot].forEach(el => {
+        el.setAttribute('x',      String(o));
+        el.setAttribute('y',      String(o));
+        el.setAttribute('width',  String(w - o * 2));
+        el.setAttribute('height', String(h - o * 2));
+      });
+      const perimeter = spot.getTotalLength();
+      const spotLen   = 80;
+      spot.style.strokeDasharray = `${spotLen} ${perimeter - spotLen}`;
+      if (anim) anim.cancel();
+      anim = spot.animate(
+        [{ strokeDashoffset: '0' }, { strokeDashoffset: String(-perimeter) }],
+        { duration: (perimeter / 160) * 1000, iterations: Infinity, easing: 'linear' }
+      );
+    }
+
+    setup();
+    window.addEventListener('resize', setup);
+  }
+
+  document.querySelectorAll<HTMLElement>('.reveal').forEach((el, i) => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => el.classList.add('visible'), i < 4 ? i * 80 : 0);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+  });
+</script>
