@@ -95,6 +95,7 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
               data-open-contact
               class="font-label font-semibold tracking-widest uppercase hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
               style="width: 100%; font-size: 0.65rem; padding: 0.7rem 1.25rem; background: transparent; border: 1px solid rgba(240,235,225,0.2); border-radius: 8px; cursor: pointer; color: rgba(240,235,225,0.7); margin-bottom: 1.75rem;"
+              data-bundle="Minimum Bundle"
             >
               Get Started
             </button>
@@ -125,8 +126,8 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
             <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0; display: flex; flex-direction: column; gap: 0.85rem;">
               <li style="display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem;">
                 <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
-                  <Fragment set:html={checkGreen} />
-                  <span class="font-body" style="font-size: 0.875rem; color: rgba(240,235,225,0.7); line-height: 1.5;">5-Star Review Request Automator</span>
+                  <Fragment set:html={checkBW} />
+                  <span class="font-body" style="font-size: 0.875rem; color: rgba(240,235,225,0.5); line-height: 1.5;">5-star review request automation</span>
                 </div>
                 <span class="font-label" style="font-size: 0.75rem; color: #c8511a; white-space: nowrap; margin-top: 0.1rem; flex-shrink: 0;">$500 value</span>
               </li>
@@ -146,7 +147,7 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
             <!-- Separator -->
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
               <span style="height: 1px; flex: 1; background: rgba(240,235,225,0.08);"></span>
-              <span class="font-label tracking-widest" style="font-size: 0.875rem; color: rgba(240,235,225,0.35); white-space: nowrap; text-transform: uppercase;">What you won't get</span>
+              <span class="font-label tracking-widest" style="font-size: 0.875rem; color: rgba(240,235,225,0.35); white-space: nowrap; text-transform: uppercase;">What you don't get</span>
               <span style="height: 1px; flex: 1; background: rgba(240,235,225,0.08);"></span>
             </div>
 
@@ -171,18 +172,11 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
             <!-- Ambient glow behind card -->
             <div aria-hidden="true" style="position: absolute; inset: -40%; background: radial-gradient(ellipse at center, rgba(200,81,26,0.18) 0%, transparent 65%); z-index: 0; pointer-events: none;"></div>
 
-            <!-- Card itself — SVG overlay provides the animated border -->
+            <!-- Card itself — border beam orbits the card border -->
             <div class="card-shine-wrapper">
-              <svg class="card-shine-svg" style="position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; overflow: visible;" aria-hidden="true">
-                <defs>
-                  <filter id="card-glow" x="-100%" y="-100%" width="300%" height="300%">
-                    <feGaussianBlur stdDeviation="3" result="blur"/>
-                    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-                  </filter>
-                </defs>
-                <rect class="shine-base" fill="none" stroke="rgba(200,81,26,0.4)" stroke-width="1.5" rx="19.5"/>
-                <rect class="shine-spot" fill="none" stroke="rgba(255,210,140,1)" stroke-width="2.5" rx="19.5" filter="url(#card-glow)"/>
-              </svg>
+              <div class="border-beam" aria-hidden="true">
+                <div class="border-beam-light"></div>
+              </div>
               <div style="position: relative; z-index: 1; background: rgb(14,13,11); border-radius: 20px; padding: 2.25rem; overflow: hidden;">
               <!-- Most Popular badge -->
               <span
@@ -209,6 +203,7 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
                 data-open-contact
                 class="font-label font-semibold tracking-widest uppercase text-text hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
                 style="width: 100%; font-size: 0.7rem; padding: 0.8rem 1.25rem; background: linear-gradient(180deg, #d4622a 0%, #c8511a 100%); border-radius: 8px; border: none; cursor: pointer; box-shadow: 0 8px 28px rgba(200,81,26,0.4); margin-bottom: 1.75rem;"
+                data-bundle="Authority Accelerator"
               >
                 Build My Authority
               </button>
@@ -240,6 +235,7 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
               <!-- Bonuses -->
               <ul style="list-style: none; padding: 0; margin: 0 0 1.25rem 0; display: flex; flex-direction: column; gap: 0.85rem;">
                 {([
+                  ['Everything from Minimum Bundle', '$500 value'],
                   ['Competitor Crusher SEO Audit', '$1,500 value'],
                   ['Instant & 90-Day Local Google Ranking Report', '$1,500 value'],
                   ['Ad Campaign Creation', '$2,500 value'],
@@ -259,7 +255,7 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
               <div style="background: rgba(200,81,26,0.07); border: 1px solid rgba(200,81,26,0.15); border-radius: 8px; padding: 0.9rem 1rem; margin-bottom: 1.5rem;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem;">
                   <span class="font-label tracking-widest" style="font-size: 0.58rem; color: rgba(240,235,225,0.4); text-transform: uppercase;">Total bonus value</span>
-                  <span class="font-display font-bold" style="color: rgba(240,235,225,0.4); text-decoration: line-through; font-size: 0.95rem;">$6,000</span>
+                  <span class="font-display font-bold" style="color: rgba(240,235,225,0.4); text-decoration: line-through; font-size: 0.95rem;">$6,500</span>
                 </div>
                 <div style="display: flex; justify-content: flex-end;">
                   <span class="font-display font-extrabold text-text" style="font-size: 1.25rem;">FREE</span>
@@ -269,15 +265,15 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
               <!-- X separator -->
               <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
                 <span style="height: 1px; flex: 1; background: rgba(240,235,225,0.1);"></span>
-                <span class="font-label tracking-widest" style="font-size: 0.875rem; color: rgba(240,235,225,0.35); white-space: nowrap; text-transform: uppercase;">What you won't get</span>
+                <span class="font-label tracking-widest" style="font-size: 0.875rem; color: rgba(240,235,225,0.35); white-space: nowrap; text-transform: uppercase;">What you don't get</span>
                 <span style="height: 1px; flex: 1; background: rgba(240,235,225,0.1);"></span>
               </div>
 
               <!-- X items -->
               <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.85rem;">
                 {[
-                  'Watching competitors rank above you in local search',
-                  'Agencies that disappear after your site goes live',
+                  'Still failing to show up on Google',
+                  'Looking less credible online than competitors half your size',
                   'Ad budget pouring into traffic with nowhere good to land',
                 ].map(item => (
                   <li style="display: flex; align-items: flex-start; gap: 0.75rem; opacity: 0.65;">
@@ -312,8 +308,9 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
               data-open-contact
               class="font-label font-semibold tracking-widest uppercase text-text hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
               style="width: 100%; font-size: 0.65rem; padding: 0.7rem 1.25rem; background: linear-gradient(180deg, #d4622a 0%, #c8511a 100%); border-radius: 8px; border: none; cursor: pointer; box-shadow: 0 8px 24px rgba(200,81,26,0.25); margin-bottom: 1.75rem;"
+              data-bundle="Market Dominion"
             >
-              Claim My Territory
+              Own My Market
             </button>
 
             <!-- Features -->
@@ -347,7 +344,7 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
                   <Fragment set:html={checkGreen} />
                   <span class="font-body" style="font-size: 0.875rem; color: rgba(240,235,225,0.7); line-height: 1.5;">Everything from Authority Accelerator</span>
                 </div>
-                <span class="font-label" style="font-size: 0.75rem; color: #c8511a; white-space: nowrap; margin-top: 0.1rem; flex-shrink: 0;">$6,000 value</span>
+                <span class="font-label" style="font-size: 0.75rem; color: #c8511a; white-space: nowrap; margin-top: 0.1rem; flex-shrink: 0;">$6,500 value</span>
               </li>
               <li style="display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem;">
                 <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
@@ -362,7 +359,7 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
             <div style="background: rgba(200,81,26,0.07); border: 1px solid rgba(200,81,26,0.15); border-radius: 8px; padding: 0.9rem 1rem; margin-bottom: 1.5rem;">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem;">
                 <span class="font-label tracking-widest" style="font-size: 0.58rem; color: rgba(240,235,225,0.4); text-transform: uppercase;">Total bonus value</span>
-                <span class="font-display font-bold" style="color: rgba(240,235,225,0.4); text-decoration: line-through; font-size: 0.95rem;">$11,750</span>
+                <span class="font-display font-bold" style="color: rgba(240,235,225,0.4); text-decoration: line-through; font-size: 0.95rem;">$11,500</span>
               </div>
               <div style="display: flex; justify-content: flex-end;">
                 <span class="font-display font-extrabold text-text" style="font-size: 1.25rem;">FREE</span>
@@ -372,16 +369,16 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
             <!-- X separator -->
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
               <span style="height: 1px; flex: 1; background: rgba(200,81,26,0.15);"></span>
-              <span class="font-label tracking-widest" style="font-size: 0.875rem; color: rgba(240,235,225,0.35); white-space: nowrap; text-transform: uppercase;">What you won't get</span>
+              <span class="font-label tracking-widest" style="font-size: 0.875rem; color: rgba(240,235,225,0.35); white-space: nowrap; text-transform: uppercase;">What you don't get</span>
               <span style="height: 1px; flex: 1; background: rgba(200,81,26,0.15);"></span>
             </div>
 
             <!-- X items -->
             <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.85rem;">
               {[
-                'Competitors owning every channel you aren\'t in',
-                'AI search sending inquiries to someone else',
-                'Managing four vendors to do what one should',
+                'Watching competitors rank above you in local search',
+                'Seeing competitors leave you in the dust because of their use of AI',
+                'Spending tons on marketing but failing to get any qualified leads',
               ].map(item => (
                 <li style="display: flex; align-items: flex-start; gap: 0.75rem; opacity: 0.65;">
                   <Fragment set:html={xRed} />
@@ -397,27 +394,47 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
 
 
     <!-- ─── GUARANTEES ────────────────────────────────────────────────────── -->
-    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: rgba(255,255,255,0.02);">
-      <div class="container reveal">
-        <p class="font-label text-xs tracking-widest uppercase text-center" style="color: #c8511a; margin-bottom: 1rem;">Our Guarantees</p>
-        <h2
-          class="font-display font-bold tracking-tight text-text text-center"
-          style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: clamp(3rem, 6vw, 5rem);"
-        >
-          Every Package Backs Itself Up.
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2" style="gap: 1.5rem; max-width: 56rem; margin: 0 auto;">
-          <div style="border: 1px solid rgba(240,235,225,0.1); border-radius: 12px; padding: 2.5rem 2rem;">
-            <p class="font-label text-xs tracking-widest uppercase" style="color: #c8511a; margin-bottom: 1rem;">Site Guarantee</p>
-            <h3 class="font-display font-bold text-text" style="font-size: 1.5rem; margin-bottom: 1rem;">Money Back Before Launch</h3>
-            <p class="font-body text-text-muted" style="font-size: 1rem; line-height: 1.7;">If you're not happy with the site before it goes live, you get your money back. No negotiation, no fine print. After launch, any issues are fixed free for 30 days.</p>
-          </div>
-          <div style="border: 1px solid rgba(240,235,225,0.1); border-radius: 12px; padding: 2.5rem 2rem;">
-            <p class="font-label text-xs tracking-widest uppercase" style="color: #c8511a; margin-bottom: 1rem;">Results Guarantee</p>
-            <h3 class="font-display font-bold text-text" style="font-size: 1.5rem; margin-bottom: 1rem;">More Leads in 90 Days or We Work Free</h3>
-            <p class="font-body text-text-muted" style="font-size: 1rem; line-height: 1.7;">If you don't see more qualified leads within 90 days, we keep working at no charge for up to 90 more days. Your results are the only thing that matters.</p>
-          </div>
+    <section
+      style="padding-top: clamp(8rem, 14vw, 14rem); padding-bottom: clamp(8rem, 14vw, 14rem); background: #161614; position: relative; overflow: hidden;"
+      aria-labelledby="pricing-guarantee-heading"
+    >
+      <!-- Pulsing radial bloom -->
+      <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; z-index: 0;">
+        <div class="pricing-guarantee-bloom" style="position: absolute; width: 900px; height: 900px; border-radius: 50%; left: 50%; top: 50%; margin-left: -450px; margin-top: -450px; background: radial-gradient(circle, rgba(200,81,26,0.38) 0%, transparent 65%); filter: blur(60px);"></div>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 1;">
+
+        <div class="reveal" id="pg-header">
+          <p class="font-label text-xs tracking-widest uppercase text-center" style="color: #c8511a; margin-bottom: 1.25rem;">Our Guarantees</p>
+          <h2
+            id="pricing-guarantee-heading"
+            class="font-display font-bold tracking-tight text-text text-center"
+            style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 1.5rem;"
+          >
+            Your Risk Just Dropped<br class="hidden md:block" /> to Zero.
+          </h2>
+          <p class="font-body text-text-muted text-center" style="font-size: 1.125rem; max-width: 48ch; margin: 0 auto; line-height: 1.7; margin-bottom: clamp(3rem, 6vw, 5rem);">
+            Every package comes backed by two ironclad guarantees. You either love what we build and see real results from it, or you don't pay. Simple as that.
+          </p>
         </div>
+
+        <div class="reveal grid grid-cols-1 md:grid-cols-2" id="pg-blocks" style="gap: 1.25rem; max-width: 56rem; margin: 0 auto;">
+
+          <div class="pricing-guarantee-card" style="padding: clamp(2.5rem, 5vw, 3.5rem);">
+            <p class="font-label text-xs tracking-widest uppercase" style="color: #8a8880; margin-bottom: 1.5rem;">The Website Guarantee</p>
+            <p class="font-display font-bold tracking-tight text-text" style="font-size: clamp(1.5rem, 2.5vw, 2rem); margin-bottom: 1.5rem;">Love it or you don't pay.</p>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">If you're not satisfied with your website at any point during the build, you get every dollar back. No questions. We don't launch until you'd be proud to send that URL to your best client.</p>
+          </div>
+
+          <div class="pricing-guarantee-card" style="padding: clamp(2.5rem, 5vw, 3.5rem);">
+            <p class="font-label text-xs tracking-widest uppercase" style="color: #8a8880; margin-bottom: 1.5rem;">The Results Guarantee</p>
+            <p class="font-display font-bold tracking-tight" style="font-size: clamp(1.5rem, 2.5vw, 2rem); color: #c8511a; margin-bottom: 1.5rem;">Results or you don't pay.</p>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">If you don't have more qualified leads coming in within 90 days of launch, we keep working at no charge for up to 90 more days until you do. Seriously. We care about results that much.</p>
+          </div>
+
+        </div>
+
       </div>
     </section>
 
@@ -429,13 +446,13 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
     >
       <div class="container">
         <div class="reveal">
-          <p class="font-label text-xs tracking-widest uppercase text-accent" style="margin-bottom: 1.25rem;">Not Sure Which Package Fits?</p>
+          <p class="font-label text-xs tracking-widest uppercase text-accent" style="margin-bottom: 1.25rem;">The Next Step Is Free.</p>
           <h2
             id="pricing-cta-heading"
             class="font-display font-bold tracking-tight text-text"
             style="font-size: clamp(2rem, 4vw, 3.5rem); max-width: 22ch; margin-bottom: clamp(3rem, 5vw, 4rem);"
           >
-            Let's Talk. We'll Tell You Exactly What You Need.
+            You've Got Nothing to Lose and a Lot to Gain.
           </h2>
           <div class="flex flex-wrap items-center" style="gap: 1rem;">
             <button
@@ -444,7 +461,7 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
               class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover hover:scale-[1.05] active:scale-[0.98] transition-all duration-300"
               style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
             >
-              Get Started
+              Let's Talk
             </button>
           </div>
         </div>
@@ -458,10 +475,73 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
 </Layout>
 
 <style>
-  /* Animated border shine on featured card */
+  /* Border beam on featured card */
   .card-shine-wrapper {
     position: relative;
     border-radius: 20px;
+    border: 1px solid rgba(200,81,26,0.4);
+  }
+
+  .border-beam {
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 3;
+  }
+
+  .border-beam-light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    background: radial-gradient(ellipse at center, rgba(255, 190, 80, 0.9), transparent 65%);
+    offset-path: var(--beam-path);
+    animation: border-beam-orbit 10.4s linear infinite;
+  }
+
+  @keyframes border-beam-orbit {
+    from { offset-distance: 0%; }
+    to   { offset-distance: 100%; }
+  }
+
+  @keyframes pricing-guarantee-bloom-pulse {
+    0%, 100% { opacity: 0.6; transform: scale(1); }
+    50%       { opacity: 1;   transform: scale(1.18); }
+  }
+  .pricing-guarantee-bloom {
+    animation: pricing-guarantee-bloom-pulse 10s ease-in-out infinite;
+  }
+
+  .pricing-guarantee-card {
+    border-radius: 1rem;
+    background: rgba(22, 22, 20, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(240, 235, 225, 0.1);
+    transition: transform 700ms ease, box-shadow 700ms ease;
+  }
+  .pricing-guarantee-card:hover,
+  .pricing-guarantee-card:active {
+    transform: scale(1.025);
+    box-shadow: 0 0 0 1px rgba(200, 81, 26, 0.25), 0 0 30px rgba(200, 81, 26, 0.2), 0 0 60px rgba(200, 81, 26, 0.1);
+  }
+
+  .pricing-card-side,
+  .pricing-card-center {
+    transition: transform 400ms ease;
+  }
+  .pricing-card-side:hover,
+  .pricing-card-side:active,
+  .pricing-card-center:hover,
+  .pricing-card-center:active {
+    transform: scale(1.025);
   }
 
   .pricing-grid {
@@ -496,37 +576,19 @@ const xBW     = `<svg style="width:1rem;height:1rem;flex-shrink:0;color:#ef4444;
   matchSideHeights();
   window.addEventListener('resize', matchSideHeights);
 
-  // Border shine — SVG dash travels at uniform linear speed around the rect
-  const shineWrapper = document.querySelector<HTMLElement>('.card-shine-wrapper');
-  if (shineWrapper) {
-    const svg   = shineWrapper.querySelector<SVGSVGElement>('.card-shine-svg')!;
-    const base  = shineWrapper.querySelector<SVGRectElement>('.shine-base')!;
-    const spot  = shineWrapper.querySelector<SVGRectElement>('.shine-spot')!;
-    let anim: Animation | null = null;
+  // Border beam — radial gradient orbits the card border
+  const beamWrapper = document.querySelector<HTMLElement>('.card-shine-wrapper');
+  if (beamWrapper) {
+    const light = beamWrapper.querySelector<HTMLElement>('.border-beam-light')!;
 
-    function setup() {
-      const w = shineWrapper.offsetWidth;
-      const h = shineWrapper.offsetHeight;
-      svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
-      const o = 1.25; // half of spot stroke-width
-      [base, spot].forEach(el => {
-        el.setAttribute('x',      String(o));
-        el.setAttribute('y',      String(o));
-        el.setAttribute('width',  String(w - o * 2));
-        el.setAttribute('height', String(h - o * 2));
-      });
-      const perimeter = spot.getTotalLength();
-      const spotLen   = 80;
-      spot.style.strokeDasharray = `${spotLen} ${perimeter - spotLen}`;
-      if (anim) anim.cancel();
-      anim = spot.animate(
-        [{ strokeDashoffset: '0' }, { strokeDashoffset: String(-perimeter) }],
-        { duration: (perimeter / 160) * 1000, iterations: Infinity, easing: 'linear' }
-      );
+    function updateBeamPath() {
+      const w = beamWrapper.offsetWidth;
+      const h = beamWrapper.offsetHeight;
+      light.style.setProperty('--beam-path', `path("M 0 0 H ${w} V ${h} H 0 V 0")`);
     }
 
-    setup();
-    window.addEventListener('resize', setup);
+    updateBeamPath();
+    window.addEventListener('resize', updateBeamPath);
   }
 
   document.querySelectorAll<HTMLElement>('.reveal').forEach((el, i) => {

@@ -85,6 +85,7 @@ const budgetOptions = [
       <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" aria-hidden="true" />
       <input type="hidden" name="pain_points" id="pain-points-value" />
       <input type="hidden" name="budget" id="budget-value" />
+      <input type="hidden" name="bundle_interest" id="bundle-value" />
 
       <!-- ── STEP 1: Pain points ── -->
       <div data-step="1" style="padding: 0 clamp(1.5rem, 5vw, 2.5rem) clamp(2rem, 5vw, 2.5rem);">
@@ -385,7 +386,7 @@ const budgetOptions = [
     if (label) label.textContent = `Step ${step} of ${TOTAL}`;
   }
 
-  function openModal() {
+  function openModal(bundle = '') {
     const modal = document.getElementById('contact-modal');
     if (!modal) return;
     modal.style.display = 'flex';
@@ -395,6 +396,12 @@ const budgetOptions = [
       const el = document.getElementById(id);
       if (el) el.style.display = 'none';
     });
+    const bundleField = document.getElementById('bundle-value');
+    if (bundleField) bundleField.value = bundle;
+    const subjectField = document.querySelector('[name="subject"]');
+    if (subjectField) subjectField.value = bundle
+      ? `New Lead — ${bundle} | Dominion Digital`
+      : 'New Inquiry — Dominion Digital';
     const form = document.getElementById('contact-form');
     const success = document.getElementById('modal-success');
     if (form) form.style.display = 'block';
@@ -423,7 +430,7 @@ const budgetOptions = [
   document.querySelectorAll('[data-open-contact]').forEach(btn => {
     btn.addEventListener('click', e => {
       e.preventDefault();
-      openModal();
+      openModal(btn.dataset.bundle || '');
     });
   });
 
