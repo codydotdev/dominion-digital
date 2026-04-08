@@ -1,0 +1,779 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import Sparkles from '../../components/Sparkles.astro';
+---
+
+<Layout
+  title="High-Conversion Web Design Kansas City | Dominion Digital"
+  description="Kansas City web design engineered to convert traffic into revenue. Persuasion architecture, mobile-first performance, and tested user journeys built to get visitors to take action."
+  canonicalUrl="https://dominion.digital/web-design/high-conversion-web-design"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://dominion.digital"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Web Design",
+            "item": "https://dominion.digital/web-design"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "High-Conversion Web Design",
+            "item": "https://dominion.digital/web-design/high-conversion-web-design"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://dominion.digital/web-design/high-conversion-web-design#service",
+        "name": "High-Conversion Web Design",
+        "serviceType": "High-Conversion Web Design",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://dominion.digital/#organization",
+          "name": "Dominion Digital"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Kansas City",
+          "addressRegion": "MO"
+        },
+        "url": "https://dominion.digital/web-design/high-conversion-web-design"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What makes a website high-converting?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A high-converting website removes friction between the visitor and the action you want them to take. That means clear calls to action, a layout that guides attention where it needs to go, fast load times, and copy that speaks directly to what the visitor cares about. Most sites fail on at least two of those."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a high-conversion web design project take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most projects run 3 to 6 weeks from discovery to launch. The timeline depends on the number of pages and how quickly feedback rounds move. Dominion runs a structured process so nothing stalls."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you write the copy, or do I need to provide it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dominion handles the copy. Every page is written with conversion in mind. If you have existing messaging you want to keep, it gets reviewed and anything working against you gets flagged before it goes live."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the site come with SEO built in?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Every Dominion site is built with clean code, proper heading structure, and on-page SEO signals from day one."
+            }
+          }
+        ]
+      }
+    ]
+    </script>
+  </Fragment>
+
+  <Nav />
+
+  <main>
+
+    <!-- ─── HERO ──────────────────────────────────────────────────────────── -->
+    <section
+      class="relative"
+      style="padding-top: clamp(9rem, 18vw, 14rem); padding-bottom: clamp(5rem, 10vw, 8rem);"
+      aria-label="High-Conversion Web Design hero"
+    >
+      <Sparkles />
+      <div
+        class="absolute inset-0 pointer-events-none"
+        style="background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,81,26,0.07) 0%, transparent 70%); z-index: 0;"
+        aria-hidden="true"
+      ></div>
+
+      <div class="container relative" style="z-index: 1;">
+
+        <!-- Breadcrumb -->
+        <p class="font-label text-xs tracking-widest uppercase mb-6 reveal" style="color: #8a8880;">
+          <a href="/" class="hover:text-text transition-colors duration-200">Home</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          <a href="/web-design" class="hover:text-text transition-colors duration-200">Web Design</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          High-Conversion Web Design
+        </p>
+
+        <h1
+          class="font-display font-extrabold text-text tracking-tighter leading-none reveal"
+          style="font-size: clamp(3rem, 6.5vw, 6.5rem); max-width: 18ch; margin-bottom: 2rem;"
+        >
+          Kansas City Web Design Engineered to Convert Traffic Into Revenue
+        </h1>
+
+        <p class="font-body text-text-muted reveal" style="font-size: 1.125rem; max-width: 52ch; margin-bottom: 2rem; line-height: 1.6;">
+          Pretty websites don't pay your bills. High-converting ones do. Every design decision — layout, copy placement, CTA position — is made to get visitors to take action, not just scroll.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 reveal">
+          <button
+            type="button"
+            data-open-contact
+            class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97] transition-all duration-200"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
+          >
+            Get a Conversion Audit
+          </button>
+          <a
+            href="/web-design/custom-web-development"
+            class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent transition-colors duration-200"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+            id="hero-ghost-secondary"
+          >
+            See Custom Development
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ─── OPENING / PUNCHLINE ───────────────────────────────────────────── -->
+    <!-- Pattern B: Centered Heavyweight for the punchline -->
+    <section
+      style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);"
+      aria-labelledby="opening-punchline"
+    >
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[3fr_2fr] items-start gap-16 md:gap-24" id="opening-block">
+
+          <!-- Left: narrative -->
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">
+              Web Design / High-Conversion
+            </p>
+            <div class="space-y-6" style="max-width: 60ch;">
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                Most websites are built to win approval in a meeting. They look great in a demo, launch on time, and then sit on the internet collecting visitors who leave without doing anything. If your site gets traffic but not leads, the design is working against you.
+              </p>
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                High-conversion web design is built around a different question. Every layout decision, every call-to-action placement, every headline and page section is made with one goal: get the visitor to take action.
+              </p>
+              <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
+                Dominion Digital is a web design service Kansas City businesses use when they're done paying for a site that looks good but doesn't produce. Every build is structured around persuasion, performance, and the specific action you want your visitor to take.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: punchline card -->
+          <div class="reveal" id="punchline-card" style="margin-top: 2rem;">
+            <div style="border: 1px solid rgba(200,81,26,0.25); padding: clamp(2rem, 4vw, 3rem); position: relative; overflow: hidden;">
+              <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(200,81,26,0.06) 0%, transparent 70%);"></div>
+              <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">
+                The Principle
+              </p>
+              <p
+                class="font-display font-bold tracking-tight text-text"
+                id="opening-punchline"
+                style="font-size: clamp(1.5rem, 2.5vw, 2rem); line-height: 1.2;"
+              >
+                A website should work like your best salesperson. Always on. Always closing.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── WHAT'S INCLUDED ───────────────────────────────────────────────── -->
+    <!-- Pattern A: Asymmetric split — pills + bento list left, copy right, surface bg -->
+    <section
+      style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: #161614;"
+      aria-labelledby="includes-heading"
+    >
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start gap-16 md:gap-24" id="includes-block">
+
+          <!-- Left: label + pills + trust anchor -->
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">
+              What's Included
+            </p>
+            <h2
+              id="includes-heading"
+              class="font-display font-bold tracking-tight text-text"
+              style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 2rem; line-height: 1.1;"
+            >
+              Every Build.<br />Every Time.
+            </h2>
+
+            <!-- Pill cluster: Rapid Fire Benefits -->
+            <div class="stagger" style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2.5rem;" aria-label="Service capabilities">
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Persuasion Architecture</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Mobile-First Build</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">SEO-Ready Day One</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">CTA Strategy</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Speed-Optimized</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Conversion Copy</span>
+            </div>
+
+            <!-- Trust anchor -->
+            <div style="border-top: 1px solid rgba(200,81,26,0.2); padding-top: 1.5rem;">
+              <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #c8511a;">
+                Included on Every Project
+              </p>
+              <p class="font-body text-text-muted" style="font-size: 1rem; line-height: 1.6;">
+                30 days of free revisions after launch. If something isn't performing, Dominion fixes it at no charge.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Bento Checkmarks — Scope / Inclusion List -->
+          <div>
+            <ul class="stagger space-y-3" aria-label="What high-conversion web design includes">
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Persuasion architecture</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Page layouts structured to guide visitors from attention to action</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">CTA strategy</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Button placement, copy, and frequency built around conversion best practices</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Mobile-first design</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Built for how your customers actually browse — over 60% are on a phone</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Performance optimization</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Fast load times built in from the start, not patched in later</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">SEO-ready structure</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Clean heading hierarchy and on-page signals baked in from day one</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Conversion-focused copy</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Every section written to move people forward, not just fill space</p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── WHY IT MATTERS ────────────────────────────────────────────────── -->
+    <!-- Pattern A flipped: copy right, stat callout left -->
+    <section
+      style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);"
+      aria-labelledby="matters-heading"
+    >
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start gap-16 md:gap-24" id="matters-block">
+
+          <!-- Left: big stat callout -->
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">
+              The Lever
+            </p>
+            <p
+              class="font-display font-bold tracking-tighter text-accent"
+              style="font-size: clamp(4rem, 8vw, 7rem); line-height: 0.9; margin-bottom: 1rem;"
+            >
+              3×
+            </p>
+            <p class="font-body text-text-muted" style="font-size: 1rem; max-width: 28ch; line-height: 1.5;">
+              More leads from the same traffic. That is what fixing your conversion rate actually delivers — without spending another dollar on ads or SEO.
+            </p>
+          </div>
+
+          <!-- Right: narrative -->
+          <div>
+            <h2
+              id="matters-heading"
+              class="font-display font-bold tracking-tight text-text"
+              style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 2rem; line-height: 1.1;"
+            >
+              The Traffic Is Already There.
+            </h2>
+            <div class="space-y-6" style="max-width: 58ch;">
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                If your site gets 500 visitors a month and converts at 1%, you get 5 leads. Fix the conversion rate to 3% and you get 15 leads, same traffic, no increase in ad spend. That gap is real money, and most Kansas City business owners haven't addressed it yet.
+              </p>
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                The reason most sites underperform has nothing to do with the amount of traffic. It is the design. Visitors land, feel confused or unimpressed, and leave. A high-converting site is structured to catch that drop-off, answer the visitor's question before they ask it, and make the next step obvious.
+              </p>
+              <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem; font-weight: 500;">
+                That is the lever. And it works on the traffic you already have.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── HOW WE APPROACH IT ────────────────────────────────────────────── -->
+    <!-- Pattern E: Sticky sidecar — label + heading left, scrolling steps right, surface bg -->
+    <section
+      style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: #161614;"
+      aria-labelledby="process-heading"
+    >
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start gap-16 md:gap-24" id="process-block">
+
+          <!-- Left: sticky label + heading -->
+          <div class="md:sticky" style="top: 6rem;">
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">
+              The Process
+            </p>
+            <h2
+              id="process-heading"
+              class="font-display font-bold tracking-tight text-text"
+              style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.5rem; line-height: 1.1;"
+            >
+              Built Backwards From the Outcome.
+            </h2>
+            <p class="font-body text-text-muted" style="font-size: 1rem; max-width: 32ch; line-height: 1.6;">
+              Every Dominion project starts with your goal. What does a win look like for this site? That defines everything that comes after it.
+            </p>
+          </div>
+
+          <!-- Right: process steps -->
+          <div>
+            <ul class="stagger" aria-label="High-conversion web design process">
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">01</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Discovery and goal-setting</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">We define the win first — more calls, form fills, or booked appointments — then reverse-engineer the design from that outcome.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">02</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Competitor review</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">We look at what your market already responds to, then build a site that outperforms it on conversion and first impression.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">03</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Layout design with copy</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">Full-page layout design and conversion copy are completed before any development begins. You see the full picture before a line of code is written.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">04</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Mobile and desktop QA</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">Every page is tested across devices before launch. Nothing goes live until it works the way it's supposed to.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">05</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">30-day revision window</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">After launch, 30 days of free revisions are included on every project. If something isn't working the way it should, Dominion stays on it.</p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── FAQ ───────────────────────────────────────────────────────────── -->
+    <!-- Pattern G: Accordion, matches homepage FAQ exactly -->
+    <section
+      style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);"
+      aria-labelledby="faq-heading"
+      id="faq"
+    >
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-16 md:gap-24" id="faq-content">
+
+          <!-- Left: label + heading -->
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">
+              FAQ
+            </p>
+            <h2
+              id="faq-heading"
+              class="font-display font-bold tracking-tight text-text"
+              style="font-size: clamp(2rem, 4vw, 3.5rem);"
+            >
+              Questions.<br />Answered.
+            </h2>
+          </div>
+
+          <!-- Right: accordion -->
+          <div class="faq-list" role="list">
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+                  What makes a website "high-converting"?
+                </span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  A high-converting website removes friction between the visitor and the action you want them to take. Clear calls to action, a layout that guides attention where it needs to go, fast load times, and copy that speaks directly to what the visitor cares about. Most sites fail on at least two of those. Fixing them is what moves the needle.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+                  How long does a high-conversion web design project take?
+                </span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  Most projects run 3 to 6 weeks from discovery to launch. The timeline depends on the number of pages and how quickly feedback rounds move. Dominion runs a structured process so nothing stalls.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+                  Do you write the copy, or do I need to provide it?
+                </span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  Dominion handles the copy. Every page is written with conversion in mind. If you have existing messaging you want to keep, it gets reviewed and anything working against you gets flagged before it goes live.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+                  Does the site come with SEO built in?
+                </span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  Yes. Every Dominion site is built with clean code, proper heading structure, and on-page SEO signals from day one. If you want to go further with ongoing SEO or local search, those services are available through <a href="/internet-marketing/seo" class="link-underline link-underline-accent" style="color: #c8511a;">Dominion's SEO service</a>.
+                </p>
+              </div></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── RELATED PAGES ─────────────────────────────────────────────────── -->
+    <section
+      style="padding-top: clamp(4rem, 8vw, 6rem); padding-bottom: clamp(4rem, 8vw, 6rem); background: #161614;"
+      aria-label="Related services"
+    >
+      <div class="container">
+        <div class="reveal" id="related-block">
+          <p class="font-label text-xs tracking-widest uppercase mb-8" style="color: #8a8880;">
+            Explore More
+          </p>
+          <ul class="stagger grid grid-cols-1 md:grid-cols-3 gap-4" aria-label="Related pages">
+
+            <li>
+              <a
+                href="/web-design"
+                class="block group"
+                style="padding: 1.75rem 2rem; border: 1px solid rgba(240,235,225,0.07); transition: border-color 200ms ease;"
+                onmouseenter="this.style.borderColor='rgba(200,81,26,0.3)'"
+                onmouseleave="this.style.borderColor='rgba(240,235,225,0.07)'"
+              >
+                <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">Web Design</p>
+                <p class="font-body text-text" style="font-size: 1rem; font-weight: 500;">Web Design Kansas City</p>
+                <p class="font-body text-text-muted" style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.5;">All web design services and the full picture of what a Dominion site includes.</p>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="/web-design/custom-web-development"
+                class="block group"
+                style="padding: 1.75rem 2rem; border: 1px solid rgba(240,235,225,0.07); transition: border-color 200ms ease;"
+                onmouseenter="this.style.borderColor='rgba(200,81,26,0.3)'"
+                onmouseleave="this.style.borderColor='rgba(240,235,225,0.07)'"
+              >
+                <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">Web Design</p>
+                <p class="font-body text-text" style="font-size: 1rem; font-weight: 500;">Custom Web Development</p>
+                <p class="font-body text-text-muted" style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.5;">Custom builds for businesses that have outgrown off-the-shelf solutions.</p>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="/internet-marketing/seo"
+                class="block group"
+                style="padding: 1.75rem 2rem; border: 1px solid rgba(240,235,225,0.07); transition: border-color 200ms ease;"
+                onmouseenter="this.style.borderColor='rgba(200,81,26,0.3)'"
+                onmouseleave="this.style.borderColor='rgba(240,235,225,0.07)'"
+              >
+                <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">Internet Marketing</p>
+                <p class="font-body text-text" style="font-size: 1rem; font-weight: 500;">SEO Services Kansas City</p>
+                <p class="font-body text-text-muted" style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.5;">Get the site found. Pair a high-converting site with SEO that drives traffic to it.</p>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── BOTTOM CTA ─────────────────────────────────────────────────────── -->
+    <section
+      style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); position: relative; overflow: hidden;"
+      aria-label="Call to action"
+    >
+      <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; z-index: 0; background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(200,81,26,0.08) 0%, transparent 70%);"></div>
+      <div class="container reveal text-center" style="position: relative; z-index: 1; max-width: 48rem;" id="cta-block">
+        <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">
+          Get Started
+        </p>
+        <h2
+          class="font-display font-bold tracking-tight text-text"
+          style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 1.5rem; line-height: 1.1;"
+        >
+          Your Site Should Be Working for You Right Now.
+        </h2>
+        <p class="font-body text-text-muted" style="font-size: 1.125rem; max-width: 46ch; margin: 0 auto 2.5rem; line-height: 1.6;">
+          Dominion's high-conversion web design is built on persuasion architecture, mobile-first performance, and tested user journeys. If your current site isn't producing leads, let's fix that.
+        </p>
+        <div class="flex flex-wrap justify-center items-center gap-4">
+          <button
+            type="button"
+            data-open-contact
+            class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97] transition-all duration-200"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
+          >
+            Get a Conversion Audit
+          </button>
+          <a
+            href="/pricing"
+            class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent transition-colors duration-200"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+            id="cta-ghost"
+          >
+            See Pricing
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+
+</Layout>
+
+
+<style>
+  /* FAQ accordion — identical to homepage FAQ component */
+  .faq-body {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 480ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .faq-body.is-open {
+    max-height: 600px;
+  }
+  .faq-body-inner {
+    padding-bottom: 1.5rem;
+  }
+
+  @keyframes faq-spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  .faq-icon {
+    animation: faq-spin 4s linear infinite;
+  }
+  .faq-icon.is-open {
+    animation: none;
+    transform: rotate(180deg);
+  }
+</style>
+
+
+<script>
+  // ─── Scroll reveal: fire once per element ─────────────────────────────────
+  const revealIds = [
+    'opening-block',
+    'punchline-card',
+    'includes-block',
+    'matters-block',
+    'process-block',
+    'faq-content',
+    'related-block',
+    'cta-block',
+  ];
+
+  revealIds.forEach((id, i) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    // Elements that are already `.reveal` children inherit from parent;
+    // top-level reveal containers get the observer directly.
+    if (!el.classList.contains('reveal')) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => el.classList.add('visible'), i * 60);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.08 }
+    );
+    observer.observe(el);
+  });
+
+  // Catch all remaining .reveal elements not covered above
+  document.querySelectorAll('.reveal').forEach((el) => {
+    if (el.classList.contains('visible')) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.classList.add('visible');
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.08 }
+    );
+    observer.observe(el);
+  });
+
+  // ─── FAQ accordion ─────────────────────────────────────────────────────────
+  document.querySelectorAll('.faq-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const item   = trigger.closest('.faq-item')!;
+      const body   = item.querySelector('.faq-body') as HTMLElement;
+      const icon   = trigger.querySelector('.faq-icon') as HTMLElement;
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+
+      if (isOpen) {
+        body.classList.remove('is-open');
+        icon.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+      } else {
+        body.classList.add('is-open');
+        icon.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // ─── Ghost CTA hover: border → accent ─────────────────────────────────────
+  ['hero-ghost-secondary', 'cta-ghost'].forEach(id => {
+    const el = document.getElementById(id) as HTMLAnchorElement | null;
+    if (!el) return;
+    el.addEventListener('mouseenter', () => { el.style.borderColor = '#c8511a'; });
+    el.addEventListener('mouseleave', () => { el.style.borderColor = 'rgba(240,235,225,0.25)'; });
+  });
+</script>
