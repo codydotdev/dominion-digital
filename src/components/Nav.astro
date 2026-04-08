@@ -1,9 +1,8 @@
 ---
 // Nav.astro
-// DNA + user direction: Floating frosted glass pill nav, always visible
-// Logo: hexagonal image + wordmark (DOMINION bold, digital normal)
-// Pill: border-radius 9999px, backdrop-blur, dark semi-transparent bg, subtle border
-// Sole Media reference: floating pill that doesn't touch viewport edges
+// Floating frosted glass pill nav
+// Desktop: hover dropdowns on each service category
+// Mobile: accordion expand/collapse per category
 ---
 
 <!-- Outer wrapper: fixed, full-width, centers the pill -->
@@ -28,10 +27,11 @@
       -webkit-backdrop-filter: blur(28px) saturate(160%);
       border: 1px solid rgba(240, 235, 225, 0.12);
       padding: 0 0.35rem 0 1.25rem;
+      overflow: visible;
     "
   >
 
-    <!-- Logo: hexagon image + wordmark -->
+    <!-- Logo -->
     <a
       href="/"
       class="flex items-center gap-3 shrink-0 col-start-1"
@@ -48,13 +48,72 @@
       </span>
     </a>
 
-    <!-- Desktop nav links -->
-    <div class="hidden lg:flex items-center gap-7 col-start-2 justify-self-center">
-      <a href="/web-design"          class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Web Design</a>
-      <a href="/internet-marketing"  class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Marketing</a>
-      <a href="/advertising"         class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Advertising</a>
-      <a href="/ai-automation"       class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Automation</a>
-      <a href="/about"               class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">About</a>
+    <!-- Desktop nav links with dropdowns -->
+    <div class="hidden lg:flex items-stretch col-start-2 justify-self-center" style="gap: 0; height: 100%;">
+
+      <!-- Web Design dropdown -->
+      <div class="nav-dropdown-group" style="position: relative; display: flex; align-items: center;">
+        <a href="/web-design" class="nav-cat-link" aria-haspopup="true">
+          Web Design
+          <svg class="nav-chevron" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="nav-dropdown" role="menu" aria-label="Web Design services">
+          <a href="/web-design" class="nav-dropdown-category" role="menuitem">Web Design Overview</a>
+          <div class="nav-dropdown-divider"></div>
+          <a href="/web-design/high-conversion-web-design" class="nav-dropdown-item" role="menuitem">High-Conversion Web Design</a>
+          <a href="/web-design/custom-web-development" class="nav-dropdown-item" role="menuitem">Custom Web Development</a>
+        </div>
+      </div>
+
+      <!-- Internet Marketing dropdown -->
+      <div class="nav-dropdown-group" style="position: relative; display: flex; align-items: center;">
+        <a href="/internet-marketing" class="nav-cat-link" aria-haspopup="true">
+          Marketing
+          <svg class="nav-chevron" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="nav-dropdown" role="menu" aria-label="Internet Marketing services">
+          <a href="/internet-marketing" class="nav-dropdown-category" role="menuitem">Marketing Overview</a>
+          <div class="nav-dropdown-divider"></div>
+          <a href="/internet-marketing/seo" class="nav-dropdown-item" role="menuitem">Search Engine Optimization</a>
+          <a href="/internet-marketing/geo" class="nav-dropdown-item" role="menuitem">Generative Engine Optimization</a>
+          <a href="/internet-marketing/content-marketing" class="nav-dropdown-item" role="menuitem">Content Marketing</a>
+          <a href="/internet-marketing/local-lead-generation" class="nav-dropdown-item" role="menuitem">Local Lead Generation</a>
+        </div>
+      </div>
+
+      <!-- Advertising dropdown -->
+      <div class="nav-dropdown-group" style="position: relative; display: flex; align-items: center;">
+        <a href="/advertising" class="nav-cat-link" aria-haspopup="true">
+          Advertising
+          <svg class="nav-chevron" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="nav-dropdown" role="menu" aria-label="Advertising services">
+          <a href="/advertising" class="nav-dropdown-category" role="menuitem">Advertising Overview</a>
+          <div class="nav-dropdown-divider"></div>
+          <a href="/advertising/google-ads-management" class="nav-dropdown-item" role="menuitem">Google Ads Management</a>
+          <a href="/advertising/ad-copywriting" class="nav-dropdown-item" role="menuitem">Ad Copywriting &amp; Creative</a>
+          <a href="/advertising/ppc-campaign-strategy" class="nav-dropdown-item" role="menuitem">PPC Campaign Strategy</a>
+        </div>
+      </div>
+
+      <!-- AI Automation dropdown -->
+      <div class="nav-dropdown-group" style="position: relative; display: flex; align-items: center;">
+        <a href="/ai-automation" class="nav-cat-link" aria-haspopup="true">
+          Automation
+          <svg class="nav-chevron" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="nav-dropdown" role="menu" aria-label="AI Automation services">
+          <a href="/ai-automation" class="nav-dropdown-category" role="menuitem">Automation Overview</a>
+          <div class="nav-dropdown-divider"></div>
+          <a href="/ai-automation/ai-automation-systems" class="nav-dropdown-item" role="menuitem">AI Automation Systems</a>
+        </div>
+      </div>
+
+      <!-- About: plain link, no dropdown -->
+      <div style="display: flex; align-items: center; padding: 0 1rem;">
+        <a href="/about" class="link-underline font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap;">About</a>
+      </div>
+
     </div>
 
     <!-- CTA -->
@@ -72,11 +131,11 @@
     <!-- Mobile hamburger -->
     <button
       id="nav-toggle"
-      class="lg:hidden flex flex-col justify-center gap-[5px] bg-transparent border-none cursor-pointer p-1 col-start-3 justify-self-end"
+      class="lg:hidden flex flex-col justify-center bg-transparent border-none cursor-pointer p-1 col-start-3 justify-self-end"
       aria-label="Open menu"
       aria-expanded="false"
       aria-controls="mobile-menu"
-      style="width: 36px; height: 36px;"
+      style="width: 36px; height: 36px; gap: 5px;"
     >
       <span id="bar1" class="block bg-text transition-transform duration-300 ease-out" style="width: 22px; height: 1.5px;"></span>
       <span id="bar2" class="block bg-text transition-opacity duration-300 ease-out" style="width: 22px; height: 1.5px;"></span>
@@ -89,23 +148,84 @@
 <!-- Mobile menu panel -->
 <div
   id="mobile-menu"
-  class="fixed right-0 bottom-0 z-40 flex flex-col gap-6 transition-transform duration-300 ease-out translate-x-full"
-  style="top: 72px; width: 75%; max-width: 300px; background: rgba(22,22,20,0.96); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-left: 1px solid rgba(240,235,225,0.06); padding: 1.5rem 2rem 2rem;"
+  class="fixed right-0 bottom-0 z-40 flex flex-col transition-transform duration-300 ease-out translate-x-full overflow-y-auto"
+  style="top: 72px; width: 75%; max-width: 300px; background: rgba(22,22,20,0.96); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-left: 1px solid rgba(240,235,225,0.06); padding: 1.5rem 2rem 2rem; gap: 0;"
   aria-hidden="true"
 >
-  <a href="/web-design"         class="font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase;">Web Design</a>
-  <a href="/internet-marketing" class="font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase;">Marketing</a>
-  <a href="/advertising"        class="font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase;">Advertising</a>
-  <a href="/ai-automation"      class="font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase;">Automation</a>
-  <a href="/about"              class="font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase;">About</a>
+
+  <!-- Web Design accordion -->
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-row">
+      <a href="/web-design" class="font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase;">Web Design</a>
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-label="Expand Web Design services">
+        <svg class="mobile-chevron" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <div class="mobile-nav-sub">
+      <a href="/web-design/high-conversion-web-design" class="mobile-nav-sub-link">High-Conversion Web Design</a>
+      <a href="/web-design/custom-web-development" class="mobile-nav-sub-link">Custom Web Development</a>
+    </div>
+  </div>
+
+  <!-- Marketing accordion -->
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-row">
+      <a href="/internet-marketing" class="font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase;">Marketing</a>
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-label="Expand Marketing services">
+        <svg class="mobile-chevron" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <div class="mobile-nav-sub">
+      <a href="/internet-marketing/seo" class="mobile-nav-sub-link">Search Engine Optimization</a>
+      <a href="/internet-marketing/geo" class="mobile-nav-sub-link">Generative Engine Optimization</a>
+      <a href="/internet-marketing/content-marketing" class="mobile-nav-sub-link">Content Marketing</a>
+      <a href="/internet-marketing/local-lead-generation" class="mobile-nav-sub-link">Local Lead Generation</a>
+    </div>
+  </div>
+
+  <!-- Advertising accordion -->
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-row">
+      <a href="/advertising" class="font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase;">Advertising</a>
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-label="Expand Advertising services">
+        <svg class="mobile-chevron" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <div class="mobile-nav-sub">
+      <a href="/advertising/google-ads-management" class="mobile-nav-sub-link">Google Ads Management</a>
+      <a href="/advertising/ad-copywriting" class="mobile-nav-sub-link">Ad Copywriting &amp; Creative</a>
+      <a href="/advertising/ppc-campaign-strategy" class="mobile-nav-sub-link">PPC Campaign Strategy</a>
+    </div>
+  </div>
+
+  <!-- Automation accordion -->
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-row">
+      <a href="/ai-automation" class="font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase;">Automation</a>
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-label="Expand Automation services">
+        <svg class="mobile-chevron" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <div class="mobile-nav-sub">
+      <a href="/ai-automation/ai-automation-systems" class="mobile-nav-sub-link">AI Automation Systems</a>
+    </div>
+  </div>
+
+  <!-- About: plain link -->
+  <div style="padding: 1rem 0; border-top: 1px solid rgba(240,235,225,0.06);">
+    <a href="/about" class="font-label text-text-muted hover:text-text transition-colors duration-200" style="font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase;">About</a>
+  </div>
+
+  <!-- Get Started CTA (sub-540px only) -->
   <button
     type="button"
     data-open-contact
-    class="btn-cta min-[540px]:hidden mt-2 inline-flex items-center justify-center font-label text-text bg-accent hover:bg-accent-hover text-center tracking-widest uppercase transition-colors"
-    style="font-size: 0.8rem; padding: 0.75rem 1rem; font-weight: 600; border-radius: 4px;"
+    class="btn-cta min-[540px]:hidden inline-flex items-center justify-center font-label text-text bg-accent hover:bg-accent-hover text-center tracking-widest uppercase transition-colors"
+    style="font-size: 0.8rem; padding: 0.75rem 1rem; font-weight: 600; border-radius: 4px; margin-top: 0.5rem;"
   >
     Get Started
   </button>
+
 </div>
 
 <!-- Backdrop -->
@@ -116,16 +236,181 @@
 ></div>
 
 <style>
-
+  /* Logo spin on hover */
   .nav-logo {
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   a:hover .nav-logo {
     transform: rotate(180deg);
   }
+
+  /* ── Desktop category trigger ── */
+  .nav-cat-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0 1rem;
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #8a8880;
+    white-space: nowrap;
+    transition: color 200ms ease;
+    text-decoration: none;
+  }
+  .nav-cat-link:hover,
+  .nav-dropdown-group:hover .nav-cat-link {
+    color: #f0ebe1;
+  }
+
+  /* Chevron rotates on group hover */
+  .nav-chevron {
+    width: 8px;
+    height: 5px;
+    flex-shrink: 0;
+    transition: transform 200ms ease;
+  }
+  .nav-dropdown-group:hover .nav-chevron {
+    transform: rotate(180deg);
+  }
+
+  /* ── Desktop dropdown panel ── */
+  .nav-dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px);
+    min-width: 220px;
+    background: rgba(13, 13, 11, 0.97);
+    backdrop-filter: blur(28px) saturate(160%);
+    -webkit-backdrop-filter: blur(28px) saturate(160%);
+    border: 1px solid rgba(240, 235, 225, 0.12);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease-out, transform 180ms ease-out;
+    z-index: 60;
+  }
+  .nav-dropdown-group:hover .nav-dropdown {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  /* Category "overview" link at top of dropdown */
+  .nav-dropdown-category {
+    display: block;
+    padding: 0.55rem 1.25rem;
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #c8511a;
+    text-decoration: none;
+    transition: color 150ms ease;
+    white-space: nowrap;
+  }
+  .nav-dropdown-category:hover {
+    color: #e05e20;
+  }
+
+  .nav-dropdown-divider {
+    height: 1px;
+    background: rgba(240, 235, 225, 0.08);
+    margin: 0.35rem 0;
+  }
+
+  /* Service links inside dropdown */
+  .nav-dropdown-item {
+    display: block;
+    padding: 0.55rem 1.25rem;
+    font-family: "DM Sans", system-ui, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #8a8880;
+    text-decoration: none;
+    transition: color 150ms ease, background 150ms ease;
+    white-space: nowrap;
+  }
+  .nav-dropdown-item:hover {
+    color: #f0ebe1;
+    background: rgba(240, 235, 225, 0.04);
+  }
+
+  /* ── Mobile accordion ── */
+  .mobile-nav-group {
+    border-top: 1px solid rgba(240, 235, 225, 0.06);
+  }
+
+  .mobile-nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    color: #8a8880;
+    transition: color 200ms ease;
+  }
+  .mobile-nav-toggle:hover {
+    color: #f0ebe1;
+  }
+
+  .mobile-chevron {
+    width: 10px;
+    height: 6px;
+    transition: transform 250ms ease;
+  }
+  .mobile-nav-toggle[aria-expanded="true"] .mobile-chevron {
+    transform: rotate(180deg);
+  }
+
+  /* Slide-open for sub-links */
+  .mobile-nav-sub {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-nav-sub.is-open {
+    max-height: 320px;
+  }
+
+  .mobile-nav-sub-link {
+    display: block;
+    padding: 0.55rem 0 0.55rem 1rem;
+    font-family: "DM Sans", system-ui, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #8a8880;
+    text-decoration: none;
+    border-left: 1px solid rgba(200, 81, 26, 0.3);
+    transition: color 150ms ease, border-color 150ms ease;
+    margin-bottom: 0.1rem;
+  }
+  .mobile-nav-sub-link:hover {
+    color: #f0ebe1;
+    border-left-color: #c8511a;
+  }
+  /* breathing room below the sub-list */
+  .mobile-nav-sub.is-open {
+    padding-bottom: 0.75rem;
+  }
 </style>
 
 <script>
+  // ── Mobile menu open/close ──────────────────────────────────────────────────
   const toggle   = document.getElementById('nav-toggle')!;
   const menu     = document.getElementById('mobile-menu')!;
   const backdrop = document.getElementById('nav-backdrop')!;
@@ -164,4 +449,21 @@
   toggle.addEventListener('click', () => isOpen ? closeMenu() : openMenu());
   backdrop.addEventListener('click', closeMenu);
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && isOpen) closeMenu(); });
+
+  // ── Mobile accordion toggles ────────────────────────────────────────────────
+  document.querySelectorAll<HTMLButtonElement>('.mobile-nav-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const group = btn.closest('.mobile-nav-group')!;
+      const sub   = group.querySelector<HTMLElement>('.mobile-nav-sub')!;
+      const open  = btn.getAttribute('aria-expanded') === 'true';
+
+      if (open) {
+        sub.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+      } else {
+        sub.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
 </script>
