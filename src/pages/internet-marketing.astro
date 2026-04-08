@@ -1,0 +1,615 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Sparkles from '../components/Sparkles.astro';
+---
+
+<Layout
+  title="Internet Marketing Services Kansas City | Dominion Digital"
+  description="Kansas City internet marketing built to get your business found on Google and in AI search results. SEO, GEO, content, and local lead generation as one system."
+  canonicalUrl="https://dominion.digital/internet-marketing"
+>
+  <Fragment slot="head">
+    <!-- Breadcrumb + Service Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://dominion.digital"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Internet Marketing",
+            "item": "https://dominion.digital/internet-marketing"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://dominion.digital/internet-marketing#service",
+        "name": "Internet Marketing Services",
+        "alternateName": "Internet Marketing Service",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://dominion.digital/#organization",
+          "name": "Dominion Digital"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Kansas City"
+        },
+        "url": "https://dominion.digital/internet-marketing"
+      }
+    ]
+    </script>
+  </Fragment>
+
+  <Nav />
+
+  <main>
+
+    <!-- ─── PAGE HERO ──────────────────────────────────────────────────────── -->
+    <section
+      class="relative"
+      style="padding-top: clamp(9rem, 18vw, 14rem); padding-bottom: clamp(5rem, 10vw, 8rem);"
+      aria-label="Internet Marketing page hero"
+    >
+      <Sparkles />
+      <div
+        class="absolute inset-0 pointer-events-none"
+        style="background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,81,26,0.07) 0%, transparent 70%); z-index: 0;"
+        aria-hidden="true"
+      ></div>
+
+      <div class="container relative" style="z-index: 1;">
+        <p class="font-label text-xs tracking-widest uppercase mb-6 reveal" style="color: #8a8880;">
+          <a href="/" class="hover:text-text transition-colors duration-200">Home</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          Internet Marketing
+        </p>
+
+        <h1
+          class="font-display font-extrabold text-text tracking-tighter leading-none reveal"
+          style="font-size: clamp(3rem, 6.5vw, 6.5rem); max-width: 18ch; margin-bottom: 2rem;"
+        >
+          Kansas City Internet Marketing That Gets Your Business Found First
+        </h1>
+
+        <p class="font-body text-text-muted reveal" style="font-size: 1.125rem; max-width: 48ch; margin-bottom: 2rem; line-height: 1.6;">
+          SEO, GEO, content, and local lead generation built as a system. Most agencies do one thing and call it a strategy. We build the whole machine.
+        </p>
+
+        <div class="flex flex-wrap items-center reveal" style="gap: 1rem;">
+          <button
+            type="button"
+            data-open-contact
+            class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover hover:scale-[1.05] active:scale-[0.98] transition-all duration-300"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
+          >
+            Get a Free Marketing Audit
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── ROLE: CATEGORY PROBLEM ───────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);">
+      <div class="container reveal flex flex-col items-center justify-center">
+        <div class="w-full text-center flex flex-col items-center">
+
+          <!-- Top Callout -->
+          <div class="text-left w-full max-w-4xl" style="margin-bottom: clamp(2rem, 4vw, 3rem); padding: 2rem 0; border-top: 1px solid rgba(200,81,26,0.2); border-bottom: 1px solid rgba(200,81,26,0.2);">
+            <strong class="font-display text-text inline-flex items-center justify-start gap-6" style="font-size: clamp(1.5rem, 3vw, 2rem);">
+              <svg class="warn-icon flex-shrink-0" style="width: clamp(1.5rem, 2.5vw, 2rem); height: clamp(1.5rem, 2.5vw, 2rem); color: #c8511a;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+              </svg>
+              If your competitors rank above you, they're taking your customers every single day.
+            </strong>
+          </div>
+
+          <!-- Cards Summarizing Paragraph Points -->
+          <p class="font-label text-xs tracking-widest uppercase w-full max-w-6xl text-left" style="color: #8a8880; margin-bottom: 1.5rem;">Is your marketing failing you in these ways?</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 w-full max-w-6xl text-left" style="margin-bottom: 4rem; gap: 1.5rem;">
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px; padding: 2.5rem 2rem;" class="hover:-translate-y-2 hover:scale-[1.02] hover:bg-[rgba(200,81,26,0.03)] hover:border-[rgba(200,81,26,0.2)] hover:shadow-[0_0_30px_rgba(200,81,26,0.15)] transition-all duration-300 cursor-default group">
+              <div class="w-12 h-12 flex items-center justify-center rounded-full group-hover:scale-110 transition-transform duration-300" style="background: rgba(200,81,26,0.1); color: #c8511a; margin-bottom: 1.5rem;">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+              </div>
+              <h3 class="font-display font-medium text-text" style="font-size: 1.25rem; margin-bottom: 0.75rem;">Buried on Google</h3>
+              <p class="font-body text-text-muted group-hover:text-text transition-colors duration-300" style="font-size: 1rem; line-height: 1.6;">Your competitors own the first page and collect every search-ready buyer in Kansas City. Being on page two is functionally invisible. We build the technical and content foundation that moves your rankings and keeps them there.</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px; padding: 2.5rem 2rem;" class="hover:-translate-y-2 hover:scale-[1.02] hover:bg-[rgba(200,81,26,0.03)] hover:border-[rgba(200,81,26,0.2)] hover:shadow-[0_0_30px_rgba(200,81,26,0.15)] transition-all duration-300 cursor-default group">
+              <div class="w-12 h-12 flex items-center justify-center rounded-full group-hover:scale-110 transition-transform duration-300" style="background: rgba(200,81,26,0.1); color: #c8511a; margin-bottom: 1.5rem;">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+                </svg>
+              </div>
+              <h3 class="font-display font-medium text-text" style="font-size: 1.25rem; margin-bottom: 0.75rem;">AI Search Blind Spot</h3>
+              <p class="font-body text-text-muted group-hover:text-text transition-colors duration-300" style="font-size: 1rem; line-height: 1.6;">ChatGPT, Perplexity, and Google's AI Overviews now answer your customers' questions directly. If your business is not cited as the source, a competitor is. Standard SEO alone does not solve this problem.</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px; padding: 2.5rem 2rem;" class="hover:-translate-y-2 hover:scale-[1.02] hover:bg-[rgba(200,81,26,0.03)] hover:border-[rgba(200,81,26,0.2)] hover:shadow-[0_0_30px_rgba(200,81,26,0.15)] transition-all duration-300 cursor-default group">
+              <div class="w-12 h-12 flex items-center justify-center rounded-full group-hover:scale-110 transition-transform duration-300" style="background: rgba(200,81,26,0.1); color: #c8511a; margin-bottom: 1.5rem;">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                </svg>
+              </div>
+              <h3 class="font-display font-medium text-text" style="font-size: 1.25rem; margin-bottom: 0.75rem;">Traffic Without Pipeline</h3>
+              <p class="font-body text-text-muted group-hover:text-text transition-colors duration-300" style="font-size: 1rem; line-height: 1.6;">Traffic that doesn't convert is just a vanity metric. If your analytics show visitors but your phone doesn't ring, your marketing is disconnected from your revenue. We track and optimize for one thing: qualified leads.</p>
+            </div>
+          </div>
+
+          <!-- Downward Arrow Button -->
+          <a
+            href="#seo-services"
+            class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+            style="margin-top: 2rem; font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+          >
+            Here's how we fix it
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="margin-left: 0.75rem;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ROLE: CORE SERVICE 1 — SEO (Centered Bento) ───────────────────── -->
+    <section id="seo-services" style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: rgba(255,255,255,0.02);">
+      <div class="container reveal flex flex-col items-center justify-center">
+        <div class="max-w-4xl w-full text-center flex flex-col items-center" style="margin-bottom: 0;">
+          <span class="font-label tracking-widest" style="font-size: 0.75rem; text-transform: uppercase; border: 1px solid rgba(200,81,26,0.5); color: #c8511a; border-radius: 9999px; padding: 0.3rem 1rem; display: inline-block; margin-bottom: 1.25rem;">Service 01</span>
+          <div style="display: inline-flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+            <svg style="width: 1rem; height: 1rem; color: #c8511a; flex-shrink: 0;" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+            </svg>
+            <span class="font-label text-xs tracking-widest uppercase" style="color: #c8511a;">Search Engine Optimization</span>
+          </div>
+          <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 2rem;">
+            Rank on Google. Stay There.
+          </h2>
+          <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; max-width: 60ch; margin: 0 auto;">
+            As an Internet Marketing Service, Dominion builds SEO campaigns around one outcome: qualified buyers calling your business. We start with a full technical audit to eliminate anything holding your rankings back, then layer in on-page optimization, location-targeted content, and authoritative link building. Every month you receive a plain-language report showing exactly where your rankings moved, how much traffic you gained, and how many leads that traffic produced. No vanity dashboards, no missing attribution.
+          </p>
+        </div>
+
+        <!-- Scope / Inclusion Bento Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 w-full max-w-5xl" style="margin-top: clamp(2.5rem, 5vw, 4rem); gap: 1.5rem;">
+          {
+            [
+              "Local SEO targeting Kansas City and every suburb your customers are in.",
+              "Technical audits that fix crawl errors, speed issues, and index problems.",
+              "On-page optimization across every service and location page on your site.",
+              "Monthly reporting tied to rankings, traffic, and leads — not impressions.",
+              "Link building that builds real domain authority over time.",
+              "Google Business Profile optimization for map-pack visibility."
+            ].map((item) => (
+              <div class="flex items-start hover:-translate-y-1 transition-all duration-300" style="padding: 1.5rem 2rem; background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px;">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: #c8511a; margin-right: 1rem;" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="font-body text-text text-left" style="font-size: 1rem; line-height: 1.5;">{item}</span>
+              </div>
+            ))
+          }
+        </div>
+
+        <a
+          href="/internet-marketing/seo"
+          class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+          style="margin-top: clamp(3rem, 5vw, 4rem); font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+        >
+          Explore SEO Services
+          <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="margin-left: 0.5rem;">
+            <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ─── ROLE: CORE SERVICE 2 — GEO / AUTHORITY STACK ─────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] items-center" style="gap: 3rem;">
+          <!-- Left: Pill Cluster -->
+          <div class="reveal flex flex-col w-full order-last md:order-first" style="padding-top: 1rem; gap: 0.75rem;">
+            {
+              [
+                "Google AI Overview Optimization",
+                "ChatGPT & Perplexity Citations",
+                "Schema & Structured Data",
+                "Entity-Based Content Strategy",
+                "Local AI Search Presence",
+                "E-E-A-T Signal Building"
+              ].map((item) => (
+                <span class="inline-flex w-full items-center font-label text-xs tracking-widest uppercase text-text hover:border-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300" style="padding: 0.85rem 1.5rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">
+                  <svg class="w-3 h-3 flex-shrink-0" style="color: #c8511a; margin-right: 0.75rem;" viewBox="0 0 12 12" fill="none"><path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  {item}
+                </span>
+              ))
+            }
+          </div>
+
+          <!-- Right: Narrative -->
+          <div class="reveal space-y-6">
+            <span class="font-label tracking-widest" style="font-size: 0.75rem; text-transform: uppercase; border: 1px solid rgba(200,81,26,0.5); color: #c8511a; border-radius: 9999px; padding: 0.3rem 1rem; display: inline-block; margin-bottom: 1.25rem;">Service 02</span>
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+              <svg style="width: 1rem; height: 1rem; color: #c8511a; flex-shrink: 0;" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z" />
+              </svg>
+              <span class="font-label text-xs tracking-widest uppercase" style="color: #c8511a;">Generative Engine Optimization</span>
+            </div>
+            <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+              Rank on Google. Show Up in AI. Own Both.
+            </h2>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              Most agencies are still optimizing for Google from 2019. Your customers are now asking ChatGPT, Perplexity, and Google's AI Overview which business to hire. Those tools answer from cited sources. If your business is not one of them, someone else's is.
+            </p>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              The Authority Stack is Dominion's proprietary method that optimizes for both traditional search rankings and AI-generated answers simultaneously. No other Kansas City agency runs both. When your ideal customer searches on Google or asks an AI assistant, your name should be the answer.
+            </p>
+            <a
+              href="/internet-marketing/geo"
+              class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+              style="margin-top: 2rem; font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+            >
+              See GEO Services
+              <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="margin-left: 0.5rem;">
+                <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ROLE: CORE SERVICE 3 — CONTENT MARKETING ─────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: rgba(255,255,255,0.02);">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] items-center" style="gap: 3rem;">
+          <!-- Left: Narrative -->
+          <div class="reveal space-y-6">
+            <span class="font-label tracking-widest" style="font-size: 0.75rem; text-transform: uppercase; border: 1px solid rgba(200,81,26,0.5); color: #c8511a; border-radius: 9999px; padding: 0.3rem 1rem; display: inline-block; margin-bottom: 1.25rem;">Service 03</span>
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+              <svg style="width: 1rem; height: 1rem; color: #c8511a; flex-shrink: 0;" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+              </svg>
+              <span class="font-label text-xs tracking-widest uppercase" style="color: #c8511a;">Content Marketing</span>
+            </div>
+            <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+              Traffic That Compounds Instead of Expiring
+            </h2>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              Every blog post and guide you publish is a permanent asset. Unlike ads that stop working the moment you stop paying, content earns traffic every month it's live. We build content strategies around the exact keywords your customers search and the topics AI tools actually cite when answering industry questions.
+            </p>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              From service pages and location pages to long-form authority content, every piece is engineered for both Google rankings and AI visibility. Your site becomes the go-to resource in your market, not just another business with a blog nobody reads.
+            </p>
+            <a
+              href="/internet-marketing/content-marketing"
+              class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+              style="margin-top: 2rem; font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+            >
+              Explore Content Marketing
+              <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="margin-left: 0.5rem;">
+                <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Right: Pill Cluster -->
+          <div class="reveal flex flex-col w-full" style="gap: 0.75rem;">
+            {
+              [
+                "SEO-Driven Blog Posts",
+                "Location & Service Pages",
+                "FAQ Content for AI Citations",
+                "Topical Authority Mapping",
+                "Monthly Content Calendar"
+              ].map((item) => (
+                <span class="inline-flex w-full items-center font-label text-xs tracking-widest uppercase text-text hover:border-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300" style="padding: 0.85rem 1.5rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">
+                  <svg class="w-3 h-3 flex-shrink-0" style="color: #c8511a; margin-right: 0.75rem;" viewBox="0 0 12 12" fill="none"><path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  {item}
+                </span>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ROLE: CORE SERVICE 4 — LOCAL LEAD GEN ────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] items-center" style="gap: 3rem;">
+          <!-- Left: Pill Cluster -->
+          <div class="reveal flex flex-col w-full order-last md:order-first" style="padding-top: 1rem; gap: 0.75rem;">
+            {
+              [
+                "Organic Search Lead Capture",
+                "Conversion-Optimized Landing Pages",
+                "Click-to-Call Architecture",
+                "Lead Tracking & Attribution",
+                "Google Business Profile Leads",
+                "Monthly Lead Pipeline Reports"
+              ].map((item) => (
+                <span class="inline-flex w-full items-center font-label text-xs tracking-widest uppercase text-text hover:border-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300" style="padding: 0.85rem 1.5rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">
+                  <svg class="w-3 h-3 flex-shrink-0" style="color: #c8511a; margin-right: 0.75rem;" viewBox="0 0 12 12" fill="none"><path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  {item}
+                </span>
+              ))
+            }
+          </div>
+
+          <!-- Right: Narrative -->
+          <div class="reveal space-y-6">
+            <span class="font-label tracking-widest" style="font-size: 0.75rem; text-transform: uppercase; border: 1px solid rgba(200,81,26,0.5); color: #c8511a; border-radius: 9999px; padding: 0.3rem 1rem; display: inline-block; margin-bottom: 1.25rem;">Service 04</span>
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+              <svg style="width: 1rem; height: 1rem; color: #c8511a; flex-shrink: 0;" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
+              <span class="font-label text-xs tracking-widest uppercase" style="color: #c8511a;">Local Lead Generation</span>
+            </div>
+            <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+              Predictable Pipeline. Every Month.
+            </h2>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              Feast-or-famine is a system problem. Dominion builds local lead generation around organic search, so your phone rings whether or not you're running ads. We combine SEO, conversion architecture, and lead tracking into one connected system so you always know where each lead came from and how many you're getting.
+            </p>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              Every landing page is built to convert. Every phone number is tracked. Every form submission goes straight to you, with context. No lost leads, no guesswork about what's working.
+            </p>
+            <a
+              href="/internet-marketing/local-lead-generation"
+              class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+              style="margin-top: 2rem; font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+            >
+              Build My Lead Pipeline
+              <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="margin-left: 0.5rem;">
+                <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ROLE: URGENCY ─────────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: rgba(200,81,26,0.05);">
+      <div class="container reveal flex flex-col items-center justify-center">
+        <div class="max-w-4xl w-full text-center flex flex-col items-center" style="gap: 2rem;">
+          <p class="font-label text-xs tracking-widest uppercase text-accent">
+            The Window Is Closing
+          </p>
+          <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 3.5vw, 3rem);">
+            AI Search Is Already Here. Most KC Businesses Aren't Optimized for It.
+          </h2>
+          <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; max-width: 60ch; margin: 0 auto;">
+            The businesses that establish AI search authority now will be very hard to displace. Right now, most of your competitors are invisible to ChatGPT and Perplexity. That gap will not last forever. Every month without an AI visibility strategy is a month your competitors have a chance to own that position instead of you.
+          </p>
+          <button
+            type="button"
+            data-open-contact
+            class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover hover:scale-[1.05] active:scale-[0.98] transition-all duration-300"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem; margin-top: 1rem;"
+          >
+            Get a Free Marketing Audit
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ROLE: FAQ ──────────────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);">
+      <div class="container flex flex-col items-center justify-center">
+        <div class="max-w-3xl w-full">
+          <h2 class="font-display font-bold tracking-tight text-text text-center reveal" style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 4rem;">
+            Frequently Asked Questions
+          </h2>
+          <div class="faq-list reveal" role="list">
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+                  How long before SEO starts producing leads?
+                </span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  Most clients see ranking movement within 60 to 90 days and meaningful lead volume by month four or five. The exact timeline depends on your current site, how competitive your market is, and how aggressively we build content and links. We set realistic expectations upfront and show you progress every single month.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+                  What's the difference between SEO and GEO?
+                </span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  SEO (Search Engine Optimization) is about ranking in Google's blue-link results. GEO (Generative Engine Optimization) is about getting your business cited in AI-generated answers from tools like ChatGPT, Perplexity, and Google's AI Overview. They require overlapping but distinct strategies. Dominion is one of the only agencies in Kansas City running both simultaneously.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+                  Do I need all four services, or can I start with one?
+                </span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  You can start with SEO alone and expand from there. That said, SEO and GEO work best together and share most of the same content foundation, so running both from day one costs far less than adding GEO later. We'll tell you exactly what makes sense for your budget and goals when you reach out.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+                  How do I know if my marketing is actually working?
+                </span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  Every client receives a monthly report that shows ranking changes for every target keyword, organic traffic growth, and lead volume by source. You should never have to wonder whether your marketing is moving the needle. If it is, you'll see it. If something needs to change, we tell you before you have to ask.
+                </p>
+              </div></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FINAL CTA STRIP ────────────────────────────────────────────────── -->
+    <section
+      style="background: #161614; padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);"
+      aria-labelledby="im-final-cta-heading"
+    >
+      <div class="container">
+        <div class="reveal" id="im-final-cta">
+          <p class="font-label text-xs tracking-widest uppercase text-accent" style="margin-bottom: 1.25rem;">
+            Ready to Own Your Market Online?
+          </p>
+          <h2
+            id="im-final-cta-heading"
+            class="font-display font-bold tracking-tight text-text"
+            style="font-size: clamp(2rem, 4vw, 3.5rem); max-width: 22ch; margin-bottom: clamp(3rem, 5vw, 4rem);"
+          >
+            Your Next Customer Is Already Searching. Make Sure They Find You First.
+          </h2>
+          <div class="flex flex-wrap items-center" style="gap: 1rem;">
+            <button
+              type="button"
+              data-open-contact
+              class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover hover:scale-[1.05] active:scale-[0.98] transition-all duration-300"
+              style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
+            >
+              Get Started
+            </button>
+            <a
+              href="/pricing"
+              class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+              style="font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+            >
+              See Pricing
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+
+</Layout>
+
+<style>
+  /* Warning icon pulse */
+  @keyframes warn-pulse {
+    0%, 100% { filter: drop-shadow(0 0 4px rgba(200,81,26,0.6)); opacity: 1; }
+    50%       { filter: drop-shadow(0 0 12px rgba(200,81,26,0.95)); opacity: 0.8; }
+  }
+  .warn-icon {
+    animation: warn-pulse 2.4s ease-in-out infinite;
+  }
+
+  /* FAQ slide animation */
+  .faq-body {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 480ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .faq-body.is-open {
+    max-height: 600px;
+  }
+  .faq-body-inner {
+    padding-bottom: 1.5rem;
+  }
+
+  /* Triangle: spin when closed, freeze rotated when open */
+  @keyframes faq-spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  .faq-icon {
+    animation: faq-spin 4s linear infinite;
+  }
+  .faq-icon.is-open {
+    animation: none;
+    transform: rotate(180deg);
+  }
+</style>
+
+<script>
+  // Scroll reveal: all .reveal elements on this page
+  document.querySelectorAll<HTMLElement>('.reveal').forEach((el, i) => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => el.classList.add('visible'), i < 4 ? i * 80 : 0);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+  });
+
+  // Accordion with slide transition
+  document.querySelectorAll('.faq-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const item   = trigger.closest('.faq-item')!;
+      const body   = item.querySelector('.faq-body') as HTMLElement;
+      const icon   = trigger.querySelector('.faq-icon') as HTMLElement;
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+
+      if (isOpen) {
+        body.classList.remove('is-open');
+        icon.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+      } else {
+        body.classList.add('is-open');
+        icon.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
