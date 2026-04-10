@@ -1,0 +1,509 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingPaths from '../../components/FloatingPaths.astro';
+---
+
+<Layout
+  title="Landing Page Design Kansas City | Dominion.Digital"
+  description="Landing page design for Kansas City businesses running paid campaigns. Single-purpose pages built to convert Google Ads and Meta traffic with form integration, tracking setup, and CRM connection."
+  canonicalUrl="https://dominion.digital/web-design/landing-pages"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dominion.digital" },
+          { "@type": "ListItem", "position": 2, "name": "Web Design", "item": "https://dominion.digital/web-design" },
+          { "@type": "ListItem", "position": 3, "name": "Landing Pages", "item": "https://dominion.digital/web-design/landing-pages" }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://dominion.digital/web-design/landing-pages#service",
+        "name": "Landing Page Design",
+        "serviceType": "Landing Page Design",
+        "provider": { "@type": "Organization", "@id": "https://dominion.digital/#organization", "name": "Dominion.Digital" },
+        "areaServed": { "@type": "City", "name": "Kansas City", "addressRegion": "MO" },
+        "url": "https://dominion.digital/web-design/landing-pages"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How is a landing page different from a page on my website?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A landing page has one job: convert the visitor who arrived from a specific ad or campaign. It has no main navigation, no links to other parts of your site, and no competing calls to action. A regular website page serves multiple audiences and multiple goals. Landing pages work better for paid traffic because they stay focused on the one thing the visitor came to do." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a separate landing page for every campaign?",
+            "acceptedAnswer": { "@type": "Answer", "text": "For best results, yes. Each campaign or ad group targeting a distinct audience or offer should have its own page with matching language. Running traffic from a Google Search ad about commercial roofing to the same page as a Meta retargeting ad about residential windows reduces performance on both. Dominion.Digital can scope a set of pages that covers your active campaigns without building more than you need." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can the landing page connect to my CRM or email system?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. The form on your landing page is connected to your CRM, email platform, or both as part of the build. When a lead submits, they enter your system automatically. No manual imports, no missed contacts." }
+          }
+        ]
+      }
+    ]
+    </script>
+  </Fragment>
+
+  <Nav />
+
+  <main>
+
+    <!-- HERO -->
+    <section
+      class="relative"
+      style="padding-top: clamp(9rem, 18vw, 14rem); padding-bottom: clamp(5rem, 10vw, 8rem);"
+      aria-label="Landing Page Design hero"
+    >
+      <FloatingPaths />
+      <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,81,26,0.07) 0%, transparent 70%); z-index: 0;" aria-hidden="true"></div>
+
+      <div class="container relative" style="z-index: 1;">
+        <p class="font-label text-xs tracking-widest uppercase mb-6 reveal" style="color: #8a8880;">
+          <a href="/" class="hover:text-text transition-colors duration-200">Home</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          <a href="/web-design" class="hover:text-text transition-colors duration-200">Web Design</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          Landing Pages
+        </p>
+
+        <h1
+          class="font-display font-extrabold text-text tracking-tighter leading-none reveal"
+          style="font-size: clamp(3rem, 6.5vw, 6.5rem); max-width: 18ch; margin-bottom: 2rem;"
+        >
+          Landing Page Design for Kansas City Businesses That Need Paid Traffic to Convert
+        </h1>
+
+        <p class="font-body text-text-muted reveal" style="font-size: 1.125rem; max-width: 52ch; margin-bottom: 2rem; line-height: 1.6;">
+          Sending paid traffic to your homepage wastes budget on visitors who never find what they came for. <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> builds dedicated landing pages engineered to convert the traffic you're already paying for.
+        </p>
+
+        <div class="flex flex-wrap items-center reveal" style="gap: 1rem;">
+          <button type="button" data-open-contact class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97] transition-all duration-200" style="font-size: 0.7rem; padding: 0.6rem 1.25rem;">
+            Build My Landing Page
+          </button>
+          <a href="/web-design/high-conversion-web-design" class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent transition-colors duration-200" style="font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;" id="hero-ghost-secondary">
+            See High-Conversion Web Design
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- OPENING / PUNCHLINE -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);" aria-labelledby="opening-punchline">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[3fr_2fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="opening-block">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">Web Design / Landing Pages</p>
+            <div style="max-width: 60ch;">
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                Most businesses running Google Ads or Meta campaigns make the same mistake. They spend real money driving traffic and then send that traffic to their homepage. The homepage has navigation, multiple CTAs, and a dozen reasons to click away. The visitor came looking for one thing and leaves without finding it.
+              </p>
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                A landing page is a single-purpose page with one offer, one audience, and one action. No nav links to pull attention away. No competing CTAs. Just the message that matches the ad and a clear path to convert.
+              </p>
+              <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
+                <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> builds landing pages for Kansas City businesses running paid campaigns who want their ad spend to produce results instead of just clicks.
+              </p>
+            </div>
+          </div>
+
+          <div class="reveal" id="punchline-card" style="margin-top: 2rem;">
+            <div style="border: 1px solid rgba(200,81,26,0.25); padding: clamp(2rem, 4vw, 3rem); position: relative; overflow: hidden;">
+              <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(200,81,26,0.06) 0%, transparent 70%);"></div>
+              <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">The Purpose</p>
+              <p class="font-display font-bold tracking-tight text-text" id="opening-punchline" style="font-size: clamp(1.5rem, 2.5vw, 2rem); line-height: 1.2;">
+                A landing page is the only part of your marketing system where the sole job is to convert.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- WHAT'S INCLUDED -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: #161614;" aria-labelledby="includes-heading">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="includes-block">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">What's Included</p>
+            <h2 id="includes-heading" class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 2rem; line-height: 1.1;">
+              One Page.<br />One Goal.
+            </h2>
+
+            <div class="stagger" style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2.5rem;" aria-label="Landing page capabilities">
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Conversion-Focused Layout</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Mobile-First Build</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Form + Tracking Setup</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">CRM Integration</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Speed Optimized</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">A/B Testing Ready</span>
+            </div>
+
+            <div style="border-top: 1px solid rgba(200,81,26,0.2); padding-top: 1.5rem;">
+              <p class="font-label text-xs tracking-widest uppercase" style="color: #c8511a; margin-bottom: 0.75rem;">Built Around Your Campaign</p>
+              <p class="font-body text-text-muted" style="font-size: 1rem; line-height: 1.6;">
+                Every landing page is built to match the specific ad driving the traffic. Headline, offer, and CTA aligned so the visitor who clicks your ad immediately knows they landed in the right place.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <ul class="stagger" style="display: flex; flex-direction: column; gap: 0.75rem;" aria-label="What landing page design includes">
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Conversion-focused layout</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Structured around a single goal with attention guided toward the primary CTA throughout. No competing navigation or secondary paths to distract the visitor.</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Mobile-first build</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Built and tested on mobile first since most paid traffic arrives on phones, with desktop layouts refined from there</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Form and tracking setup</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Lead capture form connected to your CRM, conversion tracking pixel installed for Google Ads and Meta, and confirmation page configured before launch</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Ad-to-page message match</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Headline, subheadline, and offer language aligned with the specific ad driving the traffic so visitors immediately recognize they landed in the right place</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Speed optimization</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Page load time treated as a conversion factor because slow pages lose leads before the form even loads</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">A/B testing architecture</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Page built to support variant testing on headlines, CTAs, and form placement once initial traffic data is collected</p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- WHY IT MATTERS -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);" aria-labelledby="matters-heading">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="matters-block">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">The Math</p>
+            <p class="font-display font-bold tracking-tighter text-accent" style="font-size: clamp(3rem, 6vw, 5.5rem); line-height: 0.9; margin-bottom: 1rem;">
+              4x.
+            </p>
+            <p class="font-body text-text-muted" style="font-size: 1rem; max-width: 28ch; line-height: 1.5;">
+              Dedicated landing pages convert paid traffic at roughly four times the rate of a homepage for the same campaign. Same ad spend. More leads.
+            </p>
+          </div>
+
+          <div>
+            <h2 id="matters-heading" class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 2rem; line-height: 1.1;">
+              The Page Decides Whether the Ad Spend Was Worth It.
+            </h2>
+            <div style="max-width: 58ch;">
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                Every dollar of ad spend lands somewhere. Where it lands determines whether it converts. The average homepage converts paid traffic at one to two percent. A dedicated landing page routinely hits three to five percent or higher for the same traffic because the message, design, and intent are all aligned.
+              </p>
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                For a Kansas City business spending two thousand dollars a month on ads, the difference between a one percent and four percent conversion rate is the difference between twenty leads and eighty. The ad budget is the same. The only variable is the page.
+              </p>
+              <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem; font-weight: 500;">
+                Your campaigns are already driving traffic. The question is whether the page is doing its job.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- HOW WE APPROACH IT -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: #161614;" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="process-block">
+
+          <div class="md:sticky" style="top: 6rem;">
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">The Process</p>
+            <h2 id="process-heading" class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.5rem; line-height: 1.1;">
+              Campaign Brief. Copy. Build. Track. Launch.
+            </h2>
+            <p class="font-body text-text-muted" style="font-size: 1rem; max-width: 32ch; line-height: 1.6;">
+              Every build starts with the campaign it supports. The offer, the audience, and the ad shape everything before any design begins.
+            </p>
+          </div>
+
+          <div>
+            <ul class="stagger" aria-label="Landing page build process">
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">01</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Campaign brief</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">What's the offer? Who's the audience? What ad or keyword is driving the traffic? The answers shape the message and layout before any design begins.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">02</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Copy and message match</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;"><strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> writes the headline, subheadline, and body copy aligned to the specific ad driving traffic so the visitor's expectation matches what they land on.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">03</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Page build</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">Conversion-focused layout built mobile-first. Form configured, CRM integration connected, and speed optimized before anything goes live.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">04</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Tracking verification</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">Conversion tracking pixels for Google Ads and Meta verified and firing correctly before launch. Form submissions tested end-to-end through to your CRM.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">05</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">30-day conversion review</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">After 30 days of live traffic, conversion rate and drop-off points are reviewed. Optimization recommendations delivered before the next round of spend.</p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="reveal" style="max-width: 72ch; margin: 0 auto;">
+          <p class="font-label text-xs tracking-widest uppercase mb-5 text-center" style="color: #8a8880;">Common Questions</p>
+          <h2 id="faq-heading" class="font-display font-bold tracking-tight text-text text-center" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: clamp(3rem, 6vw, 4rem); line-height: 1.1;">
+            Frequently Asked Questions
+          </h2>
+
+          <div id="faq-list" style="display: flex; flex-direction: column; gap: 0;">
+
+            <div class="faq-item" style="border-top: 1px solid rgba(240,235,225,0.08);">
+              <button class="faq-trigger w-full text-left" aria-expanded="false" style="display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 0; gap: 2rem; background: transparent; border: none; cursor: pointer; color: #f0ebe1;">
+                <span class="font-body font-medium" style="font-size: 1.05rem; line-height: 1.4;">How is a landing page different from a page on my website?</span>
+                <svg class="faq-icon" style="flex-shrink: 0; width: 1rem; height: 1rem; color: #c8511a;" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer" style="overflow: hidden; max-height: 0; transition: max-height 0.35s ease;">
+                <p class="font-body text-text-muted" style="font-size: 1rem; line-height: 1.7; padding-bottom: 1.5rem;">
+                  A landing page has one job: convert the visitor who arrived from a specific ad or campaign. It has no main navigation, no links to other parts of your site, and no competing calls to action. A regular website page serves multiple audiences and multiple goals. Landing pages work better for paid traffic because they stay focused on the one thing the visitor came to do.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" style="border-top: 1px solid rgba(240,235,225,0.08);">
+              <button class="faq-trigger w-full text-left" aria-expanded="false" style="display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 0; gap: 2rem; background: transparent; border: none; cursor: pointer; color: #f0ebe1;">
+                <span class="font-body font-medium" style="font-size: 1.05rem; line-height: 1.4;">Do I need a separate landing page for every campaign?</span>
+                <svg class="faq-icon" style="flex-shrink: 0; width: 1rem; height: 1rem; color: #c8511a;" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer" style="overflow: hidden; max-height: 0; transition: max-height 0.35s ease;">
+                <p class="font-body text-text-muted" style="font-size: 1rem; line-height: 1.7; padding-bottom: 1.5rem;">
+                  For best results, yes. Each campaign or ad group targeting a distinct audience or offer should have its own page with matching language. <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> can scope a set of pages that covers your active campaigns without building more than you need.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08);">
+              <button class="faq-trigger w-full text-left" aria-expanded="false" style="display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 0; gap: 2rem; background: transparent; border: none; cursor: pointer; color: #f0ebe1;">
+                <span class="font-body font-medium" style="font-size: 1.05rem; line-height: 1.4;">Can the landing page connect to my CRM or email system?</span>
+                <svg class="faq-icon" style="flex-shrink: 0; width: 1rem; height: 1rem; color: #c8511a;" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer" style="overflow: hidden; max-height: 0; transition: max-height 0.35s ease;">
+                <p class="font-body text-text-muted" style="font-size: 1rem; line-height: 1.7; padding-bottom: 1.5rem;">
+                  Yes. The form on your landing page is connected to your CRM, email platform, or both as part of the build. When a lead submits, they enter your system automatically. No manual imports, no missed contacts.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- RELATED PAGES -->
+    <section style="padding-top: clamp(4rem, 8vw, 6rem); padding-bottom: clamp(4rem, 8vw, 6rem); background: #161614;" aria-labelledby="related-heading">
+      <div class="container">
+        <p class="font-label text-xs tracking-widest uppercase mb-8 reveal" style="color: #8a8880;" id="related-heading">Explore More</p>
+        <div class="reveal grid grid-cols-1 md:grid-cols-3" style="gap: 1px; border: 1px solid rgba(240,235,225,0.07);">
+
+          <a href="/web-design" class="group block hover:bg-surface transition-colors duration-200" style="padding: 2rem 2.5rem; text-decoration: none;">
+            <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">Category</p>
+            <p class="font-body font-medium text-text group-hover:text-accent transition-colors duration-200" style="font-size: 1.05rem; margin-bottom: 0.5rem;">Web Design</p>
+            <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">All web design and development services</p>
+          </a>
+
+          <a href="/advertising/google-ads-management" class="group block hover:bg-surface transition-colors duration-200" style="padding: 2rem 2.5rem; text-decoration: none; border-left: 1px solid rgba(240,235,225,0.07);">
+            <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">Related Service</p>
+            <p class="font-body font-medium text-text group-hover:text-accent transition-colors duration-200" style="font-size: 1.05rem; margin-bottom: 0.5rem;">Google Ads Management</p>
+            <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">The campaigns your landing pages are built to support</p>
+          </a>
+
+          <a href="/advertising/ppc-campaign-strategy" class="group block hover:bg-surface transition-colors duration-200" style="padding: 2rem 2.5rem; text-decoration: none; border-left: 1px solid rgba(240,235,225,0.07);">
+            <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">Related Service</p>
+            <p class="font-body font-medium text-text group-hover:text-accent transition-colors duration-200" style="font-size: 1.05rem; margin-bottom: 0.5rem;">PPC Campaign Strategy</p>
+            <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Full-funnel paid campaign planning that landing pages complete</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- BOTTOM CTA -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);" aria-label="Get started with landing page design">
+      <div class="container">
+        <div class="reveal text-center" style="max-width: 52ch; margin: 0 auto;">
+          <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">Get Started</p>
+          <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.05; margin-bottom: 1.5rem;">
+            Stop Sending Paid Traffic to a Page That Wasn't Built for It.
+          </h2>
+          <p class="font-body text-text-muted" style="font-size: 1.125rem; line-height: 1.6; margin-bottom: 2.5rem;">
+            <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> builds landing pages for Kansas City businesses that want their ad spend to produce leads and real pipeline growth.
+          </p>
+          <button type="button" data-open-contact class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97] transition-all duration-200" style="font-size: 0.7rem; padding: 0.75rem 1.75rem;">
+            Build My Landing Page
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+
+</Layout>
+
+<style>
+  @keyframes faq-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(180deg); }
+  }
+  .faq-item.is-open .faq-icon { animation: faq-spin 0.3s ease forwards; }
+  .faq-item:not(.is-open) .faq-icon { animation: faq-spin 0.3s ease reverse forwards; }
+</style>
+
+<script>
+  document.querySelectorAll('.faq-trigger').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item') as HTMLElement;
+      const answer = item.querySelector('.faq-answer') as HTMLElement;
+      const isOpen = item.classList.contains('is-open');
+      if (isOpen) {
+        item.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+        answer.style.maxHeight = '0';
+      } else {
+        item.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+
+  const ghostBtn = document.getElementById('hero-ghost-secondary');
+  if (ghostBtn) {
+    ghostBtn.addEventListener('mouseenter', () => { ghostBtn.style.borderColor = '#c8511a'; });
+    ghostBtn.addEventListener('mouseleave', () => { ghostBtn.style.borderColor = 'rgba(240,235,225,0.25)'; });
+  }
+
+  const revealIds = ['opening-block', 'punchline-card', 'includes-block', 'matters-block', 'process-block'];
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        (e.target as HTMLElement).style.opacity = '1';
+        (e.target as HTMLElement).style.transform = 'translateY(0)';
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  revealIds.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(2rem)';
+      el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+      observer.observe(el);
+    }
+  });
+
+  document.querySelectorAll('.reveal').forEach(el => {
+    const htmlEl = el as HTMLElement;
+    if (!revealIds.includes(htmlEl.id)) {
+      htmlEl.style.opacity = '0';
+      htmlEl.style.transform = 'translateY(1.5rem)';
+      htmlEl.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(htmlEl);
+    }
+  });
+</script>
