@@ -1,0 +1,573 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Sparkles from '../components/Sparkles.astro';
+---
+
+<Layout
+  title="Advertising Agency Kansas City | Dominion.Digital"
+  description="Kansas City paid advertising built around cost-per-lead. Google Ads management, PPC strategy, and ad copywriting with full transparency on every dollar spent."
+  canonicalUrl="https://dominion.digital/advertising"
+>
+  <Fragment slot="head">
+    <!-- Breadcrumb + Service Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://dominion.digital"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Advertising",
+            "item": "https://dominion.digital/advertising"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://dominion.digital/advertising#service",
+        "name": "Advertising & Paid Media",
+        "alternateName": "Advertising Agency",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://dominion.digital/#organization",
+          "name": "Dominion.Digital"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Kansas City"
+        },
+        "url": "https://dominion.digital/advertising"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much should I budget for Google Ads in Kansas City?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For most Kansas City service businesses, $1,000 to $3,000 per month gives enough volume to generate meaningful lead data and optimize toward a real CPA target. Dominion.Digital sets a budget recommendation based on your service area, competition level, and lead goal before anything is built."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you only run Google Ads or do you handle other platforms?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Google Search is the primary channel for most service businesses because it captures active buyers. Depending on your industry and goals, Dominion.Digital also runs campaigns on Meta and Microsoft Advertising. Platform selection is part of the strategy conversation upfront."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long before I see leads from a new campaign?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most accounts generate their first leads within the first week once the campaign goes live. The first 30 to 60 days are the optimization window. Month two and three are typically where cost-per-lead stabilizes at a number that works."
+            }
+          }
+        ]
+      }
+    ]
+    </script>
+  </Fragment>
+
+  <Nav />
+
+  <main>
+
+    <!-- ─── PAGE HERO ──────────────────────────────────────────────────────── -->
+    <section
+      class="relative"
+      style="padding-top: clamp(9rem, 18vw, 14rem); padding-bottom: clamp(5rem, 10vw, 8rem);"
+      aria-label="Advertising page hero"
+    >
+      <Sparkles />
+      <div
+        class="absolute inset-0 pointer-events-none"
+        style="background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,81,26,0.07) 0%, transparent 70%); z-index: 0;"
+        aria-hidden="true"
+      ></div>
+
+      <div class="container relative" style="z-index: 1;">
+        <p class="font-label text-xs tracking-widest uppercase mb-6 reveal" style="color: #8a8880;">
+          <a href="/" class="hover:text-text transition-colors duration-200">Home</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          Advertising
+        </p>
+
+        <h1
+          class="font-display font-extrabold text-text tracking-tighter leading-none reveal"
+          style="font-size: clamp(3rem, 6.5vw, 6.5rem); max-width: 18ch; margin-bottom: 2rem;"
+        >
+          Kansas City Advertising Agency That Makes Every Dollar Accountable
+        </h1>
+
+        <p class="font-body text-text-muted reveal" style="font-size: 1.125rem; max-width: 48ch; margin-bottom: 2rem; line-height: 1.6;">
+          Most paid campaigns bleed budget on clicks that never convert. Dominion.Digital builds campaigns around cost-per-lead so every dollar you spend has a job to do.
+        </p>
+
+        <div class="flex flex-wrap items-center reveal" style="gap: 1rem;">
+          <button
+            type="button"
+            data-open-contact
+            class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover hover:scale-[1.05] active:scale-[0.98] transition-all duration-300"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
+          >
+            Audit My Ad Spend
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── ROLE: CATEGORY PROBLEM ───────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);">
+      <div class="container reveal flex flex-col items-center justify-center">
+        <div class="w-full text-center flex flex-col items-center">
+
+          <!-- Top Callout -->
+          <div class="text-left w-full max-w-4xl" style="margin-bottom: clamp(2rem, 4vw, 3rem); padding: 2rem 0; border-top: 1px solid rgba(200,81,26,0.2); border-bottom: 1px solid rgba(200,81,26,0.2);">
+            <strong class="font-display text-text inline-flex items-center justify-start gap-6" style="font-size: clamp(1.5rem, 3vw, 2rem);">
+              <svg class="warn-icon flex-shrink-0" style="width: clamp(1.5rem, 2.5vw, 2rem); height: clamp(1.5rem, 2.5vw, 2rem); color: #c8511a;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+              </svg>
+              If your ad spend is generating clicks but not calls, the campaign is costing you more than it looks.
+            </strong>
+          </div>
+
+          <!-- Problem Cards -->
+          <p class="font-label text-xs tracking-widest uppercase w-full max-w-6xl text-left" style="color: #8a8880; margin-bottom: 1.5rem;">Where most paid campaigns fail</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 w-full max-w-6xl text-left" style="margin-bottom: 4rem; gap: 1.5rem;">
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px; padding: 2.5rem 2rem;" class="hover:-translate-y-2 hover:scale-[1.02] hover:bg-[rgba(200,81,26,0.03)] hover:border-[rgba(200,81,26,0.2)] hover:shadow-[0_0_30px_rgba(200,81,26,0.15)] transition-all duration-300 cursor-default group">
+              <div class="w-12 h-12 flex items-center justify-center rounded-full group-hover:scale-110 transition-transform duration-300" style="background: rgba(200,81,26,0.1); color: #c8511a; margin-bottom: 1.5rem;">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+                </svg>
+              </div>
+              <h3 class="font-display font-medium text-text" style="font-size: 1.25rem; margin-bottom: 0.75rem;">Budget Burned on Clicks</h3>
+              <p class="font-body text-text-muted group-hover:text-text transition-colors duration-300" style="font-size: 1rem; line-height: 1.6;">Clicks are not leads. An advertising agency in Kansas City that reports on impressions and click-through rates while your phone stays quiet is optimizing for the wrong number. Every dollar should trace back to a lead.</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px; padding: 2.5rem 2rem;" class="hover:-translate-y-2 hover:scale-[1.02] hover:bg-[rgba(200,81,26,0.03)] hover:border-[rgba(200,81,26,0.2)] hover:shadow-[0_0_30px_rgba(200,81,26,0.15)] transition-all duration-300 cursor-default group">
+              <div class="w-12 h-12 flex items-center justify-center rounded-full group-hover:scale-110 transition-transform duration-300" style="background: rgba(200,81,26,0.1); color: #c8511a; margin-bottom: 1.5rem;">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                </svg>
+              </div>
+              <h3 class="font-display font-medium text-text" style="font-size: 1.25rem; margin-bottom: 0.75rem;">No Cost-Per-Lead Visibility</h3>
+              <p class="font-body text-text-muted group-hover:text-text transition-colors duration-300" style="font-size: 1rem; line-height: 1.6;">If you can't tell your cost-per-lead from your last campaign, you have no way to know if the spend is working. Dominion.Digital configures conversion tracking before the campaign launches so the data you need is there from day one.</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px; padding: 2.5rem 2rem;" class="hover:-translate-y-2 hover:scale-[1.02] hover:bg-[rgba(200,81,26,0.03)] hover:border-[rgba(200,81,26,0.2)] hover:shadow-[0_0_30px_rgba(200,81,26,0.15)] transition-all duration-300 cursor-default group">
+              <div class="w-12 h-12 flex items-center justify-center rounded-full group-hover:scale-110 transition-transform duration-300" style="background: rgba(200,81,26,0.1); color: #c8511a; margin-bottom: 1.5rem;">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                </svg>
+              </div>
+              <h3 class="font-display font-medium text-text" style="font-size: 1.25rem; margin-bottom: 0.75rem;">Copy That Doesn't Convert</h3>
+              <p class="font-body text-text-muted group-hover:text-text transition-colors duration-300" style="font-size: 1rem; line-height: 1.6;">Generic ad copy gets generic results. When the headline doesn't match what the searcher typed and the landing page doesn't reinforce the ad, the click is gone before you had a chance. Ad copy and landing pages need to be built together.</p>
+            </div>
+          </div>
+
+          <!-- Scroll CTA -->
+          <a
+            href="#google-ads"
+            class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+            style="margin-top: 2rem; font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+          >
+            Here's how we fix it
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="margin-left: 0.75rem;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ROLE: CORE SERVICE 1 — GOOGLE ADS (Centered Bento) ───────────── -->
+    <section id="google-ads" style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: rgba(255,255,255,0.02);">
+      <div class="container reveal flex flex-col items-center justify-center">
+        <div class="max-w-4xl w-full text-center flex flex-col items-center" style="margin-bottom: 0;">
+          <span class="font-label tracking-widest" style="font-size: 0.75rem; text-transform: uppercase; border: 1px solid rgba(200,81,26,0.5); color: #c8511a; border-radius: 9999px; padding: 0.3rem 1rem; display: inline-block; margin-bottom: 1.25rem;">Service 01</span>
+          <div style="display: inline-flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+            <svg style="width: 1rem; height: 1rem; color: #c8511a; flex-shrink: 0;" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+            </svg>
+            <span class="font-label text-xs tracking-widest uppercase" style="color: #c8511a;">Google Ads Management</span>
+          </div>
+          <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 2rem;">
+            Ad Spend That Produces Leads, Not Just Traffic
+          </h2>
+          <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; max-width: 60ch; margin: 0 auto;">
+            Google Ads management as an advertising agency service is focused on leads at a cost that makes business sense. Google gives you access to buyers searching for your services right now in Kansas City. The platform works when the campaign architecture, keyword targeting, bid strategy, and landing page all work together. Dominion.Digital manages accounts with cost-per-lead as the benchmark from day one.
+          </p>
+        </div>
+
+        <!-- Bento Checkmarks -->
+        <div class="grid grid-cols-1 md:grid-cols-2 w-full max-w-5xl" style="margin-top: clamp(2.5rem, 5vw, 4rem); gap: 1.5rem;">
+          {
+            [
+              "Search campaign setup structured around your service lines and coverage area.",
+              "Keyword match types tuned to capture buyer intent and block irrelevant spend.",
+              "Bid strategy managed to your CPA target with adjustments based on lead volume.",
+              "Landing pages reviewed and aligned to each ad group before launch.",
+              "Conversion tracking configured to record actual leads, calls, and form fills.",
+              "Monthly reporting showing cost-per-lead, lead volume, and budget breakdown."
+            ].map((item) => (
+              <div class="flex items-start hover:-translate-y-1 transition-all duration-300" style="padding: 1.5rem 2rem; background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px;">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: #c8511a; margin-right: 1rem;" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="font-body text-text text-left" style="font-size: 1rem; line-height: 1.5;">{item}</span>
+              </div>
+            ))
+          }
+        </div>
+
+        <a
+          href="/advertising/google-ads-management"
+          class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+          style="margin-top: clamp(3rem, 5vw, 4rem); font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+        >
+          See Google Ads Management
+          <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="margin-left: 0.5rem;">
+            <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ─── ROLE: CORE SERVICE 2 — PPC STRATEGY (Pills Left, Narrative Right) -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] items-center" style="gap: 3rem;">
+          <!-- Left: Pill Cluster -->
+          <div class="reveal flex flex-col w-full order-last md:order-first" style="padding-top: 1rem; gap: 0.75rem;">
+            {
+              [
+                "Keyword Research & Gap Analysis",
+                "Campaign Architecture Design",
+                "Audience Segmentation",
+                "Conversion Tracking Setup",
+                "CPA Target Setting",
+                "Strategy Documentation"
+              ].map((item) => (
+                <span class="inline-flex w-full items-center font-label text-xs tracking-widest uppercase text-text hover:border-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300" style="padding: 0.85rem 1.5rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">
+                  <svg class="w-3 h-3 flex-shrink-0" style="color: #c8511a; margin-right: 0.75rem;" viewBox="0 0 12 12" fill="none"><path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  {item}
+                </span>
+              ))
+            }
+          </div>
+
+          <!-- Right: Narrative -->
+          <div class="reveal space-y-6">
+            <span class="font-label tracking-widest" style="font-size: 0.75rem; text-transform: uppercase; border: 1px solid rgba(200,81,26,0.5); color: #c8511a; border-radius: 9999px; padding: 0.3rem 1rem; display: inline-block; margin-bottom: 1.25rem;">Service 02</span>
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+              <svg style="width: 1rem; height: 1rem; color: #c8511a; flex-shrink: 0;" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+              </svg>
+              <span class="font-label text-xs tracking-widest uppercase" style="color: #c8511a;">PPC Campaign Strategy</span>
+            </div>
+            <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+              The Architecture Before the First Dollar Gets Spent
+            </h2>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              PPC campaign strategy is the foundation that determines what every other part of a paid campaign can accomplish. Account structure, campaign segmentation, audience targeting, and conversion tracking all need to be in place before any spend starts. Without that foundation, you're making adjustments in the dark.
+            </p>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              Dominion.Digital builds strategy from the ground up: keyword research, competitive analysis, account architecture, and a CPA target that guides every decision going forward. The strategy document is yours to keep, whether the campaigns are managed here or handed off.
+            </p>
+            <a
+              href="/advertising/ppc-campaign-strategy"
+              class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+              style="margin-top: 2rem; font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+            >
+              See PPC Strategy
+              <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="margin-left: 0.5rem;">
+                <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ROLE: CORE SERVICE 3 — AD COPYWRITING (Narrative Left, Pills Right) -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: rgba(255,255,255,0.02);">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] items-center" style="gap: 3rem;">
+          <!-- Left: Narrative -->
+          <div class="reveal space-y-6">
+            <span class="font-label tracking-widest" style="font-size: 0.75rem; text-transform: uppercase; border: 1px solid rgba(200,81,26,0.5); color: #c8511a; border-radius: 9999px; padding: 0.3rem 1rem; display: inline-block; margin-bottom: 1.25rem;">Service 03</span>
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+              <svg style="width: 1rem; height: 1rem; color: #c8511a; flex-shrink: 0;" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+              </svg>
+              <span class="font-label text-xs tracking-widest uppercase" style="color: #c8511a;">Ad Copywriting</span>
+            </div>
+            <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+              The Gap Between a 2% CTR and a 6% CTR Is Copy
+            </h2>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              Ad copywriting is what determines whether someone who sees your ad clicks it. The headline, description, and extensions all have to do something specific: stop the scroll, signal relevance, and give the searcher a reason to choose you over the results above and below yours.
+            </p>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              Dominion.Digital writes copy for each ad group based on the specific search intent behind it. A searcher looking for "emergency HVAC repair Kansas City" needs different copy than one searching "HVAC installation quote." Both are in your campaign. Both need copy written for where they are in the decision.
+            </p>
+            <a
+              href="/advertising/ad-copywriting"
+              class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+              style="margin-top: 2rem; font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+            >
+              See Ad Copywriting
+              <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="margin-left: 0.5rem;">
+                <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Right: Pill Cluster -->
+          <div class="reveal flex flex-col w-full" style="gap: 0.75rem;">
+            {
+              [
+                "Per Ad Group Copy",
+                "Headline Rotation Testing",
+                "Description Writing",
+                "Extension Optimization",
+                "Landing Page Alignment",
+                "Monthly Copy Refresh"
+              ].map((item) => (
+                <span class="inline-flex w-full items-center font-label text-xs tracking-widest uppercase text-text hover:border-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300" style="padding: 0.85rem 1.5rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">
+                  <svg class="w-3 h-3 flex-shrink-0" style="color: #c8511a; margin-right: 0.75rem;" viewBox="0 0 12 12" fill="none"><path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  {item}
+                </span>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ROLE: URGENCY ─────────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: rgba(200,81,26,0.05);">
+      <div class="container reveal flex flex-col items-center justify-center">
+        <div class="max-w-4xl w-full text-center flex flex-col items-center" style="gap: 2rem;">
+          <p class="font-label text-xs tracking-widest uppercase text-accent">
+            The Spend Is Already Running
+          </p>
+          <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 3.5vw, 3rem);">
+            Every Month Without a CPA Target Is a Month of Unaccountable Spend
+          </h2>
+          <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; max-width: 60ch; margin: 0 auto;">
+            Most Google Ads accounts Dominion.Digital audits share the same issues: broad match keywords eating budget on irrelevant searches, ad copy that doesn't match the landing page, and no conversion tracking tied to actual leads. Those are fixable. A 30-minute audit shows exactly where your budget is leaking and what it would take to turn that spend into a real lead pipeline.
+          </p>
+          <button
+            type="button"
+            data-open-contact
+            class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover hover:scale-[1.05] active:scale-[0.98] transition-all duration-300"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem; margin-top: 1rem;"
+          >
+            Audit My Ad Spend
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ROLE: FAQ ──────────────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);">
+      <div class="container flex flex-col items-center justify-center">
+        <div class="max-w-3xl w-full">
+          <h2 class="font-display font-bold tracking-tight text-text text-center reveal" style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 4rem;">
+            Frequently Asked Questions
+          </h2>
+          <div class="faq-list reveal" role="list">
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+                  How much should I budget for Google Ads in Kansas City?
+                </span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  For most Kansas City service businesses, $1,000 to $3,000 per month gives enough volume to generate meaningful lead data and optimize toward a real CPA target. Below that range, the sample size is too small to make confident decisions. Dominion.Digital sets a budget recommendation based on your service area, competition level, and lead goal before anything is built.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+                  Do you only run Google Ads, or do you handle other platforms?
+                </span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  Google Search is the primary channel for most service businesses because it captures buyers who are actively searching. Depending on your industry and goals, Dominion.Digital also runs campaigns on Meta and Microsoft Advertising. Platform selection is part of the strategy conversation upfront.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">
+                  How long before I see leads from a new campaign?
+                </span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  Most accounts generate their first leads within the first week once the campaign goes live. The first 30 to 60 days are the optimization window: data comes in, underperforming keywords get cut, and bids are adjusted around what's converting. Month two and three are typically where cost-per-lead stabilizes at a number that works.
+                </p>
+              </div></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FINAL CTA STRIP ────────────────────────────────────────────────── -->
+    <section
+      style="background: #161614; padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);"
+      aria-labelledby="adv-final-cta-heading"
+    >
+      <div class="container">
+        <div class="reveal" id="adv-final-cta">
+          <p class="font-label text-xs tracking-widest uppercase text-accent" style="margin-bottom: 1.25rem;">
+            Ready to Make Your Ad Spend Work?
+          </p>
+          <h2
+            id="adv-final-cta-heading"
+            class="font-display font-bold tracking-tight text-text"
+            style="font-size: clamp(2rem, 4vw, 3.5rem); max-width: 22ch; margin-bottom: clamp(3rem, 5vw, 4rem);"
+          >
+            Your Next Customer Is Already Searching. Make Sure Your Ad Is the One They Click.
+          </h2>
+          <div class="flex flex-wrap items-center" style="gap: 1rem;">
+            <button
+              type="button"
+              data-open-contact
+              class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover hover:scale-[1.05] active:scale-[0.98] transition-all duration-300"
+              style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
+            >
+              Audit My Ad Spend
+            </button>
+            <a
+              href="/pricing"
+              class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+              style="font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+            >
+              See Pricing
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+
+</Layout>
+
+<style>
+  /* Warning icon pulse */
+  @keyframes warn-pulse {
+    0%, 100% { filter: drop-shadow(0 0 4px rgba(200,81,26,0.6)); opacity: 1; }
+    50%       { filter: drop-shadow(0 0 12px rgba(200,81,26,0.95)); opacity: 0.8; }
+  }
+  .warn-icon {
+    animation: warn-pulse 2.4s ease-in-out infinite;
+  }
+
+  /* FAQ slide animation */
+  .faq-body {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 480ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .faq-body.is-open {
+    max-height: 600px;
+  }
+  .faq-body-inner {
+    padding-bottom: 1.5rem;
+  }
+
+  /* Triangle: spin when closed, freeze rotated when open */
+  @keyframes faq-spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  .faq-icon {
+    animation: faq-spin 4s linear infinite;
+  }
+  .faq-icon.is-open {
+    animation: none;
+    transform: rotate(180deg);
+  }
+</style>
+
+<script>
+  // Scroll reveal
+  document.querySelectorAll<HTMLElement>('.reveal').forEach((el, i) => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => el.classList.add('visible'), i < 4 ? i * 80 : 0);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const item   = trigger.closest('.faq-item')!;
+      const body   = item.querySelector('.faq-body')!;
+      const icon   = trigger.querySelector('.faq-icon')!;
+      const isOpen = body.classList.contains('is-open');
+
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.querySelector('.faq-body')!.classList.remove('is-open');
+        i.querySelector('.faq-icon')!.classList.remove('is-open');
+        i.querySelector('.faq-trigger')!.setAttribute('aria-expanded', 'false');
+      });
+
+      if (!isOpen) {
+        body.classList.add('is-open');
+        icon.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
