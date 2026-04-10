@@ -1,0 +1,492 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingPaths from '../../components/FloatingPaths.astro';
+---
+
+<Layout
+  title="CRM Automation Kansas City | Dominion.Digital"
+  description="CRM automation for Kansas City businesses. Automated data entry, lead routing, deal stage updates, and pipeline reporting without anyone touching a keyboard."
+  canonicalUrl="https://dominion.digital/ai-automation/crm-automation"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dominion.digital" },
+          { "@type": "ListItem", "position": 2, "name": "AI & Automation", "item": "https://dominion.digital/ai-automation" },
+          { "@type": "ListItem", "position": 3, "name": "CRM Automation", "item": "https://dominion.digital/ai-automation/crm-automation" }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://dominion.digital/ai-automation/crm-automation#service",
+        "name": "CRM Automation",
+        "serviceType": "CRM Automation",
+        "provider": { "@type": "Organization", "@id": "https://dominion.digital/#organization", "name": "Dominion.Digital" },
+        "areaServed": { "@type": "City", "name": "Kansas City", "addressRegion": "MO" },
+        "url": "https://dominion.digital/ai-automation/crm-automation"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Which CRM platforms do you work with?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Dominion.Digital builds automations for HubSpot, GoHighLevel, Salesforce, and most platforms with a native API or Zapier integration. The platform audit happens before any work starts so you know exactly what's possible with your current setup." }
+          },
+          {
+            "@type": "Question",
+            "name": "What if my process changes after the automations are built?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Every engagement includes handoff documentation that explains exactly how each automation works and where to make adjustments. Most changes are straightforward configuration updates. For more significant process changes, Dominion.Digital can update the automations as part of an ongoing engagement." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a specific CRM to work with you?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Dominion.Digital works with whatever CRM your business is already running. If you don't have a CRM yet, we can recommend the right platform based on your team size, process complexity, and budget before any automation work begins." }
+          }
+        ]
+      }
+    ]
+    </script>
+  </Fragment>
+
+  <Nav />
+
+  <main>
+
+    <!-- ─── HERO ──────────────────────────────────────────────────────────── -->
+    <section
+      class="relative"
+      style="padding-top: clamp(9rem, 18vw, 14rem); padding-bottom: clamp(5rem, 10vw, 8rem);"
+      aria-label="CRM Automation hero"
+    >
+      <FloatingPaths />
+      <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,81,26,0.07) 0%, transparent 70%); z-index: 0;" aria-hidden="true"></div>
+
+      <div class="container relative" style="z-index: 1;">
+        <p class="font-label text-xs tracking-widest uppercase mb-6 reveal" style="color: #8a8880;">
+          <a href="/" class="hover:text-text transition-colors duration-200">Home</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          <a href="/ai-automation" class="hover:text-text transition-colors duration-200">AI &amp; Automation</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          CRM Automation
+        </p>
+
+        <h1
+          class="font-display font-extrabold text-text tracking-tighter leading-none reveal"
+          style="font-size: clamp(3rem, 6.5vw, 6.5rem); max-width: 18ch; margin-bottom: 2rem;"
+        >
+          CRM Automation That Keeps Your Pipeline Accurate Without Anyone Doing Data Entry
+        </h1>
+
+        <p class="font-body text-text-muted reveal" style="font-size: 1.125rem; max-width: 52ch; margin-bottom: 2rem; line-height: 1.6;">
+          A CRM full of stale data is a liability. <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> builds automations that log activity, route leads, update deal stages, and create tasks without anyone touching a keyboard.
+        </p>
+
+        <div class="flex flex-wrap items-center reveal" style="gap: 1rem;">
+          <button type="button" data-open-contact class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97] transition-all duration-200" style="font-size: 0.7rem; padding: 0.6rem 1.25rem;">
+            Automate My CRM
+          </button>
+          <a href="/ai-automation/ai-automation-systems" class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent transition-colors duration-200" style="font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;" id="hero-ghost-secondary">
+            See AI Automation Systems
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── OPENING / PUNCHLINE ───────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);" aria-labelledby="opening-punchline">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[3fr_2fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="opening-block">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">AI &amp; Automation / CRM</p>
+            <div style="max-width: 60ch;">
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                A CRM is only as useful as the data inside it. For most Kansas City service businesses, that data is incomplete because keeping it current requires manual effort nobody has time for. New leads come in and don't get entered. Deal stages don't get updated. Follow-up tasks get created inconsistently. The pipeline looks unreliable because it is.
+              </p>
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                CRM automation as part of an automation company's service stack is the set of workflows that handle data entry, lead routing, stage updates, and task creation automatically. A new form submission creates the contact. A completed call updates the deal stage. A signed proposal moves the lead to the next phase. None of it requires someone to log in and update a field.
+              </p>
+              <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
+                <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> builds CRM automations for Kansas City businesses running HubSpot, GoHighLevel, Salesforce, and similar platforms. The goal is a pipeline that reflects reality without anyone maintaining it manually.
+              </p>
+            </div>
+          </div>
+
+          <div class="reveal" id="punchline-card" style="margin-top: 2rem;">
+            <div style="border: 1px solid rgba(200,81,26,0.25); padding: clamp(2rem, 4vw, 3rem); position: relative; overflow: hidden;">
+              <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(200,81,26,0.06) 0%, transparent 70%);"></div>
+              <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">The Outcome</p>
+              <p class="font-display font-bold tracking-tight text-text" id="opening-punchline" style="font-size: clamp(1.5rem, 2.5vw, 2rem); line-height: 1.2;">
+                A CRM that updates itself is a tool your team will actually use.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── WHAT'S INCLUDED ───────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: #161614;" aria-labelledby="includes-heading">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="includes-block">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">What's Included</p>
+            <h2 id="includes-heading" class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 2rem; line-height: 1.1;">
+              Pipeline That<br />Runs Itself.
+            </h2>
+
+            <div class="stagger" style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2.5rem;" aria-label="CRM automation capabilities">
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Automated Data Entry</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Lead Routing Logic</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Deal Stage Updates</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Task Creation</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Pipeline Reporting</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Cross-Platform Sync</span>
+            </div>
+
+            <div style="border-top: 1px solid rgba(200,81,26,0.2); padding-top: 1.5rem;">
+              <p class="font-label text-xs tracking-widest uppercase" style="color: #c8511a; margin-bottom: 0.75rem;">Always Accurate</p>
+              <p class="font-body text-text-muted" style="font-size: 1rem; line-height: 1.6;">
+                Every lead entry, stage update, and follow-up task happens automatically. Your team opens their CRM and sees a pipeline that actually reflects reality.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <ul class="stagger" style="display: flex; flex-direction: column; gap: 0.75rem;" aria-label="What CRM automation includes">
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Automated contact creation</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">New leads from forms, ads, and inbound calls are created in your CRM automatically with all available data populated</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Lead routing</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">New contacts are assigned to the right team member or pipeline based on source, service type, or any defined criteria</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Deal stage automation</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Stages update automatically when trigger events occur: form fills, call completions, proposal sends, invoice payments</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Task and reminder creation</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Follow-up tasks are created automatically at each stage transition so nothing falls through between steps</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Pipeline reporting automation</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Weekly or monthly pipeline summaries delivered to your inbox without anyone pulling the data manually</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Cross-platform sync</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">CRM connections to your calendar, invoicing software, and project management tool built and tested</p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── WHY IT MATTERS ────────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);" aria-labelledby="matters-heading">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="matters-block">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">The Standard</p>
+            <p class="font-display font-bold tracking-tighter text-accent" style="font-size: clamp(3rem, 6vw, 5.5rem); line-height: 0.9; margin-bottom: 1rem;">
+              Hours.
+            </p>
+            <p class="font-body text-text-muted" style="font-size: 1rem; max-width: 28ch; line-height: 1.5;">
+              Manual CRM maintenance takes hours every week across your team. Hours that could go toward work that actually closes deals.
+            </p>
+          </div>
+
+          <div>
+            <h2 id="matters-heading" class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 2rem; line-height: 1.1;">
+              Clean Data Produces Accurate Forecasts. Accurate Forecasts Produce Decisions.
+            </h2>
+            <div style="max-width: 58ch;">
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                Salespeople and service teams are not data entry clerks. When CRM hygiene depends on manual effort, it competes directly with work that generates revenue. The field nobody fills out, the stage that never gets updated, the follow-up task that doesn't get created. Each one is a small failure that compounds into a pipeline nobody trusts.
+              </p>
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                A pipeline your team doesn't trust doesn't get used. And a CRM nobody uses is an expensive contact list.
+              </p>
+              <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem; font-weight: 500;">
+                Automation removes the dependency on discipline. The pipeline stays current whether or not anyone remembers to update it.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── HOW WE APPROACH IT ────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: #161614;" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="process-block">
+
+          <div class="md:sticky" style="top: 6rem;">
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">The Process</p>
+            <h2 id="process-heading" class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.5rem; line-height: 1.1;">
+              Audit the Pipeline. Map the Triggers. Build and Document.
+            </h2>
+            <p class="font-body text-text-muted" style="font-size: 1rem; max-width: 32ch; line-height: 1.6;">
+              Every CRM automation build starts with a pipeline audit to understand what's manual today and what the automation needs to replace.
+            </p>
+          </div>
+
+          <div>
+            <ul class="stagger" aria-label="CRM automation build process">
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">01</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Pipeline audit</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">What stages exist? What triggers a move between them? What data fields matter and where should that data come from? Where are the current manual steps that could be automated? The audit produces a clear map before anything is built.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">02</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Workflow design and review</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">Each automation is designed and documented before it's built. <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> reviews the logic with you before configuration starts so the outcome matches your expectations.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">03</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Integration and connection setup</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">Any cross-platform connections are confirmed and built at this stage. Calendar syncs, invoicing connections, and project management links are scoped and tested before the automations go live.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">04</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Testing against real scenarios</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">Each workflow is tested with real trigger events before connecting to live data. Edge cases are identified and handled before any actual leads flow through the system.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">05</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Handoff documentation and 30-day review</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">Every automation is documented so your team understands what it does, when it fires, and how to adjust it. A 30-day review catches any gaps after real data starts flowing through the system.</p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── FAQ ───────────────────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);" aria-labelledby="faq-heading" id="faq">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr]" style="gap: clamp(3rem, 6vw, 6rem);" id="faq-content">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">FAQ</p>
+            <h2 id="faq-heading" class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+              Questions.<br />Answered.
+            </h2>
+          </div>
+
+          <div class="faq-list" role="list">
+
+            <div class="faq-item" role="listitem">
+              <button class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6" style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;" aria-expanded="false">
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">Which CRM platforms do you work with?</span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;"><strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> builds automations for HubSpot, GoHighLevel, Salesforce, and most platforms with a native API or Zapier integration. The platform audit happens before any work starts so you know exactly what's possible with your current setup.</p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6" style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;" aria-expanded="false">
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">What if my process changes after the automations are built?</span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">Every engagement includes handoff documentation that explains exactly how each automation works and where to make adjustments. Most changes are straightforward configuration updates. For more significant process changes, <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> can update the automations as part of an ongoing engagement.</p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6" style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; cursor: pointer;" aria-expanded="false">
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">Do I need a specific CRM to work with you?</span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">No. <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> works with whatever CRM your business is already running. If you don't have a CRM yet, we can recommend the right platform based on your team size, process complexity, and budget before any automation work begins.</p>
+              </div></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── RELATED PAGES ─────────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(4rem, 8vw, 6rem); padding-bottom: clamp(4rem, 8vw, 6rem); background: #161614;" aria-label="Related services">
+      <div class="container">
+        <div class="reveal" id="related-block">
+          <p class="font-label text-xs tracking-widest uppercase mb-8" style="color: #8a8880;">Explore More</p>
+          <ul class="stagger grid grid-cols-1 md:grid-cols-3" style="gap: 1rem;" aria-label="Related pages">
+
+            <li>
+              <a href="/ai-automation" class="block group" style="padding: 1.75rem 2rem; border: 1px solid rgba(240,235,225,0.07); transition: border-color 200ms ease;" onmouseenter="this.style.borderColor='rgba(200,81,26,0.3)'" onmouseleave="this.style.borderColor='rgba(240,235,225,0.07)'">
+                <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">AI &amp; Automation</p>
+                <p class="font-body text-text" style="font-size: 1rem; font-weight: 500;">AI &amp; Automation</p>
+                <p class="font-body text-text-muted" style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.5;">The full picture of <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span>'s automation services: workflows, voice agents, chatbots, and reputation management.</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="/ai-automation/lead-nurturing" class="block group" style="padding: 1.75rem 2rem; border: 1px solid rgba(240,235,225,0.07); transition: border-color 200ms ease;" onmouseenter="this.style.borderColor='rgba(200,81,26,0.3)'" onmouseleave="this.style.borderColor='rgba(240,235,225,0.07)'">
+                <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">AI &amp; Automation</p>
+                <p class="font-body text-text" style="font-size: 1rem; font-weight: 500;">Lead Nurturing Automation</p>
+                <p class="font-body text-text-muted" style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.5;">Multi-touch email and SMS sequences that follow up with every lead automatically until they're ready to buy.</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="/ai-automation/client-onboarding" class="block group" style="padding: 1.75rem 2rem; border: 1px solid rgba(240,235,225,0.07); transition: border-color 200ms ease;" onmouseenter="this.style.borderColor='rgba(200,81,26,0.3)'" onmouseleave="this.style.borderColor='rgba(240,235,225,0.07)'">
+                <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">AI &amp; Automation</p>
+                <p class="font-body text-text" style="font-size: 1rem; font-weight: 500;">Client Onboarding Automation</p>
+                <p class="font-body text-text-muted" style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.5;">Automated welcome sequences, intake forms, kickoff scheduling, and project setup from the moment a contract is signed.</p>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── BOTTOM CTA ────────────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); position: relative; overflow: hidden;" aria-label="Call to action">
+      <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; z-index: 0; background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(200,81,26,0.08) 0%, transparent 70%);"></div>
+      <div class="container reveal text-center" style="position: relative; z-index: 1; max-width: 48rem;" id="cta-block">
+        <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">Get Started</p>
+        <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 1.5rem; line-height: 1.1;">
+          Your Pipeline Should Reflect Reality Without Anyone Maintaining It.
+        </h2>
+        <p class="font-body text-text-muted" style="font-size: 1.125rem; max-width: 46ch; margin: 0 auto; margin-bottom: 2.5rem; line-height: 1.6;">
+          <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> builds CRM automations that log every lead, update every stage, and create every follow-up task automatically. Your team spends time closing deals.
+        </p>
+        <div class="flex flex-wrap justify-center items-center" style="gap: 1rem;">
+          <button type="button" data-open-contact class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97] transition-all duration-200" style="font-size: 0.7rem; padding: 0.6rem 1.25rem;">
+            Automate My CRM
+          </button>
+          <a href="/pricing" class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent transition-colors duration-200" style="font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;" id="cta-ghost">
+            See Pricing
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+
+</Layout>
+
+<style>
+  .faq-body { overflow: hidden; max-height: 0; transition: max-height 480ms cubic-bezier(0.4, 0, 0.2, 1); }
+  .faq-body.is-open { max-height: 600px; }
+  .faq-body-inner { padding-bottom: 1.5rem; }
+  @keyframes faq-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  .faq-icon { animation: faq-spin 4s linear infinite; }
+  .faq-icon.is-open { animation: none; transform: rotate(180deg); }
+</style>
+
+<script>
+  const revealIds = ['opening-block','punchline-card','includes-block','matters-block','process-block','faq-content','related-block','cta-block'];
+  revealIds.forEach((id) => {
+    const el = document.getElementById(id);
+    if (!el || !el.classList.contains('reveal')) return;
+    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { el.classList.add('visible'); obs.disconnect(); } }, { threshold: 0.08 });
+    obs.observe(el);
+  });
+  document.querySelectorAll('.reveal').forEach((el) => {
+    if (el.classList.contains('visible')) return;
+    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { el.classList.add('visible'); obs.disconnect(); } }, { threshold: 0.08 });
+    obs.observe(el);
+  });
+  document.querySelectorAll('.faq-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const item = trigger.closest('.faq-item')!;
+      const body = item.querySelector('.faq-body') as HTMLElement;
+      const icon = trigger.querySelector('.faq-icon') as HTMLElement;
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+      body.classList.toggle('is-open', !isOpen);
+      icon.classList.toggle('is-open', !isOpen);
+      trigger.setAttribute('aria-expanded', String(!isOpen));
+    });
+  });
+  const g = document.getElementById('hero-ghost-secondary');
+  if (g) { g.addEventListener('mouseenter', () => { g.style.borderColor = '#c8511a'; }); g.addEventListener('mouseleave', () => { g.style.borderColor = 'rgba(240,235,225,0.25)'; }); }
+  const c = document.getElementById('cta-ghost');
+  if (c) { c.addEventListener('mouseenter', () => { c.style.borderColor = '#c8511a'; }); c.addEventListener('mouseleave', () => { c.style.borderColor = 'rgba(240,235,225,0.25)'; }); }
+</script>

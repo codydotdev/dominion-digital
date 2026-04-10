@@ -1,0 +1,484 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingPaths from '../../components/FloatingPaths.astro';
+---
+
+<Layout
+  title="Lead Nurturing Automation Kansas City | Dominion.Digital"
+  description="Automated lead nurturing sequences for Kansas City businesses. Multi-touch email and SMS follow-up that stays in front of every prospect until they're ready to buy."
+  canonicalUrl="https://dominion.digital/ai-automation/lead-nurturing"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dominion.digital" },
+          { "@type": "ListItem", "position": 2, "name": "AI & Automation", "item": "https://dominion.digital/ai-automation" },
+          { "@type": "ListItem", "position": 3, "name": "Lead Nurturing Automation", "item": "https://dominion.digital/ai-automation/lead-nurturing" }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://dominion.digital/ai-automation/lead-nurturing#service",
+        "name": "Lead Nurturing Automation",
+        "serviceType": "Lead Nurturing Automation",
+        "provider": { "@type": "Organization", "@id": "https://dominion.digital/#organization", "name": "Dominion.Digital" },
+        "areaServed": { "@type": "City", "name": "Kansas City", "addressRegion": "MO" },
+        "url": "https://dominion.digital/ai-automation/lead-nurturing"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How many messages should a nurture sequence have?",
+            "acceptedAnswer": { "@type": "Answer", "text": "It depends on your sales cycle. For most Kansas City service businesses with a short decision window, three to five touchpoints over seven to ten days is enough. For higher-ticket services with longer decision cycles, sequences can run eight to twelve touches over thirty to sixty days. Dominion.Digital maps the right length based on your specific customer behavior." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can the sequence be paused when a lead responds?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Response tracking is built into every sequence. When a lead replies, clicks a booking link, or takes any defined action, the sequence pauses automatically and your team gets an alert. The follow-up at that point is a human conversation with full context." }
+          },
+          {
+            "@type": "Question",
+            "name": "Which CRMs do you integrate with for lead nurturing?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Dominion.Digital builds nurture sequences that integrate with HubSpot, GoHighLevel, Salesforce, and most platforms with an API or Zapier connection. The CRM integration is scoped before the build starts so you know exactly what's getting connected." }
+          }
+        ]
+      }
+    ]
+    </script>
+  </Fragment>
+
+  <Nav />
+
+  <main>
+
+    <!-- ─── HERO ──────────────────────────────────────────────────────────── -->
+    <section
+      class="relative"
+      style="padding-top: clamp(9rem, 18vw, 14rem); padding-bottom: clamp(5rem, 10vw, 8rem);"
+      aria-label="Lead Nurturing Automation hero"
+    >
+      <FloatingPaths />
+      <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,81,26,0.07) 0%, transparent 70%); z-index: 0;" aria-hidden="true"></div>
+
+      <div class="container relative" style="z-index: 1;">
+        <p class="font-label text-xs tracking-widest uppercase mb-6 reveal" style="color: #8a8880;">
+          <a href="/" class="hover:text-text transition-colors duration-200">Home</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          <a href="/ai-automation" class="hover:text-text transition-colors duration-200">AI &amp; Automation</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          Lead Nurturing
+        </p>
+
+        <h1
+          class="font-display font-extrabold text-text tracking-tighter leading-none reveal"
+          style="font-size: clamp(3rem, 6.5vw, 6.5rem); max-width: 18ch; margin-bottom: 2rem;"
+        >
+          Lead Nurturing Automation That Follows Up Until Every Lead Is Ready to Buy
+        </h1>
+
+        <p class="font-body text-text-muted reveal" style="font-size: 1.125rem; max-width: 52ch; margin-bottom: 2rem; line-height: 1.6;">
+          Most leads go cold because nobody followed up at the right time. <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> builds automated nurture sequences that stay in front of every prospect on the right cadence across email and SMS.
+        </p>
+
+        <div class="flex flex-wrap items-center reveal" style="gap: 1rem;">
+          <button type="button" data-open-contact class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97] transition-all duration-200" style="font-size: 0.7rem; padding: 0.6rem 1.25rem;">
+            Build My Nurture Sequence
+          </button>
+          <a href="/ai-automation/ai-automation-systems" class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent transition-colors duration-200" style="font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;" id="hero-ghost-secondary">
+            See AI Automation Systems
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── OPENING / PUNCHLINE ───────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);" aria-labelledby="opening-punchline">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[3fr_2fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="opening-block">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">AI &amp; Automation / Lead Nurturing</p>
+            <div style="max-width: 60ch;">
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                The average buyer needs multiple touchpoints before making a decision. For most Kansas City service businesses, those touchpoints never happen because following up manually is inconsistent and time-consuming. A lead comes in, gets a first call or email, and then slips through the cracks when the team moves on.
+              </p>
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                Lead nurturing automation as part of an automation company's service stack is the system that makes sure every lead gets followed up with on the right schedule through the right channels, without anyone on your team having to track it. A new lead triggers a sequence. The sequence runs across email and SMS. Responses are tracked. Hot leads surface automatically.
+              </p>
+              <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
+                <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> builds lead nurturing sequences for Kansas City businesses that want consistent pipeline movement without adding a full-time follow-up person to their team.
+              </p>
+            </div>
+          </div>
+
+          <div class="reveal" id="punchline-card" style="margin-top: 2rem;">
+            <div style="border: 1px solid rgba(200,81,26,0.25); padding: clamp(2rem, 4vw, 3rem); position: relative; overflow: hidden;">
+              <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(200,81,26,0.06) 0%, transparent 70%);"></div>
+              <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">The Outcome</p>
+              <p class="font-display font-bold tracking-tight text-text" id="opening-punchline" style="font-size: clamp(1.5rem, 2.5vw, 2rem); line-height: 1.2;">
+                A lead that goes cold is usually a timing problem. Automation solves timing.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── WHAT'S INCLUDED ───────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: #161614;" aria-labelledby="includes-heading">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="includes-block">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">What's Included</p>
+            <h2 id="includes-heading" class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 2rem; line-height: 1.1;">
+              Every Lead.<br />Every Channel.<br />Every Time.
+            </h2>
+
+            <div class="stagger" style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2.5rem;" aria-label="Lead nurturing capabilities">
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Multi-Touch Sequences</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Email + SMS Coverage</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Timing Logic</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Response Tracking</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Hot Lead Alerts</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">CRM Integration</span>
+            </div>
+
+            <div style="border-top: 1px solid rgba(200,81,26,0.2); padding-top: 1.5rem;">
+              <p class="font-label text-xs tracking-widest uppercase" style="color: #c8511a; margin-bottom: 0.75rem;">No Lead Left Behind</p>
+              <p class="font-body text-text-muted" style="font-size: 1rem; line-height: 1.6;">
+                Every lead that comes in triggers a sequence. Every response pauses it. Every hot signal surfaces your team at the right moment.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <ul class="stagger" style="display: flex; flex-direction: column; gap: 0.75rem;" aria-label="What lead nurturing automation includes">
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Multi-touch email sequences</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">A series of messages written to move a prospect from inquiry to decision, spaced and timed based on where they are in the buying cycle</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">SMS follow-up integration</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Text messages sent at the right moments in the sequence when SMS is the higher-response channel for your audience</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Trigger-based logic</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Sequences fire automatically when a lead comes in, a form is submitted, or any defined event in your CRM occurs</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Response tracking and hot lead alerts</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">When a lead replies or takes action, the sequence pauses and your team gets notified so follow-up happens at the right moment</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">CRM integration</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">All sequence activity is logged in your CRM so your team has full context on every conversation before picking up the phone</p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── WHY IT MATTERS ────────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);" aria-labelledby="matters-heading">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="matters-block">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">The Standard</p>
+            <p class="font-display font-bold tracking-tighter text-accent" style="font-size: clamp(3rem, 6vw, 5.5rem); line-height: 0.9; margin-bottom: 1rem;">
+              8x.
+            </p>
+            <p class="font-body text-text-muted" style="font-size: 1rem; max-width: 28ch; line-height: 1.5;">
+              Most buyers need eight or more touchpoints before they make a decision. Manual follow-up stops at one or two.
+            </p>
+          </div>
+
+          <div>
+            <h2 id="matters-heading" class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 2rem; line-height: 1.1;">
+              The Business That Stays in Front of a Lead the Longest Wins the Job When That Lead Is Ready.
+            </h2>
+            <div style="max-width: 58ch;">
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                Most service businesses spend money generating leads and then let those leads go cold because the follow-up is inconsistent. The lead had interest. They submitted a form or called once. Then life got busy, the team moved on, and a few days later the lead hired someone else.
+              </p>
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                The difference in most cases is timing. The business that followed up three times over five days won the job. Automation makes the multi-touch follow-up the default for every single lead without anyone having to remember to do it.
+              </p>
+              <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem; font-weight: 500;">
+                A lead that doesn't convert today isn't a lost lead. It's a lead on a timeline. Automation keeps you in front of it.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── HOW WE APPROACH IT ────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: #161614;" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="process-block">
+
+          <div class="md:sticky" style="top: 6rem;">
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">The Process</p>
+            <h2 id="process-heading" class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.5rem; line-height: 1.1;">
+              Map the Lifecycle. Write the Sequence. Deploy and Optimize.
+            </h2>
+            <p class="font-body text-text-muted" style="font-size: 1rem; max-width: 32ch; line-height: 1.6;">
+              Every sequence build starts with mapping your lead lifecycle and understanding what moves a prospect from inquiry to decision.
+            </p>
+          </div>
+
+          <div>
+            <ul class="stagger" aria-label="Lead nurturing build process">
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">01</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Lead lifecycle mapping</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">Where do your leads come from? How long does a typical decision take? What information do they need at each stage? What channel do your customers respond to best? These questions are answered before any copy is written.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">02</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Sequence copy and timing</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;"><strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> writes every message in the sequence with the stage-appropriate tone and timing. Each message has a specific job. The copy is reviewed and approved before the sequence is built.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">03</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">CRM trigger configuration</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">The trigger events are configured so the sequence fires automatically when a lead enters, when a form is submitted, or when any defined CRM event occurs. Response detection and hot lead alerts are built in at this stage.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">04</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Test run and deployment</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">The full sequence is tested end-to-end with mock leads before going live. Timing, formatting, and trigger logic are all verified before any real lead enters the flow.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">05</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">30-day review and optimization</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">Engagement data is reviewed in the first 30 days. Open rates, click rates, and response rates show where the sequence is working and where a message needs adjustment. The sequence gets sharper after the first real-world cycle.</p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── FAQ ───────────────────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);" aria-labelledby="faq-heading" id="faq">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr]" style="gap: clamp(3rem, 6vw, 6rem);" id="faq-content">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">FAQ</p>
+            <h2 id="faq-heading" class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+              Questions.<br />Answered.
+            </h2>
+          </div>
+
+          <div class="faq-list" role="list">
+
+            <div class="faq-item" role="listitem">
+              <button class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6" style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;" aria-expanded="false">
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">How many messages should a nurture sequence have?</span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">It depends on your sales cycle. For most Kansas City service businesses with a short decision window, three to five touchpoints over seven to ten days is enough. For higher-ticket services with longer decision cycles, sequences can run eight to twelve touches over thirty to sixty days. <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> maps the right length based on your specific customer behavior.</p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6" style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;" aria-expanded="false">
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">Can the sequence be paused when a lead responds?</span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">Yes. Response tracking is built into every sequence. When a lead replies, clicks a booking link, or takes any defined action, the sequence pauses automatically and your team gets an alert. The follow-up at that point is a human conversation.</p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6" style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; cursor: pointer;" aria-expanded="false">
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">Which CRMs do you integrate with?</span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;"><strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> builds nurture sequences that integrate with HubSpot, GoHighLevel, Salesforce, and most platforms with an API or Zapier connection. The integration is scoped before the build starts so you know exactly what's getting connected.</p>
+              </div></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── RELATED PAGES ─────────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(4rem, 8vw, 6rem); padding-bottom: clamp(4rem, 8vw, 6rem); background: #161614;" aria-label="Related services">
+      <div class="container">
+        <div class="reveal" id="related-block">
+          <p class="font-label text-xs tracking-widest uppercase mb-8" style="color: #8a8880;">Explore More</p>
+          <ul class="stagger grid grid-cols-1 md:grid-cols-3" style="gap: 1rem;" aria-label="Related pages">
+
+            <li>
+              <a href="/ai-automation" class="block group" style="padding: 1.75rem 2rem; border: 1px solid rgba(240,235,225,0.07); transition: border-color 200ms ease;" onmouseenter="this.style.borderColor='rgba(200,81,26,0.3)'" onmouseleave="this.style.borderColor='rgba(240,235,225,0.07)'">
+                <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">AI &amp; Automation</p>
+                <p class="font-body text-text" style="font-size: 1rem; font-weight: 500;">AI &amp; Automation</p>
+                <p class="font-body text-text-muted" style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.5;">The full picture of <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span>'s automation services: workflows, voice agents, chatbots, and reputation management.</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="/ai-automation/crm-automation" class="block group" style="padding: 1.75rem 2rem; border: 1px solid rgba(240,235,225,0.07); transition: border-color 200ms ease;" onmouseenter="this.style.borderColor='rgba(200,81,26,0.3)'" onmouseleave="this.style.borderColor='rgba(240,235,225,0.07)'">
+                <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">AI &amp; Automation</p>
+                <p class="font-body text-text" style="font-size: 1rem; font-weight: 500;">CRM Automation</p>
+                <p class="font-body text-text-muted" style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.5;">Keep your pipeline accurate automatically. Lead routing, deal stage updates, and task creation without manual data entry.</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="/ai-automation/ai-automation-systems" class="block group" style="padding: 1.75rem 2rem; border: 1px solid rgba(240,235,225,0.07); transition: border-color 200ms ease;" onmouseenter="this.style.borderColor='rgba(200,81,26,0.3)'" onmouseleave="this.style.borderColor='rgba(240,235,225,0.07)'">
+                <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">AI &amp; Automation</p>
+                <p class="font-body text-text" style="font-size: 1rem; font-weight: 500;">AI Automation Systems</p>
+                <p class="font-body text-text-muted" style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.5;">Custom automation workflows that span your full business process from lead to close.</p>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── BOTTOM CTA ────────────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); position: relative; overflow: hidden;" aria-label="Call to action">
+      <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; z-index: 0; background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(200,81,26,0.08) 0%, transparent 70%);"></div>
+      <div class="container reveal text-center" style="position: relative; z-index: 1; max-width: 48rem;" id="cta-block">
+        <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">Get Started</p>
+        <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 1.5rem; line-height: 1.1;">
+          Your Leads Deserve More Than One Follow-Up.
+        </h2>
+        <p class="font-body text-text-muted" style="font-size: 1.125rem; max-width: 46ch; margin: 0 auto; margin-bottom: 2.5rem; line-height: 1.6;">
+          <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> builds a nurture sequence that stays in front of every lead across email and SMS until they're ready to buy, without anyone on your team having to track it.
+        </p>
+        <div class="flex flex-wrap justify-center items-center" style="gap: 1rem;">
+          <button type="button" data-open-contact class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97] transition-all duration-200" style="font-size: 0.7rem; padding: 0.6rem 1.25rem;">
+            Build My Nurture Sequence
+          </button>
+          <a href="/pricing" class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent transition-colors duration-200" style="font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;" id="cta-ghost">
+            See Pricing
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+
+</Layout>
+
+<style>
+  .faq-body { overflow: hidden; max-height: 0; transition: max-height 480ms cubic-bezier(0.4, 0, 0.2, 1); }
+  .faq-body.is-open { max-height: 600px; }
+  .faq-body-inner { padding-bottom: 1.5rem; }
+  @keyframes faq-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  .faq-icon { animation: faq-spin 4s linear infinite; }
+  .faq-icon.is-open { animation: none; transform: rotate(180deg); }
+</style>
+
+<script>
+  const revealIds = ['opening-block','punchline-card','includes-block','matters-block','process-block','faq-content','related-block','cta-block'];
+  revealIds.forEach((id) => {
+    const el = document.getElementById(id);
+    if (!el || !el.classList.contains('reveal')) return;
+    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { el.classList.add('visible'); obs.disconnect(); } }, { threshold: 0.08 });
+    obs.observe(el);
+  });
+  document.querySelectorAll('.reveal').forEach((el) => {
+    if (el.classList.contains('visible')) return;
+    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { el.classList.add('visible'); obs.disconnect(); } }, { threshold: 0.08 });
+    obs.observe(el);
+  });
+  document.querySelectorAll('.faq-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const item = trigger.closest('.faq-item')!;
+      const body = item.querySelector('.faq-body') as HTMLElement;
+      const icon = trigger.querySelector('.faq-icon') as HTMLElement;
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+      body.classList.toggle('is-open', !isOpen);
+      icon.classList.toggle('is-open', !isOpen);
+      trigger.setAttribute('aria-expanded', String(!isOpen));
+    });
+  });
+  const g = document.getElementById('hero-ghost-secondary');
+  if (g) { g.addEventListener('mouseenter', () => { g.style.borderColor = '#c8511a'; }); g.addEventListener('mouseleave', () => { g.style.borderColor = 'rgba(240,235,225,0.25)'; }); }
+  const c = document.getElementById('cta-ghost');
+  if (c) { c.addEventListener('mouseenter', () => { c.style.borderColor = '#c8511a'; }); c.addEventListener('mouseleave', () => { c.style.borderColor = 'rgba(240,235,225,0.25)'; }); }
+</script>

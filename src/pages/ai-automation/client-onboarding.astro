@@ -1,0 +1,530 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingPaths from '../../components/FloatingPaths.astro';
+---
+
+<Layout
+  title="Client Onboarding Automation Kansas City | Dominion.Digital"
+  description="Client onboarding automation for Kansas City service businesses. Automated welcome sequences, intake forms, kickoff scheduling, and project setup so every new client gets a consistent first experience."
+  canonicalUrl="https://dominion.digital/ai-automation/client-onboarding"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dominion.digital" },
+          { "@type": "ListItem", "position": 2, "name": "AI & Automation", "item": "https://dominion.digital/ai-automation" },
+          { "@type": "ListItem", "position": 3, "name": "Client Onboarding Automation", "item": "https://dominion.digital/ai-automation/client-onboarding" }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://dominion.digital/ai-automation/client-onboarding#service",
+        "name": "Client Onboarding Automation",
+        "serviceType": "Client Onboarding Automation",
+        "provider": { "@type": "Organization", "@id": "https://dominion.digital/#organization", "name": "Dominion.Digital" },
+        "areaServed": { "@type": "City", "name": "Kansas City", "addressRegion": "MO" },
+        "url": "https://dominion.digital/ai-automation/client-onboarding"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What tools does the onboarding automation connect to?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Dominion.Digital builds onboarding automations that connect to your CRM, calendar, project management tool (Asana, Monday, ClickUp, Notion), document signing platform (DocuSign, PandaDoc), and email system. The specific integrations are scoped before the build starts." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can the automation handle different onboarding flows for different services?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. If your business has multiple service lines with different onboarding requirements, Dominion.Digital can build separate flows that trigger based on which service was purchased. Each flow runs independently with its own steps and timing." }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if a client doesn't complete the intake form?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The automation includes a defined reminder window. If the form isn't completed within a set number of days, a reminder goes out automatically. If it still isn't completed, your team gets flagged so a personal follow-up can happen. Nothing falls through without someone knowing about it." }
+          }
+        ]
+      }
+    ]
+    </script>
+  </Fragment>
+
+  <Nav />
+
+  <main>
+
+    <!-- HERO -->
+    <section
+      class="relative"
+      style="padding-top: clamp(9rem, 18vw, 14rem); padding-bottom: clamp(5rem, 10vw, 8rem);"
+      aria-label="Client Onboarding Automation hero"
+    >
+      <FloatingPaths />
+      <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,81,26,0.07) 0%, transparent 70%); z-index: 0;" aria-hidden="true"></div>
+
+      <div class="container relative" style="z-index: 1;">
+        <p class="font-label text-xs tracking-widest uppercase mb-6 reveal" style="color: #8a8880;">
+          <a href="/" class="hover:text-text transition-colors duration-200">Home</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          <a href="/ai-automation" class="hover:text-text transition-colors duration-200">AI &amp; Automation</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          Client Onboarding Automation
+        </p>
+
+        <h1
+          class="font-display font-extrabold text-text tracking-tighter leading-none reveal"
+          style="font-size: clamp(3rem, 6.5vw, 6.5rem); max-width: 18ch; margin-bottom: 2rem;"
+        >
+          Client Onboarding Automation That Delivers a Consistent First Experience Every Time
+        </h1>
+
+        <p class="font-body text-text-muted reveal" style="font-size: 1.125rem; max-width: 52ch; margin-bottom: 2rem; line-height: 1.6;">
+          The first week with a new client sets the tone for everything that follows. <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> builds automated onboarding sequences that make that experience smooth, professional, and consistent without adding to your team's workload.
+        </p>
+
+        <div class="flex flex-wrap items-center reveal" style="gap: 1rem;">
+          <button type="button" data-open-contact class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97] transition-all duration-200" style="font-size: 0.7rem; padding: 0.6rem 1.25rem;">
+            Automate My Onboarding
+          </button>
+          <a href="/ai-automation/ai-automation-systems" class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent transition-colors duration-200" style="font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;" id="hero-ghost-secondary">
+            See AI Automation Systems
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- OPENING / PUNCHLINE -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);" aria-labelledby="opening-punchline">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[3fr_2fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="opening-block">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">AI &amp; Automation / Client Onboarding</p>
+            <div style="max-width: 60ch;">
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                A new client signs and then the chaos begins. Someone needs to send the welcome email. Someone needs to collect the intake form. Someone needs to schedule the kickoff call. Someone needs to set up the project in the right tool. When all of that depends on a person remembering to do it, the experience is inconsistent at best and genuinely bad at worst.
+              </p>
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                Client onboarding automation as part of an automation company's service stack is the system that handles every step of that process automatically from the moment a contract is signed. The welcome message goes out immediately. The intake form gets sent and tracked. The kickoff call gets scheduled without email back-and-forth. Project setup happens in the background.
+              </p>
+              <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
+                <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> builds onboarding automations for Kansas City service businesses that want every client to get the same high-quality first experience regardless of how busy the team is.
+              </p>
+            </div>
+          </div>
+
+          <div class="reveal" id="punchline-card" style="margin-top: 2rem;">
+            <div style="border: 1px solid rgba(200,81,26,0.25); padding: clamp(2rem, 4vw, 3rem); position: relative; overflow: hidden;">
+              <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(200,81,26,0.06) 0%, transparent 70%);"></div>
+              <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">The Standard</p>
+              <p class="font-display font-bold tracking-tight text-text" id="opening-punchline" style="font-size: clamp(1.5rem, 2.5vw, 2rem); line-height: 1.2;">
+                A smooth onboarding is the first proof that hiring you was the right decision.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- WHAT'S INCLUDED -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: #161614;" aria-labelledby="includes-heading">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="includes-block">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">What's Included</p>
+            <h2 id="includes-heading" class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 2rem; line-height: 1.1;">
+              Every Step,<br />Handled.
+            </h2>
+
+            <div class="stagger" style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2.5rem;" aria-label="Client onboarding automation capabilities">
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Welcome Sequences</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Intake Form Automation</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Kickoff Scheduling</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Project Setup Triggers</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Document Collection</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Status Notifications</span>
+            </div>
+
+            <div style="border-top: 1px solid rgba(200,81,26,0.2); padding-top: 1.5rem;">
+              <p class="font-label text-xs tracking-widest uppercase" style="color: #c8511a; margin-bottom: 0.75rem;">From Signature to Kickoff</p>
+              <p class="font-body text-text-muted" style="font-size: 1rem; line-height: 1.6;">
+                The moment a contract is signed, your new client's onboarding sequence starts. Welcome email, intake form, scheduling link, project setup. All of it fires without anyone on your team doing a thing.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <ul class="stagger" style="display: flex; flex-direction: column; gap: 0.75rem;" aria-label="What client onboarding automation includes">
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Automated welcome sequence</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">A branded welcome email (and optional SMS) sent immediately when a contract is signed or payment is received, with everything the client needs to know about next steps</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Intake form delivery and tracking</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">The intake questionnaire is sent automatically and tracked. If it doesn't get completed within a defined window, a reminder fires without anyone having to follow up manually</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Kickoff call scheduling</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">A booking link with your available times is sent automatically so the client can self-schedule without email back-and-forth</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Project and CRM setup triggers</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">When onboarding is complete, defined actions fire in your project management tool and CRM: folders created, tasks assigned, deal stages updated</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Document collection</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Contracts, signed agreements, and required assets are collected through automated requests with completion tracking</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Team status notifications</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Your team gets a notification when each onboarding milestone is completed so everyone knows exactly where a new client stands</p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- WHY IT MATTERS -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);" aria-labelledby="matters-heading">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="matters-block">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">First Impressions</p>
+            <p class="font-display font-bold tracking-tighter text-accent" style="font-size: clamp(3rem, 6vw, 5.5rem); line-height: 0.9; margin-bottom: 1rem;">
+              Day 1.
+            </p>
+            <p class="font-body text-text-muted" style="font-size: 1rem; max-width: 28ch; line-height: 1.5;">
+              The onboarding experience starts the moment a contract is signed. That first day sets the expectation for every day that follows.
+            </p>
+          </div>
+
+          <div>
+            <h2 id="matters-heading" class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 2rem; line-height: 1.1;">
+              The First Impression After a Sale Is the Onboarding Experience.
+            </h2>
+            <div style="max-width: 58ch;">
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                A slow, disorganized onboarding raises doubts about the decision the client just made. A fast, clear, professional onboarding reinforces it. The work hasn't even started yet but the client already knows whether they made the right call.
+              </p>
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                For service businesses that grow through referrals, the onboarding experience is the first story a new client will tell someone else. Automation makes that story consistent regardless of how busy your team is when the contract comes in.
+              </p>
+              <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem; font-weight: 500;">
+                Your new client feels taken care of before anyone on your team has done a thing.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- HOW WE APPROACH IT -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: #161614;" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="process-block">
+
+          <div class="md:sticky" style="top: 6rem;">
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">The Process</p>
+            <h2 id="process-heading" class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.5rem; line-height: 1.1;">
+              Map the Process. Build Every Step. Run a Client Through It.
+            </h2>
+            <p class="font-body text-text-muted" style="font-size: 1rem; max-width: 32ch; line-height: 1.6;">
+              Every onboarding automation build starts by mapping the current process before any automation is created.
+            </p>
+          </div>
+
+          <div>
+            <ul class="stagger" aria-label="Client onboarding automation build process">
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">01</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Onboarding process map</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">What steps happen between a signed contract and a project kickoff? What gets forgotten when the team is busy? What does the client experience look like from their side? That map becomes the foundation of the automation before any build begins.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">02</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Welcome sequence copy</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;"><strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> writes and reviews the welcome sequence copy before deployment. The first message your new client receives is branded, clear, and sets the right expectations for what comes next.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">03</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Form delivery and scheduling setup</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">Intake form and document collection are configured with automatic reminders. Kickoff scheduling is integrated directly with your calendar system so the client can book without any email coordination.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">04</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Project setup triggers</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">CRM deal stages, project management tasks, and team notifications are configured and tested against your actual project management tool before going live.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">05</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Full client-side run-through</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">The entire sequence is tested from the client's perspective before it goes live. Every message, form, and scheduling step is verified so your first real client gets the experience you designed.</p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="reveal" style="max-width: 72ch; margin: 0 auto;">
+          <p class="font-label text-xs tracking-widest uppercase mb-5 text-center" style="color: #8a8880;">Common Questions</p>
+          <h2 id="faq-heading" class="font-display font-bold tracking-tight text-text text-center" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: clamp(3rem, 6vw, 4rem); line-height: 1.1;">
+            Frequently Asked Questions
+          </h2>
+
+          <div id="faq-list" style="display: flex; flex-direction: column; gap: 0;">
+
+            <div class="faq-item" style="border-top: 1px solid rgba(240,235,225,0.08);">
+              <button
+                class="faq-trigger w-full text-left"
+                aria-expanded="false"
+                style="display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 0; gap: 2rem; background: transparent; border: none; cursor: pointer; color: #f0ebe1;"
+              >
+                <span class="font-body font-medium" style="font-size: 1.05rem; line-height: 1.4;">What tools does the onboarding automation connect to?</span>
+                <svg class="faq-icon" style="flex-shrink: 0; width: 1rem; height: 1rem; color: #c8511a;" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer" style="overflow: hidden; max-height: 0; transition: max-height 0.35s ease;">
+                <p class="font-body text-text-muted" style="font-size: 1rem; line-height: 1.7; padding-bottom: 1.5rem;">
+                  <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> builds onboarding automations that connect to your CRM, calendar, project management tool (Asana, Monday, ClickUp, Notion), document signing platform (DocuSign, PandaDoc), and email system. The specific integrations are scoped before the build starts.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" style="border-top: 1px solid rgba(240,235,225,0.08);">
+              <button
+                class="faq-trigger w-full text-left"
+                aria-expanded="false"
+                style="display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 0; gap: 2rem; background: transparent; border: none; cursor: pointer; color: #f0ebe1;"
+              >
+                <span class="font-body font-medium" style="font-size: 1.05rem; line-height: 1.4;">Can the automation handle different onboarding flows for different services?</span>
+                <svg class="faq-icon" style="flex-shrink: 0; width: 1rem; height: 1rem; color: #c8511a;" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer" style="overflow: hidden; max-height: 0; transition: max-height 0.35s ease;">
+                <p class="font-body text-text-muted" style="font-size: 1rem; line-height: 1.7; padding-bottom: 1.5rem;">
+                  Yes. If your business has multiple service lines with different onboarding requirements, <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> can build separate flows that trigger based on which service was purchased. Each flow runs independently with its own steps and timing.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item" style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08);">
+              <button
+                class="faq-trigger w-full text-left"
+                aria-expanded="false"
+                style="display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 0; gap: 2rem; background: transparent; border: none; cursor: pointer; color: #f0ebe1;"
+              >
+                <span class="font-body font-medium" style="font-size: 1.05rem; line-height: 1.4;">What happens if a client doesn't complete the intake form?</span>
+                <svg class="faq-icon" style="flex-shrink: 0; width: 1rem; height: 1rem; color: #c8511a;" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer" style="overflow: hidden; max-height: 0; transition: max-height 0.35s ease;">
+                <p class="font-body text-text-muted" style="font-size: 1rem; line-height: 1.7; padding-bottom: 1.5rem;">
+                  The automation includes a defined reminder window. If the form isn't completed within a set number of days, a reminder goes out automatically. If it still isn't completed, your team gets flagged so a personal follow-up can happen. Nothing falls through without someone knowing about it.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- RELATED PAGES -->
+    <section style="padding-top: clamp(4rem, 8vw, 6rem); padding-bottom: clamp(4rem, 8vw, 6rem); background: #161614;" aria-labelledby="related-heading">
+      <div class="container">
+        <p class="font-label text-xs tracking-widest uppercase mb-8 reveal" style="color: #8a8880;" id="related-heading">Explore More</p>
+        <div class="reveal grid grid-cols-1 md:grid-cols-3" style="gap: 1px; border: 1px solid rgba(240,235,225,0.07);">
+
+          <a href="/ai-automation" class="group block hover:bg-surface transition-colors duration-200" style="padding: 2rem 2.5rem; text-decoration: none;">
+            <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">Category</p>
+            <p class="font-body font-medium text-text group-hover:text-accent transition-colors duration-200" style="font-size: 1.05rem; margin-bottom: 0.5rem;">AI &amp; Automation</p>
+            <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">All automation services for Kansas City businesses</p>
+          </a>
+
+          <a href="/ai-automation/lead-nurturing" class="group block hover:bg-surface transition-colors duration-200" style="padding: 2rem 2.5rem; text-decoration: none; border-left: 1px solid rgba(240,235,225,0.07);">
+            <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">Related Service</p>
+            <p class="font-body font-medium text-text group-hover:text-accent transition-colors duration-200" style="font-size: 1.05rem; margin-bottom: 0.5rem;">Lead Nurturing Automation</p>
+            <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Automated follow-up sequences for every lead</p>
+          </a>
+
+          <a href="/ai-automation/crm-automation" class="group block hover:bg-surface transition-colors duration-200" style="padding: 2rem 2.5rem; text-decoration: none; border-left: 1px solid rgba(240,235,225,0.07);">
+            <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">Related Service</p>
+            <p class="font-body font-medium text-text group-hover:text-accent transition-colors duration-200" style="font-size: 1.05rem; margin-bottom: 0.5rem;">CRM Automation</p>
+            <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Pipeline that stays accurate without manual data entry</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- BOTTOM CTA -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);" aria-label="Get started with client onboarding automation">
+      <div class="container">
+        <div class="reveal text-center" style="max-width: 52ch; margin: 0 auto;">
+          <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">Get Started</p>
+          <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.05; margin-bottom: 1.5rem;">
+            Every New Client Deserves a Great First Day.
+          </h2>
+          <p class="font-body text-text-muted" style="font-size: 1.125rem; line-height: 1.6; margin-bottom: 2.5rem;">
+            <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> builds client onboarding automations for Kansas City service businesses that want a consistent, professional experience from day one without adding to their team's workload.
+          </p>
+          <button type="button" data-open-contact class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97] transition-all duration-200" style="font-size: 0.7rem; padding: 0.75rem 1.75rem;">
+            Automate My Onboarding
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+
+</Layout>
+
+
+<style>
+  @keyframes faq-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(180deg); }
+  }
+  .faq-item.is-open .faq-icon {
+    animation: faq-spin 0.3s ease forwards;
+  }
+  .faq-item:not(.is-open) .faq-icon {
+    animation: faq-spin 0.3s ease reverse forwards;
+  }
+</style>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-trigger').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item') as HTMLElement;
+      const answer = item.querySelector('.faq-answer') as HTMLElement;
+      const isOpen = item.classList.contains('is-open');
+
+      if (isOpen) {
+        item.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+        answer.style.maxHeight = '0';
+      } else {
+        item.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // Ghost CTA hover border
+  const ghostBtn = document.getElementById('hero-ghost-secondary');
+  if (ghostBtn) {
+    ghostBtn.addEventListener('mouseenter', () => { ghostBtn.style.borderColor = '#c8511a'; });
+    ghostBtn.addEventListener('mouseleave', () => { ghostBtn.style.borderColor = 'rgba(240,235,225,0.25)'; });
+  }
+
+  // Scroll reveal
+  const revealIds = ['opening-block', 'punchline-card', 'includes-block', 'matters-block', 'process-block'];
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        (e.target as HTMLElement).style.opacity = '1';
+        (e.target as HTMLElement).style.transform = 'translateY(0)';
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  revealIds.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(2rem)';
+      el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+      observer.observe(el);
+    }
+  });
+
+  document.querySelectorAll('.reveal').forEach(el => {
+    const htmlEl = el as HTMLElement;
+    if (!revealIds.includes(htmlEl.id)) {
+      htmlEl.style.opacity = '0';
+      htmlEl.style.transform = 'translateY(1.5rem)';
+      htmlEl.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(htmlEl);
+    }
+  });
+</script>
