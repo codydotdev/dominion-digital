@@ -57,7 +57,7 @@ const budgetOptions = [
       <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.75rem;">
         <img
           src="/images/Dominion Digital Logo White.png"
-          alt="Dominion Digital"
+          alt="Dominion.Digital"
           style="height: 2rem; width: auto; display: block;"
         />
         <span class="font-wordmark text-text" style="font-size: 0.875rem; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap;">
@@ -80,7 +80,7 @@ const budgetOptions = [
 
       <!-- Web3Forms hidden fields -->
       <input type="hidden" name="access_key" value="80768fb4-59cf-4ebf-a55a-b6303350574e" />
-      <input type="hidden" name="subject" value="New Inquiry — Dominion Digital" />
+      <input type="hidden" name="subject" value="New Inquiry — Dominion.Digital" />
       <input type="hidden" name="redirect" value="false" />
       <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" aria-hidden="true" />
       <input type="hidden" name="pain_points" id="pain-points-value" />
@@ -205,7 +205,7 @@ const budgetOptions = [
               style="width: 15px; height: 15px; min-width: 15px; margin-top: 3px; accent-color: #c8511a; cursor: pointer;"
             />
             <span class="font-body" style="font-size: 0.8rem; color: #8a8880; line-height: 1.55;">
-              I agree to receive texts and emails about my project from Dominion Digital.
+              I agree to receive texts and emails about my project from Dominion.Digital.
             </span>
           </label>
 
@@ -400,8 +400,8 @@ const budgetOptions = [
     if (bundleField) bundleField.value = bundle;
     const subjectField = document.querySelector('[name="subject"]');
     if (subjectField) subjectField.value = bundle
-      ? `New Lead — ${bundle} | Dominion Digital`
-      : 'New Inquiry — Dominion Digital';
+      ? `New Lead — ${bundle} | Dominion.Digital`
+      : 'New Inquiry — Dominion.Digital';
     const form = document.getElementById('contact-form');
     const success = document.getElementById('modal-success');
     if (form) form.style.display = 'block';

@@ -1,0 +1,544 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Sparkles from '../components/Sparkles.astro';
+---
+
+<Layout
+  title="AI & Automation Kansas City | Dominion.Digital"
+  description="Custom AI automation, voice agents, chatbots, and reputation management for Kansas City businesses. Stop trading time for revenue — Dominion.Digital builds systems that run themselves."
+  canonicalUrl="https://dominion.digital/ai-automation"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://dominion.digital"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "AI & Automation",
+            "item": "https://dominion.digital/ai-automation"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://dominion.digital/ai-automation#service",
+        "name": "AI & Automation",
+        "alternateName": "Automation Company",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://dominion.digital/#organization",
+          "name": "Dominion.Digital"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Kansas City"
+        },
+        "url": "https://dominion.digital/ai-automation"
+      }
+    ]
+    </script>
+  </Fragment>
+
+  <Nav />
+
+  <main>
+
+    <!-- ─── PAGE HERO ──────────────────────────────────────────────────────── -->
+    <section
+      class="relative"
+      style="padding-top: clamp(9rem, 18vw, 14rem); padding-bottom: clamp(5rem, 10vw, 8rem);"
+      aria-label="AI & Automation page hero"
+    >
+      <Sparkles />
+      <div
+        class="absolute inset-0 pointer-events-none"
+        style="background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,81,26,0.07) 0%, transparent 70%); z-index: 0;"
+        aria-hidden="true"
+      ></div>
+
+      <div class="container relative" style="z-index: 1;">
+        <p class="font-label text-xs tracking-widest uppercase mb-6 reveal" style="color: #8a8880;">
+          <a href="/" class="hover:text-text transition-colors duration-200">Home</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          AI &amp; Automation
+        </p>
+
+        <h1
+          class="font-display font-extrabold text-text tracking-tighter leading-none reveal"
+          style="font-size: clamp(3rem, 6.5vw, 6.5rem); max-width: 18ch; margin-bottom: 2rem;"
+        >
+          Kansas City AI &amp; Automation for Businesses Done Trading Time for Revenue
+        </h1>
+
+        <p class="font-body text-text-muted reveal" style="font-size: 1.125rem; max-width: 48ch; margin-bottom: 2rem; line-height: 1.6;">
+          If you're manually following up on leads, building reports, or booking appointments, that's a system problem. Dominion.Digital builds the fix.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 reveal">
+          <button
+            type="button"
+            data-open-contact
+            class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97] transition-all duration-200"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
+          >
+            Show Me What to Automate
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── PROBLEM SECTION ───────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);">
+      <div class="container reveal flex flex-col items-center justify-center">
+        <div class="w-full text-center flex flex-col items-center">
+
+          <div class="text-left w-full max-w-4xl" style="margin-bottom: clamp(2rem, 4vw, 3rem); padding: 2rem 0; border-top: 1px solid rgba(200,81,26,0.2); border-bottom: 1px solid rgba(200,81,26,0.2);">
+            <strong class="font-display text-text inline-flex items-center justify-start gap-6" style="font-size: clamp(1.5rem, 3vw, 2rem);">
+              <svg class="flex-shrink-0" style="width: clamp(1.5rem, 2.5vw, 2rem); height: clamp(1.5rem, 2.5vw, 2rem); color: #c8511a;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+              </svg>
+              Every hour spent on manual tasks is an hour not spent on growing the business.
+            </strong>
+          </div>
+
+          <p class="font-label text-xs tracking-widest uppercase w-full max-w-6xl text-left" style="color: #8a8880; margin-bottom: 1.5rem;">Where the hours go</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl text-left" style="margin-bottom: clamp(2.5rem, 5vw, 4rem);">
+
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px; padding: 2.5rem 2rem;" class="hover:-translate-y-2 hover:scale-[1.02] hover:bg-[rgba(200,81,26,0.03)] hover:border-[rgba(200,81,26,0.2)] hover:shadow-[0_0_30px_rgba(200,81,26,0.15)] transition-all duration-300 cursor-default group">
+              <div class="w-12 h-12 mb-6 flex items-center justify-center rounded-full group-hover:scale-110 transition-transform duration-300" style="background: rgba(200,81,26,0.1); color: #c8511a;">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+              </div>
+              <h3 class="font-display font-medium text-text mb-3" style="font-size: 1.25rem;">Leads Going Cold</h3>
+              <p class="font-body text-text-muted group-hover:text-text transition-colors duration-300" style="font-size: 1rem; line-height: 1.6;">The odds of reaching a new lead drop by 10x after five minutes. Most businesses respond in hours. An AI voice agent or chatbot closes that gap permanently. Every lead gets a response in seconds, regardless of what else is happening.</p>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px; padding: 2.5rem 2rem;" class="hover:-translate-y-2 hover:scale-[1.02] hover:bg-[rgba(200,81,26,0.03)] hover:border-[rgba(200,81,26,0.2)] hover:shadow-[0_0_30px_rgba(200,81,26,0.15)] transition-all duration-300 cursor-default group">
+              <div class="w-12 h-12 mb-6 flex items-center justify-center rounded-full group-hover:scale-110 transition-transform duration-300" style="background: rgba(200,81,26,0.1); color: #c8511a;">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="font-display font-medium text-text mb-3" style="font-size: 1.25rem;">Manual Everything</h3>
+              <p class="font-body text-text-muted group-hover:text-text transition-colors duration-300" style="font-size: 1rem; line-height: 1.6;">Follow-up emails, CRM updates, report generation, appointment confirmations — your team does them on repeat because no one ever built a system. Every one of those tasks can run on its own. Dominion.Digital builds the workflow that replaces them.</p>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px; padding: 2.5rem 2rem;" class="hover:-translate-y-2 hover:scale-[1.02] hover:bg-[rgba(200,81,26,0.03)] hover:border-[rgba(200,81,26,0.2)] hover:shadow-[0_0_30px_rgba(200,81,26,0.15)] transition-all duration-300 cursor-default group">
+              <div class="w-12 h-12 mb-6 flex items-center justify-center rounded-full group-hover:scale-110 transition-transform duration-300" style="background: rgba(200,81,26,0.1); color: #c8511a;">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.562.562 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                </svg>
+              </div>
+              <h3 class="font-display font-medium text-text mb-3" style="font-size: 1.25rem;">Reputation Left to Chance</h3>
+              <p class="font-body text-text-muted group-hover:text-text transition-colors duration-300" style="font-size: 1rem; line-height: 1.6;">Happy clients rarely leave reviews on their own. Unhappy ones do. Without a system requesting reviews and monitoring what gets posted, your reputation grows on its own timeline. A system keeps you in front of it.</p>
+            </div>
+
+          </div>
+
+          <a
+            href="#ai-automation-systems"
+            class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent transition-all duration-300"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+          >
+            See the solutions
+            <svg class="ml-3 w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── SERVICE 01: AI AUTOMATION SYSTEMS ────────────────────────────── -->
+    <section id="ai-automation-systems" style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: rgba(255,255,255,0.02);">
+      <div class="container reveal flex flex-col items-center justify-center">
+        <div class="max-w-4xl w-full text-center space-y-8 flex flex-col items-center">
+          <span class="font-label tracking-widest" style="font-size: 0.75rem; text-transform: uppercase; border: 1px solid rgba(200,81,26,0.5); color: #c8511a; border-radius: 9999px; padding: 0.3rem 1rem; display: inline-block; margin-bottom: 1.25rem;">Service 01</span>
+          <div style="display: inline-flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+            <svg style="width: 1rem; height: 1rem; color: #c8511a; flex-shrink: 0;" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.964m11.49-9.642l1.149-.964M7.501 19.795l.75-1.3m7.5-12.99l.75-1.3m-6.063 16.658l.26-1.477m2.605-14.772l.26-1.477m0 17.726l-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205L12 12m6.894 5.785l-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864l-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
+            </svg>
+            <span class="font-label text-xs tracking-widest uppercase" style="color: #c8511a;">AI Automation Systems</span>
+          </div>
+          <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+            Replace the Manual Layer With Workflows That Run Themselves
+          </h2>
+          <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; max-width: 60ch; margin: 0 auto;">
+            Lead follow-up, appointment booking, CRM updates, and reporting — every task your team does on repeat has the same answer: a custom automation workflow. Dominion.Digital maps the logic, connects your existing tools, and deploys systems that fire automatically so your business keeps moving whether or not anyone is at a desk.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl" style="margin-top: clamp(2.5rem, 5vw, 4rem);">
+          {
+            [
+              "Lead follow-up sequences that fire in seconds, not hours",
+              "Appointment booking that syncs with your calendar automatically",
+              "CRM updates triggered by form fills, calls, and bookings",
+              "Scheduled reports delivered to your inbox without anyone pulling data",
+              "Custom workflow design built around your process, not a generic template",
+              "Handoff documentation so your team can manage and adjust after delivery"
+            ].map((item) => (
+              <div class="flex items-start hover:-translate-y-1 transition-all duration-300" style="padding: 1.5rem 2rem; background: rgba(255,255,255,0.02); border: 1px solid rgba(240,235,225,0.08); border-radius: 8px;">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: #c8511a; margin-right: 1rem;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="font-body text-text text-left" style="font-size: 1rem; line-height: 1.5;">{item}</span>
+              </div>
+            ))
+          }
+        </div>
+
+        <a
+          href="/ai-automation/ai-automation-systems"
+          class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent transition-all duration-300"
+          style="margin-top: clamp(3rem, 5vw, 4rem); font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+        >
+          See How It Works
+          <svg class="ml-2 w-3 h-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- ─── SERVICE 02: AI VOICE AGENTS ──────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] items-center gap-12 md:gap-24">
+
+          <!-- Left: pill benefits -->
+          <div class="reveal flex flex-col gap-3 w-full order-last md:order-first" style="padding-top: 1rem;">
+            {
+              [
+                "Answers Every Inbound Call",
+                "Qualifies Leads Instantly",
+                "Books Appointments Automatically",
+                "Works 24/7 After Hours",
+                "Never Puts a Lead on Hold"
+              ].map((item) => (
+                <span class="inline-flex w-full items-center font-label text-xs tracking-widest uppercase text-text hover:border-accent transition-all duration-300" style="padding: 0.85rem 1.5rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">
+                  <svg class="w-3 h-3 flex-shrink-0" style="color: #c8511a; margin-right: 0.75rem;" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  {item}
+                </span>
+              ))
+            }
+          </div>
+
+          <!-- Right: narrative -->
+          <div class="reveal space-y-6">
+            <span class="font-label tracking-widest" style="font-size: 0.75rem; text-transform: uppercase; border: 1px solid rgba(200,81,26,0.5); color: #c8511a; border-radius: 9999px; padding: 0.3rem 1rem; display: inline-block; margin-bottom: 1.25rem;">Service 02</span>
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+              <svg style="width: 1rem; height: 1rem; color: #c8511a; flex-shrink: 0;" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+              </svg>
+              <span class="font-label text-xs tracking-widest uppercase" style="color: #c8511a;">AI Voice Agents</span>
+            </div>
+            <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+              Every Call Answered. Every Lead Captured.
+            </h2>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              Missed calls are missed revenue. An AI voice agent answers every inbound call — day or night — qualifies the caller, and books the appointment directly into your calendar. No voicemail. No hold music. No leads slipping through because the phone rang at 7pm.
+            </p>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              For businesses that depend on phone calls, this is the highest-leverage automation available. Every call answered means every lead captured.
+            </p>
+            <a
+              href="/ai-automation/ai-voice-agents"
+              class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent transition-all duration-300"
+              style="margin-top: 2rem; font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+            >
+              See AI Voice Agents
+              <svg class="ml-2 w-3 h-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── SERVICE 03: AI CHATBOTS ───────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: rgba(255,255,255,0.02);">
+      <div class="container reveal flex flex-col items-center justify-center">
+        <div class="max-w-4xl w-full text-center space-y-8 flex flex-col items-center">
+          <span class="font-label tracking-widest" style="font-size: 0.75rem; text-transform: uppercase; border: 1px solid rgba(200,81,26,0.5); color: #c8511a; border-radius: 9999px; padding: 0.3rem 1rem; display: inline-block; margin-bottom: 1.25rem;">Service 03</span>
+          <div style="display: inline-flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+            <svg style="width: 1rem; height: 1rem; color: #c8511a; flex-shrink: 0;" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+            </svg>
+            <span class="font-label text-xs tracking-widest uppercase" style="color: #c8511a;">AI Chatbots</span>
+          </div>
+          <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+            Your Website Works While You Sleep
+          </h2>
+          <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; max-width: 60ch; margin: 0 auto;">
+            An AI chatbot on your site qualifies visitors, answers their questions, and books appointments — without anyone on your team involved. Most businesses lose after-hours visitors because there's no one there to respond. A chatbot removes that ceiling entirely. It handles the conversation from first question to booked appointment, 24 hours a day.
+          </p>
+          <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; max-width: 60ch; margin: 0 auto;">
+            Voice agents handle the phone. Chatbots handle the site. Together they cover every channel a lead might use to reach you.
+          </p>
+        </div>
+
+        <a
+          href="/ai-automation/ai-chatbots"
+          class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent transition-all duration-300"
+          style="margin-top: clamp(3rem, 5vw, 4rem); font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+        >
+          See AI Chatbots
+          <svg class="ml-2 w-3 h-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- ─── SERVICE 04: AI REPUTATION MANAGEMENT ─────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-[3fr_2fr] items-center gap-12 md:gap-24">
+
+          <!-- Left: narrative -->
+          <div class="reveal space-y-6">
+            <span class="font-label tracking-widest" style="font-size: 0.75rem; text-transform: uppercase; border: 1px solid rgba(200,81,26,0.5); color: #c8511a; border-radius: 9999px; padding: 0.3rem 1rem; display: inline-block; margin-bottom: 1.25rem;">Service 04</span>
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+              <svg style="width: 1rem; height: 1rem; color: #c8511a; flex-shrink: 0;" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.562.562 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              <span class="font-label text-xs tracking-widest uppercase" style="color: #c8511a;">AI Reputation Management</span>
+            </div>
+            <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+              Your Reputation on Autopilot
+            </h2>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              Happy clients rarely leave reviews without being asked. Dominion.Digital builds automated review request sequences that go out after every completed job — timed correctly, worded conversationally, sent through the right channel. More reviews, less effort.
+            </p>
+            <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+              On top of requests, Dominion.Digital monitors your reviews across platforms and drafts responses using AI so nothing goes unanswered. Your reputation is one of your best marketing assets. A system should be managing it.
+            </p>
+            <a
+              href="/ai-automation/ai-reputation-management"
+              class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent transition-all duration-300"
+              style="margin-top: 2rem; font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+            >
+              See AI Reputation Management
+              <svg class="ml-2 w-3 h-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Right: pill benefits -->
+          <div class="reveal flex flex-col gap-3 w-full" style="padding-top: 1rem;">
+            {
+              [
+                "Automated Review Requests",
+                "Cross-Platform Monitoring",
+                "AI-Drafted Responses",
+                "Timed After Job Completion",
+                "Boosts Local SEO Rankings"
+              ].map((item) => (
+                <span class="inline-flex w-full items-center font-label text-xs tracking-widest uppercase text-text hover:border-accent transition-all duration-300" style="padding: 0.85rem 1.5rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">
+                  <svg class="w-3 h-3 flex-shrink-0" style="color: #c8511a; margin-right: 0.75rem;" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  {item}
+                </span>
+              ))
+            }
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── URGENCY / CTA SECTION ─────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: rgba(200,81,26,0.05);">
+      <div class="container reveal flex flex-col items-center justify-center">
+        <div class="max-w-4xl w-full text-center space-y-8 flex flex-col items-center">
+          <p class="font-label text-xs tracking-widest uppercase" style="color: #c8511a;">When to Start</p>
+          <h2 class="font-display font-bold tracking-tight text-text" style="font-size: clamp(2rem, 3.5vw, 3rem);">
+            If Your Business Still Runs Mostly on Manual Processes, the Answer Is Now.
+          </h2>
+          <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; max-width: 60ch; margin: 0 auto;">
+            Every month without automation is a month of leads going cold, hours spent on repetitive tasks, and reputation building left to chance. The businesses investing in AI systems right now will operate faster and at lower cost than those that wait. Dominion.Digital starts with a workflow audit — we find the highest-value automations first so the investment pays back quickly.
+          </p>
+          <button
+            type="button"
+            data-open-contact
+            class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97] transition-all duration-200"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem; margin-top: 3rem;"
+          >
+            Show Me What to Automate
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── FAQ ───────────────────────────────────────────────────────────── -->
+    <section style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);">
+      <div class="container flex flex-col items-center justify-center">
+        <div class="max-w-3xl w-full">
+          <h2 class="font-display font-bold tracking-tight text-text text-center reveal" style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: clamp(3rem, 6vw, 5rem);">
+            Frequently Asked Questions
+          </h2>
+          <div class="faq-list reveal" role="list">
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">Do I need all four services, or can I start with one?</span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  Start with one. Dominion.Digital begins every engagement with a workflow audit to identify where you're losing the most time or revenue. Most businesses start with lead follow-up automation or voice agents because the payback is fastest. You can add services as each one is running smoothly.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">Will these systems replace my team?</span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  No. They remove the repetitive work so your team can focus on the things that actually require a human. A voice agent handles the initial qualification call — your closer still closes. Automation handles the follow-up sequence — your team still builds the relationship. The goal is to free your people from low-value tasks, not replace them.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">How are these different from off-the-shelf tools I could set up myself?</span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  Off-the-shelf tools require setup time, ongoing management, and usually don't connect to each other cleanly. Dominion.Digital builds custom workflows around your specific process, connects your existing tools, and delivers something that works from day one without you having to figure it out. You get the result without the learning curve.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">What tools do you build with?</span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  It depends on your stack. Dominion.Digital works with the tools you already use — HubSpot, Salesforce, GoHighLevel, Google Workspace, and most platforms with an API. We scope every project before building so you know exactly what's getting connected and how before anything starts.
+                </p>
+              </div></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+
+</Layout>
+
+
+<style>
+  .faq-body {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 480ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .faq-body.is-open {
+    max-height: 600px;
+  }
+  .faq-body-inner {
+    padding-bottom: 1.5rem;
+  }
+
+  @keyframes faq-spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  .faq-icon {
+    animation: faq-spin 4s linear infinite;
+  }
+  .faq-icon.is-open {
+    animation: none;
+    transform: rotate(180deg);
+  }
+</style>
+
+
+<script>
+  // ─── Scroll reveal ─────────────────────────────────────────────────────────
+  document.querySelectorAll('.reveal').forEach((el) => {
+    if (el.classList.contains('visible')) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.classList.add('visible');
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.08 }
+    );
+    observer.observe(el);
+  });
+
+  // ─── FAQ accordion ─────────────────────────────────────────────────────────
+  document.querySelectorAll('.faq-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const item   = trigger.closest('.faq-item')!;
+      const body   = item.querySelector('.faq-body') as HTMLElement;
+      const icon   = trigger.querySelector('.faq-icon') as HTMLElement;
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+
+      if (isOpen) {
+        body.classList.remove('is-open');
+        icon.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+      } else {
+        body.classList.add('is-open');
+        icon.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>

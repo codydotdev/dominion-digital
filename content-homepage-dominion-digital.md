@@ -8,13 +8,13 @@
 
 ## Opening
 
-Dominate your market with a beautiful website and a high-conversion online presence engineered for one goal: qualified leads. Web design, SEO, AI search, ads, and automations. One complete system. You'll have more leads in 90 days or we work for free until you do. Guaranteed.
+Dominate your market with a high-conversion online presence engineered to generate qualified leads. Web design, SEO, AI search, ads, and automation running as a complete system. More leads in 90 days or we work for free until you do. Guaranteed.
 
 ---
 
 ## About Dominion.Digital
 
-Most Kansas City businesses that call us have already hired a marketing agency. They paid for six months of SEO, got monthly ranking reports, and ended their contract with more dashboards than new clients. Dominion.Digital is a Kansas City digital marketing agency focused on one metric: qualified leads. Web design, SEO, AI search optimization, Google Ads, and business automation are built as one connected system. When we send you a monthly report, every number connects to pipeline, not impressions. Kansas City has no shortage of agencies that are great at selling retainers. Most business owners in Overland Park, Lee's Summit, and Olathe have already found that out the hard way. Dominion.Digital was built to work differently.
+Most Kansas City businesses that call us have already hired a marketing agency. They paid for six months of SEO, got monthly ranking reports, and ended their contract with more dashboards than new clients. Dominion.Digital is a Kansas City digital marketing agency that measures everything against qualified leads. Web design, SEO, AI search optimization, Google Ads, and business automation are built as one connected system. When we send you a monthly report, every number connects to pipeline, not impressions. Kansas City has no shortage of agencies that are great at selling retainers. Most business owners in Overland Park, Lee's Summit, and Olathe have already found that out the hard way. Dominion.Digital was built to work differently.
 
 ---
 
@@ -23,7 +23,7 @@ Most Kansas City businesses that call us have already hired a marketing agency. 
 
 Most websites don't generate leads. They look fine, load fast enough, and sit there doing nothing. A digital business card. You paid someone to build it, someone else to host it, and now it's competing with 40 other local businesses on a search page it barely shows up on.
 
-Every Dominion website is starts with one question: what happens when someone lands here? We design the answer into the layout. High-conversion architecture, fast load times, and a user journey built to turn a visitor into a phone call or a contact form submission.
+Every Dominion website is designed around what happens when someone lands here. The answer is built into the layout. High-conversion architecture, fast load times, and a user journey built to turn a visitor into a phone call or a contact form submission.
 
 Businesses across Kansas City in industries from HVAC to professional services have seen inbound contact double after a site rebuild with Dominion. A well-built website is the foundation your entire marketing system sits on.
 

@@ -65,16 +65,16 @@
 
 ---
 
-## AI Automation
+## AI & Automation
 
 - Slug: /ai-automation
-- H1: AI Automation Systems for Kansas City Businesses Ready to Stop Trading Time for Revenue
-- Meta Title: AI Automation Systems Kansas City | Dominion Digital (52 chars)
-- Meta Description: PLACEHOLDER — Describe Dominion Digital's AI automation systems that help Kansas City businesses and national brands automate workflows, save time, and scale without adding headcount.
+- H1: AI & Automation Systems for Kansas City Businesses Ready to Stop Trading Time for Revenue
+- Meta Title: AI & Automation Kansas City | Dominion Digital (48 chars)
+- Meta Description: PLACEHOLDER — Describe Dominion Digital's AI and automation services — custom workflows, AI voice agents, chatbots, and reputation management that help Kansas City businesses scale without adding headcount.
 - Parent Page: /
 - Type: category
 - GBP Category: Automation Company
-- Links To: /, /web-design, /internet-marketing, /advertising, /ai-automation/ai-automation-systems, /contact
+- Links To: /, /web-design, /internet-marketing, /advertising, /ai-automation/ai-automation-systems, /ai-automation/ai-voice-agents, /ai-automation/ai-chatbots, /ai-automation/ai-reputation-management, /contact
 - Notes: This is a strong differentiator — most marketing agencies don't offer this. Lead with the time-savings and scaling angle. Speak to business owners who are doing too much manually.
 
 ---
@@ -220,6 +220,48 @@
 - GBP Category: Automation Company
 - Links To: /ai-automation, /web-design/custom-web-development, /internet-marketing/local-lead-generation, /contact
 - Notes: Lead with time savings and revenue per hour. Give concrete examples of automations: lead follow-up, appointment booking, reporting, content workflows. Bridge to web development for custom integrations.
+
+---
+
+## AI Voice Agents
+
+- Slug: /ai-automation/ai-voice-agents
+- H1: AI Voice Agents That Answer Every Call and Never Miss a Lead
+- Meta Title: AI Voice Agents Kansas City | Dominion Digital (47 chars)
+- Meta Description: PLACEHOLDER — Describe Dominion Digital's AI voice agent service — AI-powered phone agents that answer inbound calls, qualify leads, and book appointments 24/7 for Kansas City businesses.
+- Parent Page: /ai-automation
+- Type: service
+- GBP Category: Automation Company
+- Links To: /ai-automation, /ai-automation/ai-automation-systems, /ai-automation/ai-chatbots, /contact
+- Notes: AI phone agents that handle inbound calls, qualify leads, and book appointments when no one picks up. Highlight 24/7 availability, no missed calls, and the revenue lost from unanswered phones. Mention tools like VAPI and Bland AI without over-promising. Bridge to AI chatbots as the website equivalent.
+
+---
+
+## AI Chatbots
+
+- Slug: /ai-automation/ai-chatbots
+- H1: AI Chatbots That Qualify Your Website Visitors and Book Appointments While You Sleep
+- Meta Title: AI Chatbots Kansas City | Dominion Digital (43 chars)
+- Meta Description: PLACEHOLDER — Describe Dominion Digital's AI chatbot service — conversational AI for Kansas City business websites that qualifies leads, answers questions, and books appointments automatically.
+- Parent Page: /ai-automation
+- Type: service
+- GBP Category: Automation Company
+- Links To: /ai-automation, /ai-automation/ai-voice-agents, /ai-automation/ai-automation-systems, /contact
+- Notes: Website-facing conversational AI. Lead qualification, FAQ answering, appointment booking — all on the site without requiring a human. Complements voice agents (voice handles the phone, chatbot handles the site). Speak to businesses that lose leads after hours.
+
+---
+
+## AI Reputation Management
+
+- Slug: /ai-automation/ai-reputation-management
+- H1: AI Reputation Management That Puts Your Kansas City Business on Autopilot for Reviews
+- Meta Title: AI Reputation Management Kansas City | Dominion Digital (55 chars)
+- Meta Description: PLACEHOLDER — Describe Dominion Digital's AI reputation management service — automated review requests, monitoring, and AI-drafted responses that build and protect your online reputation.
+- Parent Page: /ai-automation
+- Type: service
+- GBP Category: Automation Company
+- Links To: /ai-automation, /ai-automation/ai-automation-systems, /internet-marketing/seo, /contact
+- Notes: Automated review request sequences, cross-platform monitoring, and AI-drafted response templates. Local businesses run on reviews and most don't have a system for it. Connects naturally to local SEO — more reviews improve map pack rankings. Speak to businesses that rely on word-of-mouth but have no process for turning happy clients into reviews.
 
 ---
 
@@ -460,10 +502,10 @@
 ```
 Site Structure Complete: Dominion Digital
 
-Total pages: 32
+Total pages: 35
 ├── 1  Homepage
-├── 4  Category pages (Web Design, Internet Marketing, Advertising, AI Automation)
-├── 10 Service pages
+├── 4  Category pages (Web Design, Internet Marketing, Advertising, AI & Automation)
+├── 13 Service pages
 ├── 13 Location pages (Kansas City + 12 suburbs)
 └── 3  Standard pages (About, Contact, Pricing)
 

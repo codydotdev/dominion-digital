@@ -1,0 +1,89 @@
+---
+// FloatingPaths.astro
+// Animated sweeping path background for service pages
+// Rewritten from framer-motion React original to pure CSS + SVG pathLength normalization
+// pathLength="1" on each <path> lets CSS treat the stroke as a 0–1 unit range,
+// exactly replicating framer-motion's pathLength/pathOffset props with no JS.
+// Two mirrored sets (position +1 and -1) matching the original component.
+
+const COUNT = 36;
+
+function makePaths(position: number) {
+  return Array.from({ length: COUNT }, (_, i) => {
+    const p = position;
+    return {
+      id: `${p > 0 ? 'a' : 'b'}${i}`,
+      d: [
+        `M-${380 - i * 5 * p} -${189 + i * 6}`,
+        `C-${380 - i * 5 * p} -${189 + i * 6}`,
+        `-${312 - i * 5 * p} ${216 - i * 6}`,
+        `${152 - i * 5 * p} ${343 - i * 6}`,
+        `C${616 - i * 5 * p} ${470 - i * 6}`,
+        `${684 - i * 5 * p} ${875 - i * 6}`,
+        `${684 - i * 5 * p} ${875 - i * 6}`,
+      ].join(' '),
+      // Light on dark: warm white at low opacity. Later paths (higher i) are slightly more visible.
+      opacity: +(0.03 + i * 0.006).toFixed(3),
+      width: +(0.5 + i * 0.03).toFixed(2),
+      // Stagger durations so paths don't all cycle in sync
+      duration: 20 + (i % 9) * 1.8 + (p > 0 ? 0 : 3.5),
+      // Negative delay = paths are already mid-animation on load (no blank first frame)
+      delay: -((i * 1.6 + (p > 0 ? 0 : 9)) % 30),
+    };
+  });
+}
+
+const allPaths = [...makePaths(1), ...makePaths(-1)];
+---
+
+<div
+  aria-hidden="true"
+  style="position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0;"
+>
+  <svg
+    viewBox="0 0 696 316"
+    fill="none"
+    style="position: absolute; inset: 0; width: 100%; height: 100%;"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {allPaths.map(p => (
+      <path
+        key={p.id}
+        d={p.d}
+        pathLength="1"
+        stroke="#f0ebe1"
+        stroke-width={p.width}
+        stroke-opacity={p.opacity}
+        fill="none"
+        class="fp"
+        style={`animation-duration: ${p.duration}s; animation-delay: ${p.delay}s;`}
+      />
+    ))}
+  </svg>
+</div>
+
+<style>
+  /*
+   * stroke-dasharray: "0.3 0.7"
+   *   — 30% of the path is drawn (dash), 70% is gap
+   *   — matches framer-motion's initial pathLength: 0.3
+   *
+   * Animating stroke-dashoffset 0 → -1
+   *   — shifts the start of the dash forward along the full path
+   *   — matches pathOffset: [0, 1, 0] (one full traversal per cycle)
+   *
+   * Both work because pathLength="1" normalizes the SVG path to a 0–1 unit range.
+   */
+  @keyframes fp-travel {
+    0%   { stroke-dashoffset: 0;  }
+    50%  { stroke-dashoffset: -1; }
+    100% { stroke-dashoffset: 0;  }
+  }
+
+  .fp {
+    stroke-dasharray: 0.3 0.7;
+    stroke-dashoffset: 0;
+    animation: fp-travel linear infinite;
+    will-change: stroke-dashoffset;
+  }
+</style>

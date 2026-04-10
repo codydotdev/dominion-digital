@@ -36,7 +36,7 @@ Type: category
 Keyword Target: internet marketing services kansas city
 
 H1: Kansas City Internet Marketing That Gets Your Business Found First
-Subheadline: SEO, GEO, content, and local lead gen: built as a system, not a checklist. Most agencies do one thing and call it a strategy. Dominion builds the whole machine.
+Subheadline: SEO, GEO, content, and local lead gen built as one system. Most agencies do one thing and call it a strategy. Dominion builds the whole machine.
 Primary CTA: Get a Free Marketing Audit → /contact
 Secondary CTA: See All Services → /internet-marketing/seo
 Value Prop: Dominion is the only KC agency optimizing for both Google search and AI tools like ChatGPT and Perplexity: so your business shows up wherever your customers are looking.
@@ -75,10 +75,10 @@ Type: service
 Keyword Target: high-conversion web design kansas city
 
 H1: Kansas City Web Design Engineered to Convert Traffic Into Revenue
-Subheadline: Pretty websites don't pay your bills. High-converting ones do. Every design decision: layout, copy placement, CTA position: is made to get visitors to take action, not just scroll.
+Subheadline: Every layout choice, CTA placement, and headline is built to get visitors to act. Your site should be your hardest-working salesperson.
 Primary CTA: Get a Conversion Audit → /contact
 Secondary CTA: See Custom Development → /web-design/custom-web-development
-Value Prop: Dominion's high-conversion web design is built on persuasion architecture, mobile-first performance, and tested user journeys: not just design trends.
+Value Prop: Dominion's high-conversion web design is built on persuasion architecture, mobile-first performance, and tested user journeys that convert.
 
 ---
 
@@ -88,7 +88,7 @@ Type: service
 Keyword Target: custom web development kansas city
 
 H1: Custom Web Development for Kansas City Businesses That Outgrew Templates
-Subheadline: If your current site can't do what your business needs, it's not a design problem: it's a development problem. Dominion builds from scratch, to spec, no compromises.
+Subheadline: Your business runs a specific way. Your website should too. Most websites are just templates built for someone else's business first. You want your website built from scratch, to spec, no compromises.
 Primary CTA: Scope My Custom Build → /contact
 Secondary CTA: See High-Conversion Design → /web-design/high-conversion-web-design
 Value Prop: Dominion builds fully custom sites and web applications: with integrations, automation, and performance baked in from day one, not patched in later.
@@ -104,7 +104,7 @@ H1: SEO Services That Get Kansas City Businesses to Page One
 Subheadline: Rankings don't come from one trick. They come from technical SEO, on-page optimization, link building, and content: done consistently. Dominion handles all of it and shows you the numbers.
 Primary CTA: Get My Free SEO Audit → /contact
 Secondary CTA: See GEO Services → /internet-marketing/geo
-Value Prop: Dominion's SEO covers technical, on-page, and local: with monthly reporting that shows ranking movement, traffic, and leads, not just vanity metrics.
+Value Prop: Dominion's SEO covers technical, on-page, and local: with monthly reporting that shows ranking movement, traffic, and leads tied to real business outcomes.
 
 ---
 
@@ -130,7 +130,7 @@ H1: Kansas City Content Marketing That Earns Traffic Instead of Buying It
 Subheadline: Every blog post and guide is an asset that compounds over time. Dominion builds content strategies around keywords your customers search and topics AI tools actually cite.
 Primary CTA: Get a Content Strategy Call → /contact
 Secondary CTA: See SEO Services → /internet-marketing/seo
-Value Prop: Dominion's content marketing builds topical authority for both Google and AI search: turning your site into the go-to resource in your industry, not just another blog.
+Value Prop: Dominion's content marketing builds topical authority for both Google and AI search: turning your site into the go-to resource in your industry.
 
 ---
 
@@ -140,7 +140,7 @@ Type: service
 Keyword Target: local lead generation kansas city
 
 H1: Local Lead Generation for Kansas City Businesses Tired of Slow Months
-Subheadline: Feast-or-famine is a system problem, not a market problem. Dominion builds a consistent pipeline using SEO, Google Ads, and conversion optimization: so your phone rings every month, not just when you're lucky.
+Subheadline: Feast-or-famine is a system problem. Dominion builds a consistent pipeline using SEO, Google Ads, and conversion optimization so your phone rings every month.
 Primary CTA: Build My Lead Pipeline → /contact
 Secondary CTA: See Google Ads Management → /advertising/google-ads-management
 Value Prop: Dominion's local lead generation combines SEO, paid ads, and conversion optimization into one system: built for Kansas City service businesses that need predictable, qualified leads every month.
@@ -169,7 +169,7 @@ H1: Ad Copy That Makes Your Kansas City Campaigns Actually Convert
 Subheadline: Great targeting with bad copy still fails. The words in your ads determine your click-through rate, your Quality Score, and your cost-per-lead. Dominion writes copy that moves all three.
 Primary CTA: Get My Ad Copy Reviewed → /contact
 Secondary CTA: See Google Ads Management → /advertising/google-ads-management
-Value Prop: Dominion's ad copywriting is focuses squarely on performance: CTR, Quality Score, and conversion rate: not just words that sound good in a deck.
+Value Prop: Dominion's ad copywriting focuses squarely on performance: CTR, Quality Score, and conversion rate. Every word earns its place.
 
 ---
 
@@ -205,7 +205,7 @@ Type: location
 Keyword Target: digital marketing agency kansas city
 
 H1: The Kansas City Digital Marketing Agency That Shows You the Numbers
-Subheadline: Based in Kansas City, built for KC businesses. Web design, SEO, GEO, Google Ads, and AI automation: with reporting that shows exactly what's working, not just what looks good on a slide.
+Subheadline: Based in Kansas City, built for KC businesses. Web design, SEO, GEO, Google Ads, and AI automation: with reporting that shows exactly what's working and what it's producing.
 Primary CTA: Book a Free Kansas City Strategy Call → /contact
 Secondary CTA: See All Services → /web-design
 Value Prop: Dominion Digital is headquartered in Kansas City: serving local businesses with full-stack digital marketing, results-first pricing, and complete transparency on every campaign.
@@ -244,7 +244,7 @@ Type: location
 Keyword Target: digital marketing agency lees summit mo
 
 H1: Lee's Summit Businesses Win Online With Marketing Built to Convert
-Subheadline: Lee's Summit has a strong small business community: and those businesses deserve marketing that generates leads, not just a website that sits there looking good.
+Subheadline: Lee's Summit has a strong small business community. Those businesses deserve marketing that generates consistent leads every month.
 Primary CTA: Get a Free Lee's Summit Audit → /contact
 Secondary CTA: See All Services → /web-design
 Value Prop: Dominion serves Lee's Summit businesses with web design, SEO, and paid advertising that generates consistent leads: with reporting you can actually make decisions from.
@@ -296,7 +296,7 @@ Type: location
 Keyword Target: digital marketing agency parkville mo
 
 H1: Parkville MO Businesses Deserve Marketing That Takes Them Seriously
-Subheadline: Parkville businesses have a distinct identity and a loyal customer base. Dominion builds on that foundation with digital marketing that drives real leads: not just more impressions.
+Subheadline: Parkville businesses have a distinct identity and a loyal customer base. Dominion builds on that foundation with digital marketing that drives qualified leads.
 Primary CTA: Get a Free Parkville Marketing Plan → /contact
 Secondary CTA: See All Services → /web-design
 Value Prop: Dominion brings the same full-stack marketing used by larger KC businesses to Parkville: web design, SEO, and paid ads: built to fit your market and your margins.
