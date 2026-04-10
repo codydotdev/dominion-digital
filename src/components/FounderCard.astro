@@ -1,0 +1,185 @@
+---
+// FounderCard.astro
+// Founder spotlight — two-column layout
+// New section directly below Intro (About) section
+// Photo: /images/cody-lawrence.png
+// Links to: /about (future page)
+---
+
+<section
+  style="padding-top: clamp(4rem, 8vw, 8rem); padding-bottom: clamp(8rem, 14vw, 14rem);"
+  aria-labelledby="founder-heading"
+  id="founder"
+>
+  <div class="container">
+
+    <div class="founder-wrapper reveal" id="founder-card">
+
+      <!-- Photo column -->
+      <div class="founder-photo-col">
+        <div class="founder-photo-frame">
+          <img
+            src="/images/cody-lawrence.png"
+            alt="Cody Lawrence, Founder of Dominion.Digital"
+            class="founder-photo"
+            width="340"
+            height="340"
+            loading="lazy"
+          />
+          <!-- Accent glow behind photo -->
+          <div class="founder-photo-glow" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <!-- Text content column -->
+      <div class="founder-text-col">
+
+        <!-- Label -->
+        <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">
+          The Person Behind It
+        </p>
+
+        <!-- Name/Title -->
+        <h2
+          id="founder-heading"
+          class="font-display font-bold tracking-tight text-text"
+          style="font-size: clamp(1.75rem, 3.5vw, 2.75rem); margin-bottom: 1.5rem;"
+        >
+          Cody Lawrence<span style="color: #c8511a;">.</span>
+        </h2>
+
+        <!-- Blurb -->
+        <p class="font-body leading-relaxed" style="font-size: 1.125rem; color: #8a8880; max-width: 48ch; margin-bottom: 1.25rem;">
+          Cody went into the digital marketing business in 2020. That was not exactly a gentle time to launch a business in Kansas City. He did it anyway. Since then, every strategy, service, and guarantee <strong style="font-weight: 800; color: #f0ebe1;">Dominion</strong><span style="color: #c8511a;">.</span><span style="font-weight: 400; color: #f0ebe1;">Digital</span> offers has been stress-tested in the real world.
+        </p>
+        <p class="font-body leading-relaxed" style="font-size: 1.125rem; color: #8a8880; max-width: 48ch; margin-bottom: 2.5rem;">
+          Off the clock, he is a husband, father, dog owner, avid reader of books, real estate investor, and fitness nerd. Which means he actually understands what it takes to run a business when time is the scarcest resource you have.
+        </p>
+
+        <!-- CTA -->
+        <a href="/about" class="founder-cta inline-flex items-center gap-3 font-label text-xs tracking-widest uppercase">
+          Meet Cody
+          <span class="founder-cta-arrow" aria-hidden="true">&#8594;</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* ─── Layout ─── */
+  .founder-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .founder-wrapper {
+      grid-template-columns: 1fr 1.4fr;
+      gap: 5rem;
+    }
+  }
+
+  /* ─── Photo column ─── */
+  .founder-photo-col {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: 768px) {
+    .founder-photo-col {
+      justify-content: flex-end;
+    }
+  }
+
+  .founder-photo-frame {
+    position: relative;
+    display: inline-block;
+    border-radius: 1.25rem;
+  }
+
+  .founder-photo {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    border-radius: 1.25rem;
+    filter: saturate(0.88) contrast(1.05);
+    transition: filter 600ms ease, transform 600ms ease;
+    position: relative;
+    z-index: 2;
+  }
+
+  .founder-photo:hover {
+    filter: saturate(1) contrast(1.05);
+    transform: scale(1.015);
+  }
+
+  /* Accent glow behind image */
+  .founder-photo-glow {
+    position: absolute;
+    inset: -12px;
+    border-radius: 1.5rem;
+    background: radial-gradient(ellipse at 40% 60%, rgba(200, 81, 26, 0.3) 0%, transparent 65%);
+    filter: blur(28px);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  /* ─── Text column ─── */
+  .founder-text-col {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ─── Meet Cody CTA ─── */
+  .founder-cta {
+    color: #f0ebe1;
+    border: 1px solid rgba(240, 235, 225, 0.2);
+    border-radius: 9999px;
+    padding: 0.75rem 2rem;
+    background: transparent;
+    text-decoration: none;
+    transition: color 200ms ease, border-color 200ms ease, transform 200ms ease;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .founder-cta:hover {
+    color: #c8511a;
+    border-color: #c8511a;
+    transform: translateX(3px);
+  }
+
+  .founder-cta-arrow {
+    font-size: 1rem;
+    transition: transform 200ms ease;
+  }
+
+  .founder-cta:hover .founder-cta-arrow {
+    transform: translateX(4px);
+  }
+</style>
+
+<script>
+  const el = document.getElementById('founder-card');
+  if (el) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.classList.add('visible');
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+  }
+</script>
