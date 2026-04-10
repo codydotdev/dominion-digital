@@ -1,0 +1,690 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingPaths from '../../components/FloatingPaths.astro';
+---
+
+<Layout
+  title="Ad Copywriting & Creative Kansas City | Dominion.Digital"
+  description="Ad copywriting for Kansas City businesses. Search ad headlines, landing page copy, and CTA variants written to improve click-through rate, Quality Score, and conversion rate."
+  canonicalUrl="https://dominion.digital/advertising/ad-copywriting"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://dominion.digital"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Advertising",
+            "item": "https://dominion.digital/advertising"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Ad Copywriting",
+            "item": "https://dominion.digital/advertising/ad-copywriting"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://dominion.digital/advertising/ad-copywriting#service",
+        "name": "Ad Copywriting & Creative",
+        "serviceType": "Ad Copywriting",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://dominion.digital/#organization",
+          "name": "Dominion.Digital"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Kansas City",
+          "addressRegion": "MO"
+        },
+        "url": "https://dominion.digital/advertising/ad-copywriting"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I need different copy for every ad group?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Each ad group targets a different set of keywords, and those keywords represent different search intents. A headline that converts well for one query will perform differently for another. Matching copy to intent is what drives click-through rate up and cost down."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you write copy for social ads as well?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Dominion.Digital writes ad copy for paid social alongside search. The approach shifts because social ads interrupt rather than respond to a search, but the same performance focus applies: every line is written to earn the click and the conversion."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you know if copy is performing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click-through rate and conversion rate are the primary signals. A headline with low CTR gets replaced. Copy with high CTR but low conversion rate points to a landing page mismatch. Dominion.Digital tracks both and adjusts based on what the data shows each month."
+            }
+          }
+        ]
+      }
+    ]
+    </script>
+  </Fragment>
+
+  <Nav />
+
+  <main>
+
+    <!-- ─── HERO ──────────────────────────────────────────────────────────── -->
+    <section
+      class="relative"
+      style="padding-top: clamp(9rem, 18vw, 14rem); padding-bottom: clamp(5rem, 10vw, 8rem);"
+      aria-label="Ad Copywriting hero"
+    >
+      <FloatingPaths />
+      <div
+        class="absolute inset-0 pointer-events-none"
+        style="background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,81,26,0.07) 0%, transparent 70%); z-index: 0;"
+        aria-hidden="true"
+      ></div>
+
+      <div class="container relative" style="z-index: 1;">
+
+        <p class="font-label text-xs tracking-widest uppercase mb-6 reveal" style="color: #8a8880;">
+          <a href="/" class="hover:text-text transition-colors duration-200">Home</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          <a href="/advertising" class="hover:text-text transition-colors duration-200">Advertising</a>
+          <span style="margin: 0 0.5rem; color: rgba(240,235,225,0.25);">/</span>
+          Ad Copywriting &amp; Creative
+        </p>
+
+        <h1
+          class="font-display font-extrabold text-text tracking-tighter leading-none reveal"
+          style="font-size: clamp(3rem, 6.5vw, 6.5rem); max-width: 18ch; margin-bottom: 2rem;"
+        >
+          Ad Copy That Makes Your Kansas City Campaigns Actually Convert
+        </h1>
+
+        <p class="font-body text-text-muted reveal" style="font-size: 1.125rem; max-width: 52ch; margin-bottom: 2rem; line-height: 1.6;">
+          Great targeting with bad copy still fails. The words in your ads determine your click-through rate, your Quality Score, and your cost-per-lead. Dominion.Digital writes copy that moves all three.
+        </p>
+
+        <div class="flex flex-wrap items-center reveal" style="gap: 1rem;">
+          <button
+            type="button"
+            data-open-contact
+            class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97] transition-all duration-200"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
+          >
+            Get My Ad Copy Reviewed
+          </button>
+          <a
+            href="/advertising/google-ads-management"
+            class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent transition-colors duration-200"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+            id="hero-ghost-secondary"
+          >
+            See Google Ads Management
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ─── OPENING / PUNCHLINE ───────────────────────────────────────────── -->
+    <section
+      style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);"
+      aria-labelledby="opening-punchline"
+    >
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[3fr_2fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="opening-block">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">
+              Advertising / Copy
+            </p>
+            <div style="max-width: 60ch;">
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                The copy in your ad is doing more work than most businesses realize. It determines whether someone clicks or scrolls past. A higher click-through rate improves your Google Quality Score, which lowers your cost per click. Better copy on the landing page turns more of those clicks into inquiries. The words are doing real financial work at every stage of the funnel.
+              </p>
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                Ad copywriting as an advertising agency service goes beyond writing something that sounds good. Every headline is built around what the searcher is looking for at that exact moment. Every description pushes toward the specific action you need. Every call-to-action is tested to find the version that converts at the highest rate.
+              </p>
+              <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem;">
+                The gap between a 2% click-through rate and a 6% click-through rate is copy. That difference is real money.
+              </p>
+            </div>
+          </div>
+
+          <div class="reveal" id="punchline-card" style="margin-top: 2rem;">
+            <div style="border: 1px solid rgba(200,81,26,0.25); padding: clamp(2rem, 4vw, 3rem); position: relative; overflow: hidden;">
+              <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(200,81,26,0.06) 0%, transparent 70%);"></div>
+              <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">The Leverage</p>
+              <p
+                class="font-display font-bold tracking-tight text-text"
+                id="opening-punchline"
+                style="font-size: clamp(1.5rem, 2.5vw, 2rem); line-height: 1.2;"
+              >
+                Every dollar of ad spend lands on a word. The word is either doing its job or it isn't.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── WHAT'S INCLUDED ───────────────────────────────────────────────── -->
+    <section
+      style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: #161614;"
+      aria-labelledby="includes-heading"
+    >
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="includes-block">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">What's Included</p>
+            <h2
+              id="includes-heading"
+              class="font-display font-bold tracking-tight text-text"
+              style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 2rem; line-height: 1.1;"
+            >
+              Copy Written<br />to Perform.
+            </h2>
+
+            <div class="stagger" style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2.5rem;" aria-label="Ad copywriting capabilities">
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Search Ad Headlines</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Description Copy</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">CTA Variants</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Landing Page Copy</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Ad Extensions</span>
+              <span class="font-label tracking-widest uppercase text-text" style="font-size: 0.65rem; padding: 0.5rem 1rem; border: 1px solid rgba(240,235,225,0.15); border-radius: 9999px;">Copy Audit</span>
+            </div>
+
+            <div style="border-top: 1px solid rgba(200,81,26,0.2); padding-top: 1.5rem;">
+              <p class="font-label text-xs tracking-widest uppercase" style="color: #c8511a; margin-bottom: 0.75rem;">Intent-Matched Copy</p>
+              <p class="font-body text-text-muted" style="font-size: 1rem; line-height: 1.6;">
+                Every headline is written to match the search query that triggered it. Relevance earns higher Quality Scores and lower cost per click.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <ul class="stagger" style="display: flex; flex-direction: column; gap: 0.75rem;" aria-label="What ad copywriting includes">
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Search ad headline sets</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Multiple headline variants per ad group, written to match the search intent behind each keyword cluster</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Description copy</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Full description sets for every ad group, structured to reinforce the headline and drive the click</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Call-to-action variants</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Multiple CTA options tested to identify which phrasing produces the highest conversion rate for your audience</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Landing page headline and subheadline</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">The first thing a visitor reads after clicking your ad is written to match the promise the ad made</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Ad extension copy</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">Callout extensions, sitelink copy, and structured snippet sets that improve ad rank and give searchers more reasons to click</p>
+                </div>
+              </li>
+
+              <li style="display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 2rem; background: rgba(13,13,11,0.6); border: 1px solid rgba(240,235,225,0.07);">
+                <svg style="flex-shrink: 0; margin-top: 0.15rem; width: 1.1rem; height: 1.1rem; color: #c8511a;" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem;">Copy audit for existing campaigns</p>
+                  <p class="font-body text-text-muted" style="font-size: 0.9rem; line-height: 1.5;">For businesses already running ads, a full review of current copy with rewrites and performance recommendations</p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── WHY IT MATTERS ────────────────────────────────────────────────── -->
+    <section
+      style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);"
+      aria-labelledby="matters-heading"
+    >
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="matters-block">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">The Signal</p>
+            <p
+              class="font-display font-bold tracking-tighter text-accent"
+              style="font-size: clamp(3rem, 6vw, 5.5rem); line-height: 0.9; margin-bottom: 1rem;"
+            >
+              CTR.
+            </p>
+            <p class="font-body text-text-muted" style="font-size: 1rem; max-width: 28ch; line-height: 1.5;">
+              Click-through rate is the first signal that copy is doing its job. A higher CTR improves Quality Score and lowers cost per click.
+            </p>
+          </div>
+
+          <div>
+            <h2
+              id="matters-heading"
+              class="font-display font-bold tracking-tight text-text"
+              style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 2rem; line-height: 1.1;"
+            >
+              Relevant Copy Earns Higher Quality Scores. Higher Scores Lower Your Cost.
+            </h2>
+            <div style="max-width: 58ch;">
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                Google's Quality Score is partly determined by how relevant your ad copy is to the search query that triggered it. Relevant copy earns higher scores. Higher scores lower your cost per click. Lower cost per click means more leads for the same budget. Writing ad copy for performance directly affects what you pay for every click.
+              </p>
+              <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem; margin-bottom: 1.5rem;">
+                The same principle holds on the landing page. A visitor who clicked on an ad about emergency plumbing expects to land somewhere that matches that urgency. A mismatch between the ad and the page kills conversion rates. Copy that carries the same message from search query to headline to landing page converts at a measurably higher rate.
+              </p>
+              <p class="font-body leading-relaxed text-text" style="font-size: 1.125rem; font-weight: 500;">
+                Every dollar of ad spend lands on a word. The word is either doing its job or it isn't.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── HOW WE APPROACH IT ────────────────────────────────────────────── -->
+    <section
+      style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); background: #161614;"
+      aria-labelledby="process-heading"
+    >
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr] items-start" style="gap: clamp(3rem, 6vw, 6rem);" id="process-block">
+
+          <div class="md:sticky" style="top: 6rem;">
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">The Process</p>
+            <h2
+              id="process-heading"
+              class="font-display font-bold tracking-tight text-text"
+              style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.5rem; line-height: 1.1;"
+            >
+              Intent First. Then the Words.
+            </h2>
+            <p class="font-body text-text-muted" style="font-size: 1rem; max-width: 32ch; line-height: 1.6;">
+              Every copy engagement starts with a review of the keywords being targeted and the intent behind each search. The copy follows from there.
+            </p>
+          </div>
+
+          <div>
+            <ul class="stagger" aria-label="Ad copywriting process steps">
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">01</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Keyword intent mapping</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">Each keyword cluster is reviewed for the intent behind the search. Someone searching "emergency plumber Kansas City" is in a different state of mind than someone searching "how much does a plumber cost." The copy for each needs to reflect that.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">02</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Headline and description sets</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">Multiple headline and description variants are written per ad group, anchored to the specific intent of those searches. Variants are structured for A/B testing from day one.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">03</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Landing page copy review</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">Landing page headlines and subheadlines are reviewed alongside ad copy. A click that doesn't convert is money spent with nothing to show. The page needs to match the promise the ad made.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">04</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Extension copy</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">Callout extensions, sitelinks, and structured snippets are written alongside primary ads so headlines, descriptions, and extensions are all optimized together.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="py-6" style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08);">
+                <div style="display: flex; align-items: flex-start; gap: 1.25rem;">
+                  <span class="font-label font-bold" style="color: #c8511a; font-size: 0.75rem; margin-top: 0.2rem; flex-shrink: 0;">05</span>
+                  <div>
+                    <p class="font-body text-text" style="font-size: 1rem; font-weight: 500; margin-bottom: 0.4rem;">Performance review and refinement</p>
+                    <p class="font-body text-text-muted" style="font-size: 0.95rem; line-height: 1.6;">CTR and conversion rate are tracked for every variant. The performers stay. The underperformers get replaced. Copy improves with every optimization cycle.</p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── FAQ ───────────────────────────────────────────────────────────── -->
+    <section
+      style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem);"
+      aria-labelledby="faq-heading"
+      id="faq"
+    >
+      <div class="container">
+        <div class="reveal grid grid-cols-1 md:grid-cols-[2fr_3fr]" style="gap: clamp(3rem, 6vw, 6rem);" id="faq-content">
+
+          <div>
+            <p class="font-label text-xs tracking-widest uppercase mb-5" style="color: #8a8880;">FAQ</p>
+            <h2
+              id="faq-heading"
+              class="font-display font-bold tracking-tight text-text"
+              style="font-size: clamp(2rem, 4vw, 3.5rem);"
+            >
+              Questions.<br />Answered.
+            </h2>
+          </div>
+
+          <div class="faq-list" role="list">
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">Do I need different copy for every ad group?</span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  Yes. Each ad group targets a different set of keywords, and those keywords represent different search intents. A headline that converts well for one query will perform differently for another. Matching copy to intent is what drives click-through rate up and cost down.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">Can you write copy for social ads as well?</span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  Yes. Dominion.Digital writes ad copy for paid social alongside search. The approach shifts because social ads interrupt rather than respond to a search, but the same performance focus applies: every line is written to earn the click and the conversion.
+                </p>
+              </div></div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button
+                class="faq-trigger w-full flex items-start justify-between gap-6 text-left py-6"
+                style="border-top: 1px solid rgba(240,235,225,0.08); border-bottom: 1px solid rgba(240,235,225,0.08); background: none; border-left: none; border-right: none; cursor: pointer;"
+                aria-expanded="false"
+              >
+                <span class="font-body text-text" style="font-size: 1.125rem; font-weight: 500;">How do you know if copy is performing?</span>
+                <span class="faq-icon shrink-0 font-display font-bold" style="color: #c8511a; font-size: 0.95rem; line-height: 1; margin-top: 0.2rem; text-shadow: 0 0 8px rgba(200,81,26,0.9), 0 0 20px rgba(200,81,26,0.6), 0 0 40px rgba(200,81,26,0.3);">▲</span>
+              </button>
+              <div class="faq-body"><div class="faq-body-inner">
+                <p class="font-body leading-relaxed text-text-muted" style="font-size: 1.125rem;">
+                  Click-through rate and conversion rate are the primary signals. A headline with low CTR gets replaced. Copy with high CTR but low conversion rate points to a landing page mismatch. Dominion.Digital tracks both and adjusts based on what the data shows each month.
+                </p>
+              </div></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── RELATED PAGES ─────────────────────────────────────────────────── -->
+    <section
+      style="padding-top: clamp(4rem, 8vw, 6rem); padding-bottom: clamp(4rem, 8vw, 6rem); background: #161614;"
+      aria-label="Related services"
+    >
+      <div class="container">
+        <div class="reveal" id="related-block">
+          <p class="font-label text-xs tracking-widest uppercase mb-8" style="color: #8a8880;">Explore More</p>
+          <ul class="stagger grid grid-cols-1 md:grid-cols-3" style="gap: 1rem;" aria-label="Related pages">
+
+            <li>
+              <a
+                href="/advertising"
+                class="block group"
+                style="padding: 1.75rem 2rem; border: 1px solid rgba(240,235,225,0.07); transition: border-color 200ms ease;"
+                onmouseenter="this.style.borderColor='rgba(200,81,26,0.3)'"
+                onmouseleave="this.style.borderColor='rgba(240,235,225,0.07)'"
+              >
+                <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">Advertising</p>
+                <p class="font-body text-text" style="font-size: 1rem; font-weight: 500;">Advertising &amp; Paid Media</p>
+                <p class="font-body text-text-muted" style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.5;">The full picture of Dominion.Digital's paid advertising services: Google Ads, PPC strategy, and ad copywriting.</p>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="/advertising/google-ads-management"
+                class="block group"
+                style="padding: 1.75rem 2rem; border: 1px solid rgba(240,235,225,0.07); transition: border-color 200ms ease;"
+                onmouseenter="this.style.borderColor='rgba(200,81,26,0.3)'"
+                onmouseleave="this.style.borderColor='rgba(240,235,225,0.07)'"
+              >
+                <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">Advertising</p>
+                <p class="font-body text-text" style="font-size: 1rem; font-weight: 500;">Google Ads Management</p>
+                <p class="font-body text-text-muted" style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.5;">Campaign setup, conversion tracking, and monthly optimization focused on cost-per-lead.</p>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="/advertising/ppc-campaign-strategy"
+                class="block group"
+                style="padding: 1.75rem 2rem; border: 1px solid rgba(240,235,225,0.07); transition: border-color 200ms ease;"
+                onmouseenter="this.style.borderColor='rgba(200,81,26,0.3)'"
+                onmouseleave="this.style.borderColor='rgba(240,235,225,0.07)'"
+              >
+                <p class="font-label text-xs tracking-widest uppercase mb-3" style="color: #8a8880;">Advertising</p>
+                <p class="font-body text-text" style="font-size: 1rem; font-weight: 500;">PPC Campaign Strategy</p>
+                <p class="font-body text-text-muted" style="font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.5;">Full-funnel campaign architecture, platform selection, and a 90-day launch roadmap before any spend begins.</p>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── BOTTOM CTA ────────────────────────────────────────────────────── -->
+    <section
+      style="padding-top: clamp(6rem, 12vw, 10rem); padding-bottom: clamp(6rem, 12vw, 10rem); position: relative; overflow: hidden;"
+      aria-label="Call to action"
+    >
+      <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; z-index: 0; background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(200,81,26,0.08) 0%, transparent 70%);"></div>
+      <div class="container reveal text-center" style="position: relative; z-index: 1; max-width: 48rem;" id="cta-block">
+        <p class="font-label text-xs tracking-widest uppercase mb-6" style="color: #8a8880;">Get Started</p>
+        <h2
+          class="font-display font-bold tracking-tight text-text"
+          style="font-size: clamp(2rem, 4vw, 3.5rem); margin-bottom: 1.5rem; line-height: 1.1;"
+        >
+          Better Copy Means Lower Cost Per Lead. Let's Review What You Have.
+        </h2>
+        <p class="font-body text-text-muted" style="font-size: 1.125rem; max-width: 46ch; margin: 0 auto; margin-bottom: 2.5rem; line-height: 1.6;">
+          Dominion.Digital reviews your current ad copy, rewrites for performance, and delivers headline sets, landing page copy, and extension copy built to improve CTR and conversion rate.
+        </p>
+        <div class="flex flex-wrap justify-center items-center" style="gap: 1rem;">
+          <button
+            type="button"
+            data-open-contact
+            class="btn-cta inline-flex items-center font-label font-semibold tracking-widest uppercase text-text bg-accent hover:bg-accent-hover active:scale-[0.97] transition-all duration-200"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem;"
+          >
+            Get My Ad Copy Reviewed
+          </button>
+          <a
+            href="/pricing"
+            class="inline-flex items-center font-label font-semibold tracking-widest uppercase text-text hover:text-accent transition-colors duration-200"
+            style="font-size: 0.7rem; padding: 0.6rem 1.25rem; border: 1px solid rgba(240,235,225,0.25); border-radius: 9999px;"
+            id="cta-ghost"
+          >
+            See Pricing
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+
+</Layout>
+
+
+<style>
+  .faq-body {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 480ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .faq-body.is-open {
+    max-height: 600px;
+  }
+  .faq-body-inner {
+    padding-bottom: 1.5rem;
+  }
+
+  @keyframes faq-spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  .faq-icon {
+    animation: faq-spin 4s linear infinite;
+  }
+  .faq-icon.is-open {
+    animation: none;
+    transform: rotate(180deg);
+  }
+</style>
+
+
+<script>
+  const revealIds = [
+    'opening-block', 'punchline-card', 'includes-block',
+    'matters-block', 'process-block', 'faq-content', 'related-block', 'cta-block',
+  ];
+  revealIds.forEach((id) => {
+    const el = document.getElementById(id);
+    if (!el || !el.classList.contains('reveal')) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { el.classList.add('visible'); observer.disconnect(); } },
+      { threshold: 0.08 }
+    );
+    observer.observe(el);
+  });
+  document.querySelectorAll('.reveal').forEach((el) => {
+    if (el.classList.contains('visible')) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { el.classList.add('visible'); observer.disconnect(); } },
+      { threshold: 0.08 }
+    );
+    observer.observe(el);
+  });
+
+  document.querySelectorAll('.faq-trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const item   = trigger.closest('.faq-item')!;
+      const body   = item.querySelector('.faq-body') as HTMLElement;
+      const icon   = trigger.querySelector('.faq-icon') as HTMLElement;
+      const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+      if (isOpen) {
+        body.classList.remove('is-open');
+        icon.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+      } else {
+        body.classList.add('is-open');
+        icon.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  const ghostBtn = document.getElementById('hero-ghost-secondary');
+  if (ghostBtn) {
+    ghostBtn.addEventListener('mouseenter', () => { ghostBtn.style.borderColor = '#c8511a'; });
+    ghostBtn.addEventListener('mouseleave', () => { ghostBtn.style.borderColor = 'rgba(240,235,225,0.25)'; });
+  }
+  const ctaGhost = document.getElementById('cta-ghost');
+  if (ctaGhost) {
+    ctaGhost.addEventListener('mouseenter', () => { ctaGhost.style.borderColor = '#c8511a'; });
+    ctaGhost.addEventListener('mouseleave', () => { ctaGhost.style.borderColor = 'rgba(240,235,225,0.25)'; });
+  }
+</script>
