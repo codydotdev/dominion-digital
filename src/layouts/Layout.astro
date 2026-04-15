@@ -1,7 +1,8 @@
 ---
 import '../styles/global.css';
 import ContactModal from '../components/ContactModal.astro';
-import { Analytics } from '@vercel/analytics/astro';
+import Analytics from '@vercel/analytics/astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
 
 interface Props {
   title: string;
@@ -39,5 +40,6 @@ const canonical = canonicalUrl ?? Astro.url.href;
   <slot />
   <ContactModal />
   <Analytics />
+  <SpeedInsights />
 </body>
 </html>
